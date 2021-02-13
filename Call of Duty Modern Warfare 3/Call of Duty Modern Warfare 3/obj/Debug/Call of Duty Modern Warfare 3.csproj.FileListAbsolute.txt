@@ -1,0 +1,9 @@
+C:\Users\Snickers\source\repos\Call of Duty Modern Warfare 3\Call of Duty Modern Warfare 3\bin\Debug\Call of Duty Modern Warfare 3.exe
+C:\Users\Snickers\source\repos\Call of Duty Modern Warfare 3\Call of Duty Modern Warfare 3\bin\Debug\Call of Duty Modern Warfare 3.pdb
+C:\Users\Snickers\source\repos\Call of Duty Modern Warfare 3\Call of Duty Modern Warfare 3\obj\Debug\Call of Duty Modern Warfare 3.csprojAssemblyReference.cache
+C:\Users\Snickers\source\repos\Call of Duty Modern Warfare 3\Call of Duty Modern Warfare 3\obj\Debug\Call_of_Duty_Modern_Warfare_3.Form1.resources
+C:\Users\Snickers\source\repos\Call of Duty Modern Warfare 3\Call of Duty Modern Warfare 3\obj\Debug\Call_of_Duty_Modern_Warfare_3.Properties.Resources.resources
+C:\Users\Snickers\source\repos\Call of Duty Modern Warfare 3\Call of Duty Modern Warfare 3\obj\Debug\Call of Duty Modern Warfare 3.csproj.GenerateResource.cache
+C:\Users\Snickers\source\repos\Call of Duty Modern Warfare 3\Call of Duty Modern Warfare 3\obj\Debug\Call of Duty Modern Warfare 3.csproj.CoreCompileInputs.cache
+C:\Users\Snickers\source\repos\Call of Duty Modern Warfare 3\Call of Duty Modern Warfare 3\obj\Debug\Call of Duty Modern Warfare 3.exe
+C:\Users\Snickers\source\repos\Call of Duty Modern Warfare 3\Call of Duty Modern Warfare 3\obj\Debug\Call of Duty Modern Warfare 3.pdb

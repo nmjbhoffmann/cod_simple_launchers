@@ -1,0 +1,19 @@
+C:\Users\Snickers\source\repos\Call of Duty Black Ops II\Call of Duty Black Ops II\bin\Debug\Call of Duty Black Ops II.exe
+C:\Users\Snickers\source\repos\Call of Duty Black Ops II\Call of Duty Black Ops II\bin\Debug\Call of Duty Black Ops II.pdb
+C:\Users\Snickers\source\repos\Call of Duty Black Ops II\Call of Duty Black Ops II\obj\Debug\Call of Duty Black Ops II.csprojAssemblyReference.cache
+C:\Users\Snickers\source\repos\Call of Duty Black Ops II\Call of Duty Black Ops II\obj\Debug\Call_of_Duty_Black_Ops_II.Form1.resources
+C:\Users\Snickers\source\repos\Call of Duty Black Ops II\Call of Duty Black Ops II\obj\Debug\Call_of_Duty_Black_Ops_II.Properties.Resources.resources
+C:\Users\Snickers\source\repos\Call of Duty Black Ops II\Call of Duty Black Ops II\obj\Debug\Call of Duty Black Ops II.csproj.GenerateResource.cache
+C:\Users\Snickers\source\repos\Call of Duty Black Ops II\Call of Duty Black Ops II\obj\Debug\Call of Duty Black Ops II.csproj.CoreCompileInputs.cache
+C:\Users\Snickers\source\repos\Call of Duty Black Ops II\Call of Duty Black Ops II\obj\Debug\Call of Duty Black Ops II.exe
+C:\Users\Snickers\source\repos\Call of Duty Black Ops II\Call of Duty Black Ops II\obj\Debug\Call of Duty Black Ops II.pdb
+C:\Users\Snickers\Desktop\Call of Duty Black Ops II\Call of Duty Black Ops II\bin\Debug\Call of Duty Black Ops II.exe
+C:\Users\Snickers\Desktop\Call of Duty Black Ops II\Call of Duty Black Ops II\bin\Debug\Call of Duty Black Ops II.pdb
+C:\Users\Snickers\Desktop\Call of Duty Black Ops II\Call of Duty Black Ops II\obj\Debug\Call of Duty Black Ops II.csprojAssemblyReference.cache
+C:\Users\Snickers\Desktop\Call of Duty Black Ops II\Call of Duty Black Ops II\obj\Debug\Call_of_Duty_Black_Ops_II.Form1.resources
+C:\Users\Snickers\Desktop\Call of Duty Black Ops II\Call of Duty Black Ops II\obj\Debug\Call_of_Duty_Black_Ops_II.Properties.Resources.resources
+C:\Users\Snickers\Desktop\Call of Duty Black Ops II\Call of Duty Black Ops II\obj\Debug\Call of Duty Black Ops II.csproj.GenerateResource.cache
+C:\Users\Snickers\Desktop\Call of Duty Black Ops II\Call of Duty Black Ops II\obj\Debug\Call of Duty Black Ops II.csproj.CoreCompileInputs.cache
+C:\Users\Snickers\Desktop\Call of Duty Black Ops II\Call of Duty Black Ops II\obj\Debug\Call of Duty Black Ops II.exe
+C:\Users\Snickers\Desktop\Call of Duty Black Ops II\Call of Duty Black Ops II\obj\Debug\Call of Duty Black Ops II.pdb
+C:\Users\Snickers\Desktop\Call of Duty Black Ops II\Call of Duty Black Ops II\bin\Debug\Call of Duty Black Ops II.exe.config

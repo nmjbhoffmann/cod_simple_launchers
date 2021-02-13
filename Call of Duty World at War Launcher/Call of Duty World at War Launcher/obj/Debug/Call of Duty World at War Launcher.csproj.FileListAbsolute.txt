@@ -1,0 +1,18 @@
+C:\Users\Snickers\source\repos\Call of Duty World at War Launcher\Call of Duty World at War Launcher\bin\Debug\Call of Duty World at War Launcher.exe
+C:\Users\Snickers\source\repos\Call of Duty World at War Launcher\Call of Duty World at War Launcher\bin\Debug\Call of Duty World at War Launcher.pdb
+C:\Users\Snickers\source\repos\Call of Duty World at War Launcher\Call of Duty World at War Launcher\obj\Debug\Call of Duty World at War Launcher.csprojAssemblyReference.cache
+C:\Users\Snickers\source\repos\Call of Duty World at War Launcher\Call of Duty World at War Launcher\obj\Debug\Call_of_Duty_World_at_War_Launcher.Form1.resources
+C:\Users\Snickers\source\repos\Call of Duty World at War Launcher\Call of Duty World at War Launcher\obj\Debug\Call_of_Duty_World_at_War_Launcher.Properties.Resources.resources
+C:\Users\Snickers\source\repos\Call of Duty World at War Launcher\Call of Duty World at War Launcher\obj\Debug\Call of Duty World at War Launcher.csproj.GenerateResource.cache
+C:\Users\Snickers\source\repos\Call of Duty World at War Launcher\Call of Duty World at War Launcher\obj\Debug\Call of Duty World at War Launcher.csproj.CoreCompileInputs.cache
+C:\Users\Snickers\source\repos\Call of Duty World at War Launcher\Call of Duty World at War Launcher\obj\Debug\Call of Duty World at War Launcher.exe
+C:\Users\Snickers\source\repos\Call of Duty World at War Launcher\Call of Duty World at War Launcher\obj\Debug\Call of Duty World at War Launcher.pdb
+C:\Users\Snickers\Desktop\Call of Duty World at War Launcher\Call of Duty World at War Launcher\bin\Debug\Call of Duty World at War Launcher.exe
+C:\Users\Snickers\Desktop\Call of Duty World at War Launcher\Call of Duty World at War Launcher\bin\Debug\Call of Duty World at War Launcher.pdb
+C:\Users\Snickers\Desktop\Call of Duty World at War Launcher\Call of Duty World at War Launcher\obj\Debug\Call of Duty World at War Launcher.csprojAssemblyReference.cache
+C:\Users\Snickers\Desktop\Call of Duty World at War Launcher\Call of Duty World at War Launcher\obj\Debug\Call_of_Duty_World_at_War_Launcher.Form1.resources
+C:\Users\Snickers\Desktop\Call of Duty World at War Launcher\Call of Duty World at War Launcher\obj\Debug\Call_of_Duty_World_at_War_Launcher.Properties.Resources.resources
+C:\Users\Snickers\Desktop\Call of Duty World at War Launcher\Call of Duty World at War Launcher\obj\Debug\Call of Duty World at War Launcher.csproj.GenerateResource.cache
+C:\Users\Snickers\Desktop\Call of Duty World at War Launcher\Call of Duty World at War Launcher\obj\Debug\Call of Duty World at War Launcher.csproj.CoreCompileInputs.cache
+C:\Users\Snickers\Desktop\Call of Duty World at War Launcher\Call of Duty World at War Launcher\obj\Debug\Call of Duty World at War Launcher.exe
+C:\Users\Snickers\Desktop\Call of Duty World at War Launcher\Call of Duty World at War Launcher\obj\Debug\Call of Duty World at War Launcher.pdb

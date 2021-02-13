@@ -1,0 +1,9 @@
+C:\Users\Snickers\source\repos\Call of Duty 2 Launcher\Call of Duty 2 Launcher\bin\Debug\Call of Duty 2 Launcher.exe
+C:\Users\Snickers\source\repos\Call of Duty 2 Launcher\Call of Duty 2 Launcher\bin\Debug\Call of Duty 2 Launcher.pdb
+C:\Users\Snickers\source\repos\Call of Duty 2 Launcher\Call of Duty 2 Launcher\obj\Debug\Call of Duty 2 Launcher.csprojAssemblyReference.cache
+C:\Users\Snickers\source\repos\Call of Duty 2 Launcher\Call of Duty 2 Launcher\obj\Debug\Call_of_Duty_2_Launcher.Form1.resources
+C:\Users\Snickers\source\repos\Call of Duty 2 Launcher\Call of Duty 2 Launcher\obj\Debug\Call_of_Duty_2_Launcher.Properties.Resources.resources
+C:\Users\Snickers\source\repos\Call of Duty 2 Launcher\Call of Duty 2 Launcher\obj\Debug\Call of Duty 2 Launcher.csproj.GenerateResource.cache
+C:\Users\Snickers\source\repos\Call of Duty 2 Launcher\Call of Duty 2 Launcher\obj\Debug\Call of Duty 2 Launcher.csproj.CoreCompileInputs.cache
+C:\Users\Snickers\source\repos\Call of Duty 2 Launcher\Call of Duty 2 Launcher\obj\Debug\Call of Duty 2 Launcher.exe
+C:\Users\Snickers\source\repos\Call of Duty 2 Launcher\Call of Duty 2 Launcher\obj\Debug\Call of Duty 2 Launcher.pdb
