@@ -1,0 +1,9 @@
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty WWII Launcher\bin\Release\Call of Duty WWII Launcher.exe
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty WWII Launcher\bin\Release\Call of Duty WWII Launcher.pdb
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty WWII Launcher\obj\Release\Call_of_Duty_WWII_Launcher.Form1.resources
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty WWII Launcher\obj\Release\Call_of_Duty_WWII_Launcher.Properties.Resources.resources
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty WWII Launcher\obj\Release\Call of Duty WWII Launcher.csproj.GenerateResource.cache
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty WWII Launcher\obj\Release\Call of Duty WWII Launcher.csproj.CoreCompileInputs.cache
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty WWII Launcher\obj\Release\Call of Duty WWII Launcher.exe
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty WWII Launcher\obj\Release\Call of Duty WWII Launcher.pdb
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty WWII Launcher\obj\Release\Call of Duty WWII Launcher.csprojAssemblyReference.cache
