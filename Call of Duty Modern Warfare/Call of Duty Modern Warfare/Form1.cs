@@ -47,5 +47,10 @@ namespace Call_of_Duty_Modern_Warfare
             p.Start();
             Environment.Exit(0);
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

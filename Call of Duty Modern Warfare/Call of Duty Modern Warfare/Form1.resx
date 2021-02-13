@@ -117,6 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Bots work, but are fairly dumb. The mod used is PeZBOT v011p.
+
+There's two other bot mods out there called "Bot Warfare" and "RSE bots".
+Bot Warfare is hot garbage, but Bots_RSE isn't too bad.
+In my testing they're more wall hacky than PeZBot which is why PeZbot is the default.
+I've added RSE Bots to the mods folder and can be loaded through the normal multiplayer, but for simplicity, this launcher only deals with PezBot.
+
+#######################################################
+To load bots, first launch the game using "Multiplayer - Bots" or select the PeZBOT mod in the mod list.
+
+Start a game as uhsual, when in game bots can be added via te chat command key (Default "B") or through console using commands:
+"svr_pezbots #"	        - Spawn a number of bots
+"svr_pezbots_skill #.#" - Bot skill level, a decimal between 0 to 1
+"svr_pezbots_team ***"  - Default team for the bots to join "axis", "allies" or "autoassign"
+
+#######################################################
+
+Multiplayer - Zombies isn't your typical Zombie mode since this game predates the original Zombies (It's also an Infinity Ward game, not Treyarch).
+
+This is handled by a mod called "Reign of the Undead - Zombies", it's about the best one I've tried for COD4 as the others are usually way more buggy.</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

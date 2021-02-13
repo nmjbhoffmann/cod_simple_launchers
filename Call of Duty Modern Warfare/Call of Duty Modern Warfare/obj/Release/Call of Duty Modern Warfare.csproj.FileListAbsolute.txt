@@ -1,0 +1,8 @@
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Modern Warfare\Call of Duty Modern Warfare\bin\Release\Call of Duty Modern Warfare.exe
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Modern Warfare\Call of Duty Modern Warfare\bin\Release\Call of Duty Modern Warfare.pdb
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Modern Warfare\Call of Duty Modern Warfare\obj\Release\Call_of_Duty_Modern_Warfare.Form1.resources
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Modern Warfare\Call of Duty Modern Warfare\obj\Release\Call_of_Duty_Modern_Warfare.Properties.Resources.resources
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Modern Warfare\Call of Duty Modern Warfare\obj\Release\Call of Duty Modern Warfare.csproj.GenerateResource.cache
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Modern Warfare\Call of Duty Modern Warfare\obj\Release\Call of Duty Modern Warfare.csproj.CoreCompileInputs.cache
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Modern Warfare\Call of Duty Modern Warfare\obj\Release\Call of Duty Modern Warfare.exe
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Modern Warfare\Call of Duty Modern Warfare\obj\Release\Call of Duty Modern Warfare.pdb

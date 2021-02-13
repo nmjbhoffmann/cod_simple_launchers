@@ -33,6 +33,7 @@
             this.btnMultiplayer = new System.Windows.Forms.Button();
             this.btnBots = new System.Windows.Forms.Button();
             this.btnZombies = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // brnSingleplayer
@@ -47,7 +48,7 @@
             // 
             // btnMultiplayer
             // 
-            this.btnMultiplayer.Location = new System.Drawing.Point(12, 41);
+            this.btnMultiplayer.Location = new System.Drawing.Point(93, 12);
             this.btnMultiplayer.Name = "btnMultiplayer";
             this.btnMultiplayer.Size = new System.Drawing.Size(75, 23);
             this.btnMultiplayer.TabIndex = 1;
@@ -57,7 +58,7 @@
             // 
             // btnBots
             // 
-            this.btnBots.Location = new System.Drawing.Point(93, 12);
+            this.btnBots.Location = new System.Drawing.Point(174, 12);
             this.btnBots.Name = "btnBots";
             this.btnBots.Size = new System.Drawing.Size(121, 23);
             this.btnBots.TabIndex = 2;
@@ -67,7 +68,7 @@
             // 
             // btnZombies
             // 
-            this.btnZombies.Location = new System.Drawing.Point(93, 41);
+            this.btnZombies.Location = new System.Drawing.Point(301, 12);
             this.btnZombies.Name = "btnZombies";
             this.btnZombies.Size = new System.Drawing.Size(121, 23);
             this.btnZombies.TabIndex = 3;
@@ -75,12 +76,25 @@
             this.btnZombies.UseVisualStyleBackColor = true;
             this.btnZombies.Click += new System.EventHandler(this.btnZombies_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 41);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox1.Size = new System.Drawing.Size(410, 298);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.Text = resources.GetString("textBox1.Text");
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // Form1
             // 
             this.AcceptButton = this.btnMultiplayer;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(226, 76);
+            this.ClientSize = new System.Drawing.Size(430, 348);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnZombies);
             this.Controls.Add(this.btnBots);
             this.Controls.Add(this.btnMultiplayer);
@@ -92,6 +106,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Call of Duty 4 Modern Warfare";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -101,6 +116,7 @@
         private System.Windows.Forms.Button btnMultiplayer;
         private System.Windows.Forms.Button btnBots;
         private System.Windows.Forms.Button btnZombies;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

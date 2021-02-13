@@ -7,3 +7,12 @@ C:\Users\Snickers\source\repos\Call of Duty Modern Warfare\Call of Duty Modern W
 C:\Users\Snickers\source\repos\Call of Duty Modern Warfare\Call of Duty Modern Warfare\obj\Debug\Call of Duty Modern Warfare.csproj.CoreCompileInputs.cache
 C:\Users\Snickers\source\repos\Call of Duty Modern Warfare\Call of Duty Modern Warfare\obj\Debug\Call of Duty Modern Warfare.exe
 C:\Users\Snickers\source\repos\Call of Duty Modern Warfare\Call of Duty Modern Warfare\obj\Debug\Call of Duty Modern Warfare.pdb
+D:\Games\Call of Duty Modern Warfare\Call of Duty Modern Warfare.exe
+D:\Games\Call of Duty Modern Warfare\Call of Duty Modern Warfare.pdb
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Modern Warfare\Call of Duty Modern Warfare\obj\Debug\Call of Duty Modern Warfare.csprojAssemblyReference.cache
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Modern Warfare\Call of Duty Modern Warfare\obj\Debug\Call_of_Duty_Modern_Warfare.Form1.resources
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Modern Warfare\Call of Duty Modern Warfare\obj\Debug\Call_of_Duty_Modern_Warfare.Properties.Resources.resources
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Modern Warfare\Call of Duty Modern Warfare\obj\Debug\Call of Duty Modern Warfare.csproj.GenerateResource.cache
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Modern Warfare\Call of Duty Modern Warfare\obj\Debug\Call of Duty Modern Warfare.csproj.CoreCompileInputs.cache
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Modern Warfare\Call of Duty Modern Warfare\obj\Debug\Call of Duty Modern Warfare.exe
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Modern Warfare\Call of Duty Modern Warfare\obj\Debug\Call of Duty Modern Warfare.pdb
