@@ -1,0 +1,9 @@
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Advanced Warfare Launcher\bin\Debug\Call of Duty Advanced Warfare Launcher.exe
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Advanced Warfare Launcher\bin\Debug\Call of Duty Advanced Warfare Launcher.pdb
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Advanced Warfare Launcher\obj\Debug\Call of Duty Advanced Warfare Launcher.csprojAssemblyReference.cache
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Advanced Warfare Launcher\obj\Debug\Call_of_Duty_Advanced_Warfare_Launcher.Form1.resources
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Advanced Warfare Launcher\obj\Debug\Call_of_Duty_Advanced_Warfare_Launcher.Properties.Resources.resources
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Advanced Warfare Launcher\obj\Debug\Call of Duty Advanced Warfare Launcher.csproj.GenerateResource.cache
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Advanced Warfare Launcher\obj\Debug\Call of Duty Advanced Warfare Launcher.csproj.CoreCompileInputs.cache
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Advanced Warfare Launcher\obj\Debug\Call of Duty Advanced Warfare Launcher.exe
+C:\Users\Snickers\Desktop\Call of Duty Launchers\Call of Duty Advanced Warfare Launcher\obj\Debug\Call of Duty Advanced Warfare Launcher.pdb

@@ -1,0 +1,13 @@
+article  1
+header "Welcome to ProjectNova"
+body "ProjectNova's goal is to liberate games trapped behind the Great Wall of online only restrictions. You should be able to play your games anywhere, at any time, and in any way you choose.
+
+Visit projectnova.us for new and updated offline mods.
+
+You can support the developers without spending money by following the instructions on the donations page.
+
+Enjoy!"
+type news
+image bg_large_045
+imagewidth 320
+imageheight 320

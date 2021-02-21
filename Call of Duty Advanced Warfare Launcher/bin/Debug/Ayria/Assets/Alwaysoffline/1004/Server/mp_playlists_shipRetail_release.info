@@ -1,0 +1,3968 @@
+version 796
+
+// *****************************************************************
+// *** Playlist Rules ***
+// *****************************************************************
+// Always increment the playlist version number, at the top of the file, when making a change.
+// Do not repurpose or reuse playlist IDs.
+// When adding a new playlist, always set the playlist ID for the new playlist to the number shown in "Next Playlist ID" below these rules. Example, if the newest ID is 65, your new playlist ID will be ID 65.
+// When making a playlist unavailable to the live environment, always label the playlist as "Offline" as the playlist will still show up in the Development environment.
+// When making a playlist unavailable to the live environment, move the playlist to the appropriate "Unused" section.
+// Playlists are now labeled via a comments section at the top of each playlist. Copy this format if you want the playlist name to show up correctly in data dashboards.
+// If a playlist is only for Dev environment, be sure to label as such in the name so this is indicated in the UI. Example: "Darkroom FFA (DEV)" 
+// If you have any playlist related questions, contact Andre Tiran or Dan Merboth for assistance.
+
+
+// *****************************************************************
+// *** Next Playlist ID ***256***
+// *****************************************************************
+
+rule 3266 8 
+rule 2085 1 
+rule 1765 1 
+rule cg_drawfps 1 
+rule party_minlobbytime 10 
+rule com_maxfps 85 
+set scr_airdrop_nuke 0 
+set scr_airdrop_mega_nuke 0 
+set 124 300 
+set 123 128 
+set 97 0 
+set 150 0 
+set 140 8 
+set 203 1 
+set 1866 1 
+set 128 5.5 
+set g_synchronousClients 0 
+set 1221 190 
+set 55 39 
+set 57 128 
+set 54 1 
+set 62 0.1 
+set 63 60 
+set 59 1 
+set 174 1 
+set 157 0 
+set 160 6 
+set 158 4.5 
+set 156 1 
+set 159 1 
+set 155 4.5 
+set 195 0 
+set 172 60 
+set 186 0.2 
+set 185 0 
+set 177 105 
+set 179 1 
+set 180 0 
+set 183 1.5 
+set 178 4 
+set 184 0 
+set 173 1 
+set 107 70 
+set 106 70 
+set 2009 1 
+set 1867 1 
+set 37 0 
+set 47 0 
+set 49 0.6 
+set 48 0.05 
+set 50 90 
+set 51 90 
+set 43 40 
+set 44 320 
+set 45 240 
+set 42 0 
+set 30 0 
+set aim_slowdown_pitch_scale 0.4 
+set aim_slowdown_pitch_scale_ads 0.5 
+set aim_slowdown_yaw_scale 0.4 
+set aim_slowdown_yaw_scale_ads 0.5 
+set 31 90 
+set 32 90 
+set 777 0 
+set 1022 1 
+set 1046 1 
+set 153 11 
+set 154 100 
+set 61 20 
+set 58 64 
+set 164 0 
+set 169 60 
+set 182 0.5 
+set 181 0.667 
+set 170 185 
+set 129 100 
+set 279 0 
+set 251 4.0 
+set 252 2.0 
+set 378 4.0 
+set 1462 0.1 
+set 3256 0 
+set 608 1 
+set 397 1600.0 
+set 398 3.0 
+set 400 90.0 
+set mu_deathray 0
+rule mu_deathray 0
+set scr_sdp_class_table ""
+set scr_dmz_buddymode 0
+set playlistMapRotateSequentially 0
+
+
+// *****************************************************************
+// *** Categories ***
+// *****************************************************************
+//
+// ID only matters to help connect the playlist to the category.  The actual number is never used in the UI.
+// ID must be > 0.
+// Group will be used by the UI mostly to seperate PvP vs PvE, though it might someday be extended to more.
+// Flag: Featured = 1, internal development only = 2, New = 4, Cycle = 8
+//
+//      ID    Group Flag  Unlock_Item				Name_chinese        	Name_CN
+catinfo 11    1     0         ""						"SPY"                	"SPY"                	
+catinfo 2     1     1         ""						"Search & Destroy"  	"Search & Destroy"  	
+catinfo 1     1     0         ""						"Charge"            	"Charge"            	
+catinfo 16    1     4         ""						"ROBBERY"				"ROBBERY"				
+catinfo 13    1     1         ""                        "Game of Valor"         "Game of Valor"         
+catinfo 15    1     0         ""						"VIP"					"VIP"					
+catinfo 14    1     0         ""	                    "Nuclear Football"      "Nuclear Football"      
+catinfo 10	  1     8		  ""						"Party Cycle"			"Party Cycle"			
+catinfo 3     1     0         ""						"Team Deathmatch"   	"Team Deathmatch"   	
+catinfo 12    1     0         ""	                    "Prop Hunt"             "Prop Hunt"             
+catinfo 5     1     0         ""						"Hostage Mode"         	"Hostage Mode"         	
+catinfo 9     1     0         ""		"Chaos Fight"          	"Chaos Fight"          	
+catinfo 4     1     0         ""						"Search & Destroy: Plus" "Search & Destroy: Plus"
+catinfo 7     1     0         ""						"DEV"               	"DEV"               	
+catinfo 8     1     0         ""						"QA"                	"QA"                	
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+	                                                                            
+catinfo 21    0     0         ""						"Hero Ops"          	"Hero Ops"          	
+catinfo 30    0     4         ""						"Tower Defence"         "Tower Defence"         
+catinfo 29    0     1         ""						"Zombie Hunter"         "Zombie Hunter"         
+catinfo 28    0     0         ""		"ZS Champions"     		"ZS Champions"     		
+catinfo 22    0     0         ""	"Cyborgs"           	"Cyborgs"           	
+catinfo 23    0     0         ""			"Survival"          	"Survival"          	
+catinfo 26    0     0         ""		"Zombie Survival"     	"Zombie Survival"     	
+catinfo 20    0     0         ""			"Super Zombie Battle" 	"Super Zombie Battle" 	
+catinfo 24    0     0         ""						"Timed"             	"Timed"             	
+catinfo 25    0     0         ""						"DEV"               	"DEV"               	
+
+
+// *****************************************************************
+// *** Gametypes ***
+// *****************************************************************
+
+// ****COMBAT TRAINING****
+gametype combat 
+name MPUI_COMBAT_TRAINING
+script combat
+teambased   
+
+// ****TEAM DEATHMATCH****
+
+gametype tdm 
+name MPUI_TEAM_DEATHMATCH
+script war
+teambased   
+rule scr_game_playerwaittime				20
+rule scr_game_playerwaitcountfactor			0.4
+
+// ****CHARGE****
+
+gametype cha 
+name MPUI_CHA
+script cha
+teambased   
+rule scr_game_playerwaittime				20
+rule scr_game_playerwaitcountfactor			0.4
+
+// ****DOMINATION****
+
+gametype dom 
+name MPUI_DOMINATION
+script dom
+teambased   
+rule scr_game_playerwaittime				30
+rule scr_game_playerwaitcountfactor			0.6
+
+
+// ****HEADQUARTERS****
+
+gametype hq 
+name MPUI_HEADQUARTERS
+script koth
+teambased   
+
+
+// ****HARDPOINT****
+
+gametype hp 
+name MPUI_HARDPOINT
+script hp
+teambased  
+rule scr_game_playerwaittime				30
+rule scr_game_playerwaitcountfactor			0.6
+
+
+// ****SABOTAGE****
+
+gametype sab 
+name MPUI_SABOTAGE
+script sab
+teambased  
+rule scr_sab_bombtimer 45 
+
+// ****SEARCH AND DESTROY****
+
+gametype sd 
+name MPUI_SEARCH_AND_DESTROY
+script sd
+teambased   
+rule scr_game_playerwaittime				40
+rule scr_game_playerwaitcountfactor			0.8
+
+// ****SEARCH AND RESCUE****
+
+gametype sr 
+name MPUI_SEARCH_AND_RESCUE
+script sr
+teambased   
+rule scr_game_playerwaittime				40
+rule scr_game_playerwaitcountfactor			0.8
+
+// ****Demolition****
+
+gametype dd 
+name MPUI_DD
+script dd
+teambased   
+rule scr_game_playerwaittime				30
+rule scr_game_playerwaitcountfactor			0.6
+
+// ****FREE FOR ALL****
+
+gametype ffa 
+name MPUI_DEATHMATCH
+script dm 
+
+
+// ****TEAM JUGGERNAUT****
+
+gametype tjugg 
+name MPUI_TJUGG
+script tjugg 
+teambased
+
+// ****CAPTURE THE FLAG****
+
+gametype ctf 
+name MPUI_CAPTURE_THE_FLAG
+script ctf
+teambased   
+rule scr_game_playerwaittime				30
+rule scr_game_playerwaitcountfactor			0.6
+
+
+// ****KILL CONFIRMED****
+
+gametype kc 
+name MPUI_CONF 
+script conf
+teambased
+rule scr_game_playerwaittime				20
+rule scr_game_playerwaitcountfactor			0.4
+
+// ****LOOT DROP****
+
+gametype tag
+name MPUI_TAG
+script tag
+teambased
+rule scr_game_playerwaittime				20
+rule scr_game_playerwaitcountfactor			0.4
+
+// ****COLLECTION****
+
+gametype collect 
+name MPUI_COLLECT 
+script collect
+teambased
+rule scr_game_playerwaittime				20
+rule scr_game_playerwaitcountfactor			0.4
+
+// ****ASYMMETRIC****
+
+gametype asym
+name MPUI_ASYM
+script asym
+teambased   
+
+// ****ASSIMILATION****
+
+gametype borg
+name MPUI_BORG
+script borg
+
+// ****DESTROYER****
+
+gametype des 
+name MPUI_DESTROYER
+script des 
+
+// ****GUN GAME****
+
+gametype gun
+name MPUI_GUN
+script gun
+
+// ****ONE IN THE CHAMBER****
+
+gametype oic
+name MPUI_OIC
+script oic
+
+// ****STICKS AND STONES****
+
+gametype sas
+name MPUI_SAS
+script sas
+
+// ****Spec Ops**** 
+
+gametype coop 
+name MPUI_SPEC_OPS
+script coop 
+
+// ****ZOMBIES****
+
+gametype zm 
+name MPUI_ZOMBIE
+script zm 
+
+// ****CLASH****
+
+gametype clash
+name MPUI_CLASH
+script clash 
+
+// ****SHRINES****
+
+gametype shrines
+name MPUI_SPEC_OPS
+script shrines 
+
+// ****ZOMBIE ARENA****
+
+gametype zarena
+name MPUI_SPEC_OPS
+script zarena 
+
+// ****ZOMBIE SURVIVAL****
+
+gametype zsurv
+name MPUI_SPEC_OPS
+script zsurv
+
+// ****ZOMBIE CHAMPIONS****
+
+gametype zchamp
+name MPUI_SPEC_OPS
+script zchamp
+
+// ****ZOMBIE HUNTER****
+
+gametype zhunt
+name MPUI_SPEC_OPS
+script zhunt 
+
+// ****TOWER DEFENCE****
+
+gametype td
+name MPUI_SPEC_OPS
+script td
+
+// ****HUNT****
+
+gametype hunt
+name MPUI_SPEC_OPS
+script hunt 
+
+// ****SEARCH AND DESTROY PLUS****
+
+gametype sdp 
+name MPUI_SEARCH_AND_DESTROY_PLUS
+script sdp
+teambased   
+rule scr_game_playerwaittime				40
+rule scr_game_playerwaitcountfactor			0.8
+
+// ****SEARCH AND DESTROY CHAMPIONS****
+
+gametype sdc
+name MPUI_SEARCH_AND_DESTROY_CHMP
+script sdc
+teambased   
+rule scr_game_playerwaittime				40
+rule scr_game_playerwaitcountfactor			0.8
+
+// ****VIP****
+gametype vip
+name MPUI_VIP
+script vip
+teambased
+
+// ****ROBBERY****
+gametype robbery
+name MPUI_ROBBERY
+script robbery
+teambased
+
+// ****SPY****
+
+gametype spy
+name MPUI_SPY
+script spy
+
+// ****HOSTAGE MODE****
+
+gametype hostage
+name MPUI_HOSTAGE
+script hostage
+teambased
+  
+// ****PROP HUNT****
+
+gametype ph
+name MPUI_PROP_HUNT
+script ph
+teambased
+
+// ****CHICKEN MODE****
+
+gametype chicken
+name MPUI_chicken
+script chicken
+teambased
+
+// ****BATTLE CITY****
+
+gametype dmz
+name MPUI_DMZ
+script dmz
+
+gametype tdmz
+name MPUI_TDMZ
+script tdmz
+teambased
+
+// ****Nuclear Football****
+gametype nftbl
+name MPUI_NFTBL
+script nftbl
+// *****************************************************************
+// *****************************************************************
+// *** MICRO CLIENT ***
+// *****************************************************************
+// *****************************************************************
+
+
+// *****************************************************************
+// *** MP Playlists ***
+// *****************************************************************
+
+// @LOGAS="Charge - Skirmish"
+playlist 1
+displayorder 1
+category 1
+name chinese "Skirmish" 
+name english "ÊµÕ½¶Ô¿¹" 
+description chinese "Charge TDM with bots." 
+description english "³å·æ(Ëæ»úµØÍ¼)-³å·æÍÅ¶Ó¾º¼¼Ä£Ê½£¬ÈËÊý6V6£¬ËÀÍöºó¹Ì¶¨¸´»îµã¸´»î£¬ÔÚ10·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½50»÷É±µÄ¶ÓÎé»ñÊ¤¡£" 
+buildversion default cb3 release
+//unlocklevelstart 1 
+unlocklevelend 70
+vsrule "6V6"
+combattraining
+onboardbonus 
+difficulty 0
+minparty 0 
+maxparty 4
+rule 1011 1 
+rule 3265 4 
+maxhumanplayersperteam 3
+rule scr_cha_scorelimit 50 
+rule scr_cha_timelimit 10 
+rule scr_cha_roundlimit 2
+rule scr_cha_roundswitch 2
+rule scr_cha_winlimit 1
+rule scr_cha_halftime 1
+rule scr_cha_scorelimithalftime 1
+mp_nuked,cha,1
+mp_mideast,cha,1
+mp_shipment_long,cha,1
+mp_cha_quad,cha,1
+mp_mountain,cha,1
+wargodWarmRoundId 216
+
+// @LOGAS="Charge - Onboarding"    DISABLED
+playlist 2
+displayorder 0
+category 8
+name chinese "Onboarding" 
+name english "³å·æÍÅ¶Ó¾º¼¼" 
+description chinese "Combat training in Charge TDM with humans againts bots." 
+description english "³å·æ(Ëæ»úµØÍ¼)-³å·æÍÅ¶Ó¾º¼¼Ä£Ê½£¬ÈËÊý6V6£¬ËÀÍöºó¹Ì¶¨¸´»îµã¸´»î£¬ÔÚ10·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½50»÷É±µÄ¶ÓÎé»ñÊ¤¡£" 
+buildversion
+//unlocklevelstart 1 
+unlocklevelend 10
+vsrule "6V6"
+combattraining
+onboardbonus
+noteamsplitting
+difficulty 0
+minparty 0 
+maxparty 0
+rule 1011 1 
+rule 3265 4 
+maxhumanplayersperteam 4
+rule scr_cha_scorelimit 50 
+rule scr_cha_timelimit 10 
+mp_nuked,cha,1
+mp_mideast,cha,1
+mp_shipment_long,cha,1
+mp_cha_quad,cha,1
+mp_mountain,cha,1
+
+
+// @LOGAS="Search & Destroy - Skirmish"
+playlist 123
+displayorder 0
+category 2
+name chinese "Skirmish" 
+name english "ÊµÕ½¶Ô¿¹" 
+description chinese "Take turns defending and destroying an objective." 
+description english "ÈËÊý6V6£¬½ø¹¥·½±ØÐëÔÚÊ±ÏÞÄÚÔÚÄ¿±êÎ»ÖÃ°²×°²¢Òý±¬Õ¨µ¯£¬·ÀÊØ·½Òª×èÖ¹Õ¨µ¯Òý±¬¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£"
+buildversion default cb3 release
+//unlocklevelstart 1
+unlocklevelend 70
+vsrule "6V6"
+combattraining
+onboardbonus
+difficulty 1
+minparty 0 
+maxparty 0
+rule 1011 1
+rule 3265 6
+maxhumanplayersperteam 3
+//mindlclevel 1
+mp_crash_tropical,sd,1
+mp_estate_tropical,sd,1
+mp_fav_tropical,sd,1
+mp_cross_fire,sd,1
+mp_mountain,sd,1
+mp_terminal_cls,sd,1
+mp_tunisia,sd,1
+mp_dome,sd,1
+wargodWarmRoundId 217
+
+// @LOGAS="Charge - Assault"
+playlist 4
+displayorder 3
+category 9
+name chinese "Charge - Assault" 
+name english "³å·æÍÅ¾º6V6" 
+description chinese "Charge TDM on random maps." 
+description english "ÈËÊý6V6£¬ËÀÍöºó¹Ì¶¨¸´»îµã¸´»î£¬ÔÚ20·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½100»÷É±µÄ¶ÓÎé»òÊ±¼ä½áÊø»÷É±Êý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£" 
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6 
+rule 3265 12 
+rule scr_cha_scorelimit 100 
+rule scr_cha_timelimit 20
+rule scr_cha_roundlimit 2
+rule scr_cha_roundswitch 2
+rule scr_cha_winlimit 1
+rule scr_cha_halftime 1
+rule scr_cha_scorelimithalftime 1
+mp_nuked,cha,3
+//mp_rust_long,cha,1
+mp_shipment_long,cha,3
+mp_cha_quad,cha,3
+mp_mideast,cha,3
+mp_highrise,cha,3
+mp_mountain,cha,3
+mp_offshore,cha,3
+mp_streamline,cha,3
+mp_strike_sh,cha,3
+mp_showdown,cha,3
+mp_overwatch_sh,cha,3
+mp_wasteland_sh,cha,3
+mp_lookout_sh,cha,3
+mp_interchange_sh,cha,3
+mp_mission_sh,cha,3
+streakBreakId 158
+
+// @LOGAS="Charge - Nuketown"
+playlist 110
+displayorder 7
+category 1
+name chinese "Map: Nuketown"
+name english "-ºËµ¯Ð¡Õò" 
+description chinese "Charge TDM on Nuketown only." 
+description english "ÈËÊý9V9£¬ËÀÍöºó¹Ì¶¨¸´»îµã¸´»î£¬ÔÚ20·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½150»÷É±µÄ¶ÓÎé»òÊ±¼ä½áÊø»÷É±Êý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£"
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 3
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "9V9"
+rule scr_ground_war 1
+rule 1011 12 
+rule 3265 18 
+rule scr_cha_scorelimit 150 
+rule scr_cha_timelimit 20
+//validtime1 20-24					//0-24, BJ time, seperate time buckets by ',', time buckets maximum is 3
+//validday1 2,3,4				        // from 0: Sunday to 6: Saturday; comment validday if every day is valid
+//validdate1 2016/01/14-2016/12/31	// YYYY/MM/DD-YYYY/MM/DD, BJ time
+mp_nuked,cha,1
+
+// @LOGAS="Charge - Offshore"
+playlist 190
+displayorder 4
+category 1
+name chinese "Map: Offshore"
+name english "Ä©ÈÕ×ê¾®9V9" 
+description chinese "Charge TDM on Offshore only." 
+description english "ÈËÊý9V9£¬ËÀÍöºó¹Ì¶¨¸´»îµã¸´»î£¬ÔÚ20·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½150»÷É±µÄ¶ÓÎé»òÊ±¼ä½áÊø»÷É±Êý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£"
+buildversion
+ranked   
+minparty 1 
+maxparty 9
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "9V9"
+rule scr_ground_war 1
+rule 1011 12 
+rule 3265 18 
+rule scr_cha_scorelimit 150 
+rule scr_cha_timelimit 20
+//validtime1 20-24					//0-24, BJ time, seperate time buckets by ',', time buckets maximum is 3
+//validday1 2,3,4				        // from 0: Sunday to 6: Saturday; comment validday if every day is valid
+//validdate1 2016/01/14-2016/12/31	// YYYY/MM/DD-YYYY/MM/DD, BJ time
+mp_offshore,cha,1
+featured
+
+// @LOGAS="Charge - Showndown"
+playlist 223
+displayorder 6
+category 1
+name chinese "Map: Showndown"
+name english "-×ÔÓÉ¹ã³¡" 
+description chinese "Charge TDM on Showndown only." 
+description english "ÈËÊý9V9£¬ËÀÍöºó¹Ì¶¨¸´»îµã¸´»î£¬ÔÚ20·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½150»÷É±µÄ¶ÓÎé»òÊ±¼ä½áÊø»÷É±Êý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£"
+buildversion
+ranked   
+minparty 1 
+maxparty 3
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "9V9"
+rule scr_ground_war 1
+rule 1011 12 
+rule 3265 18 
+rule scr_cha_scorelimit 150 
+rule scr_cha_timelimit 20
+//validtime1 20-24					//0-24, BJ time, seperate time buckets by ',', time buckets maximum is 3
+//validday1 2,3,4				        // from 0: Sunday to 6: Saturday; comment validday if every day is valid
+//validdate1 2016/01/14-2016/12/31	// YYYY/MM/DD-YYYY/MM/DD, BJ time
+mp_showdown,cha,1
+
+// @LOGAS="Charge - Overwatch"
+playlist 226
+displayorder 5
+category 1
+name chinese "Map: Overwatch"
+name english "-Ä¦Ìì´óÂ¥" 
+description chinese "Charge TDM on Overwatch only." 
+description english "ÈËÊý9V9£¬ËÀÍöºó¹Ì¶¨¸´»îµã¸´»î£¬ÔÚ20·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½150»÷É±µÄ¶ÓÎé»òÊ±¼ä½áÊø»÷É±Êý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£"
+buildversion
+ranked   
+minparty 1 
+maxparty 3
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "9V9"
+rule scr_ground_war 1
+rule 1011 12 
+rule 3265 18 
+rule scr_cha_scorelimit 150 
+rule scr_cha_timelimit 20
+//validtime1 20-24					//0-24, BJ time, seperate time buckets by ',', time buckets maximum is 3
+//validday1 2,3,4				        // from 0: Sunday to 6: Saturday; comment validday if every day is valid
+//validdate1 2016/01/14-2016/12/31	// YYYY/MM/DD-YYYY/MM/DD, BJ time
+mp_overwatch_sh,cha,1
+
+// @LOGAS="Charge - Voroshny"
+playlist 238
+displayorder 6
+category 1
+name chinese "Map: Borderland"
+name english "-±ß¾³·ÏÐæ" 
+description chinese "Charge TDM on Voroshny only." 
+description english "ÈËÊý9V9£¬ËÀÍöºó¹Ì¶¨¸´»îµã¸´»î£¬ÔÚ20·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½150»÷É±µÄ¶ÓÎé»òÊ±¼ä½áÊø»÷É±Êý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£"
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 3
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "9V9"
+rule scr_ground_war 1
+rule 1011 12 
+rule 3265 18 
+rule scr_cha_scorelimit 150 
+rule scr_cha_timelimit 20
+//validtime1 20-24					//0-24, BJ time, seperate time buckets by ',', time buckets maximum is 3
+//validday1 2,3,4				        // from 0: Sunday to 6: Saturday; comment validday if every day is valid
+//validdate1 2016/01/14-2016/12/31	// YYYY/MM/DD-YYYY/MM/DD, BJ time
+mp_wasteland_sh,cha,1
+
+// @LOGAS="Charge - Lookout"
+playlist 242
+displayorder 5
+category 1
+name chinese "Map: Lookout"
+name english "-É½ÁëÕ½Çø" 
+description chinese "Charge TDM on Voroshny only." 
+description english "ÈËÊý9V9£¬ËÀÍöºó¹Ì¶¨¸´»îµã¸´»î£¬ÔÚ20·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½150»÷É±µÄ¶ÓÎé»òÊ±¼ä½áÊø»÷É±Êý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£"
+buildversion
+ranked   
+minparty 1 
+maxparty 3
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "9V9"
+rule scr_ground_war 1
+rule 1011 12 
+rule 3265 18 
+rule scr_cha_scorelimit 150 
+rule scr_cha_timelimit 20
+//validtime1 20-24					//0-24, BJ time, seperate time buckets by ',', time buckets maximum is 3
+//validday1 2,3,4				        // from 0: Sunday to 6: Saturday; comment validday if every day is valid
+//validdate1 2016/01/14-2016/12/31	// YYYY/MM/DD-YYYY/MM/DD, BJ time
+mp_lookout_sh,cha,1
+
+// @LOGAS="Charge - Interchange"
+playlist 250
+displayorder 4
+category 1
+name chinese "Map: Interchange"
+name english "-Á¢½»·âËø" 
+description chinese "Charge TDM on Interchange only." 
+description english "ÈËÊý9V9£¬ËÀÍöºó¹Ì¶¨¸´»îµã¸´»î£¬ÔÚ20·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½150»÷É±µÄ¶ÓÎé»òÊ±¼ä½áÊø»÷É±Êý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£"
+buildversion default cb3 release 
+ranked   
+minparty 1 
+maxparty 3
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "9V9"
+rule scr_ground_war 1
+rule 1011 12 
+rule 3265 18 
+rule scr_cha_scorelimit 150 
+rule scr_cha_timelimit 20
+//validtime1 20-24					//0-24, BJ time, seperate time buckets by ',', time buckets maximum is 3
+//validday1 2,3,4				        // from 0: Sunday to 6: Saturday; comment validday if every day is valid
+//validdate1 2016/01/14-2016/12/31	// YYYY/MM/DD-YYYY/MM/DD, BJ time
+mp_interchange_sh,cha,1
+
+// @LOGAS="Charge - Mission"
+playlist 253
+displayorder 3
+category 1
+name chinese "Map: Mission"
+name english "-²ÐÔ«Ö®Õò" 
+description chinese "Charge TDM on Mission only." 
+description english "ÈËÊý9V9£¬ËÀÍöºó¹Ì¶¨¸´»îµã¸´»î£¬ÔÚ20·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½150»÷É±µÄ¶ÓÎé»òÊ±¼ä½áÊø»÷É±Êý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£"
+buildversion default cb3 release 
+ranked   
+minparty 1 
+maxparty 3
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "9V9"
+rule scr_ground_war 1
+rule 1011 12 
+rule 3265 18 
+rule scr_cha_scorelimit 150 
+rule scr_cha_timelimit 20
+//validtime1 20-24					//0-24, BJ time, seperate time buckets by ',', time buckets maximum is 3
+//validday1 2,3,4				        // from 0: Sunday to 6: Saturday; comment validday if every day is valid
+//validdate1 2016/01/14-2016/12/31	// YYYY/MM/DD-YYYY/MM/DD, BJ time
+mp_mission_sh,cha,1
+new
+
+// *****************************************************************
+// *** War God Playlists ***
+// *****************************************************************
+
+// @LOGAS="War God" aka Web Ladder
+playlist 68
+displayorder 12
+category 8
+name chinese "S&D + DOM Wargod/Esports" 
+name english "Õ½ÉñÅÅÎ»Èü" 
+description chinese "Playlist with Search and Destroy and Domination for ladder competition" 
+description english "×îÇ¿Íæ¼ÒµÄ¾º¼¼ÎèÌ¨£¬Õ½ÉñÔÚÕâÀï²úÉú£¡²ÉÈ¡¾­µä±¬ÆÆ&¾ÝµãÕù¶áÄ£Ê½Ëæ»ú³öÏÖµÄ±ÈÈü·½Ê½£¬²¢ÓµÓÐ×¨Êô½±Àø¡£¿ª·ÅÊ±¼ä£ºÏÂÎç13µã-ÍíÉÏ23µã¡£" 
+buildversion default cb3 release 
+ranked
+itemban uav_pro riotshield_mp javelin_mp m79_mp rpg_mp at4_mp uav counter_uav airdrop sr71_mp specialty_paint claymore_mp sho_mkswatak47gld sra_hbsak47gld gre_gp30heak104ss cqc_akimbominiuzibdiamond the_variablemsr the_fixsmallak104gld sco_targetfinderak47platinum sra_microphoneak104smart airdrop_wargod sra_scrambleraa12modern gre_pulseradaran94vulcan all_wat_mag_ssr riotshieldzhloot_mp specialty_siderollingexpert
+novoting
+minparty 1 
+maxparty 3
+//unlocklevelstart 30
+unlocklevelend  70
+vsrule "5V5"
+rule 1011 10 
+rule 3265 10
+levelrestricted
+novoting
+validtime1 7-3					//0-24, BJ time, seperate time buckets by ',', time buckets maximum is 3
+validday1 0,1,2,3,4,5,6				// from 0: Sunday to 6: Saturday; comment validday if every day is valid
+validdate1 2016/01/14-2020/12/31	// YYYY/MM/DD-YYYY/MM/DD, BJ time
+//validtime2 0-24					
+//validday2 0,1,2,3,4,5,6				
+//validdate2 2016/01/14-2020/12/31
+mp_crash_tropical,sd,1
+mp_cross_fire,sd,1
+mp_storm_spring,sd,1
+mp_tunisia,sd,1
+mp_firingrange,sd,1
+mp_fav_tropical,dom,1
+mp_district,dom,1
+mp_seatown,dom,1
+mp_mountain,dom,1
+mp_storm_spring,dom,1
+
+// *****************************************************************
+// *** PVE Playlists ***
+// *****************************************************************
+
+// @LOGAS="Evacuation Normal"
+// playlist 7, 8, 82, 83, 84, 85 evac reserved
+
+// @LOGAS="Survival Normal"
+playlist 10
+displayorder 10
+category 23
+name chinese "Survival Normal" 
+name english "Éú´æÄ£Ê½" 
+description chinese "SURVIVAL NORMAL" 
+description english "µÖ¿¹Ò»²¨ÓÖÒ»²¨µÐÈËµÄÇÖÏ®£¬Í¨¹ý»÷É±µÐÈË»ñÈ¡½ðÇ®£¬ÓÃ½ðÇ®À´»»È¡µ¯Ò©¡¢¼¼ÄÜ¡¢·Àµ¯ÒÂÒÔ¼°Á¬É±¼¼ÄÜ°ïÖúÄã¼á³Öµ½Õ½¶·½áÊø£¡" 
+buildversion default cb3 release
+difficulty 0
+//unlocklevelstart 7 
+unlocklevelend 70
+survival
+minparty 1 
+maxparty 6
+rule 1011 1 
+rule 3265 6
+coop_survival_mp_cross_fire,coop,1
+coop_survival_mp_crash_tropical,coop,1
+coop_survival_mp_fav_tropical,coop,1
+coop_survival_mp_highrise,coop,1
+coop_survival_mp_mountain,coop,1
+coop_survival_mp_terminal_cls,coop,1
+
+// @LOGAS="Survival Normal Crash Tropical"
+playlist 112
+displayorder 112
+category 23
+name chinese "Crash Tropical" 
+name english "×¹»úÖ®µØ" 
+description chinese "SURVIVAL NORMAL" 
+description english "µÖ¿¹Ò»²¨ÓÖÒ»²¨µÐÈËµÄÇÖÏ®£¬Í¨¹ý»÷É±µÐÈË»ñÈ¡½ðÇ®£¬ÓÃ½ðÇ®À´»»È¡µ¯Ò©¡¢¼¼ÄÜ¡¢·Àµ¯ÒÂÒÔ¼°Á¬É±¼¼ÄÜ°ïÖúÄã¼á³Öµ½Õ½¶·½áÊø£¡" 
+buildversion default cb3 release
+difficulty 0
+//unlocklevelstart 7 
+unlocklevelend 70
+survival
+minparty 1 
+maxparty 6
+rule 1011 1 
+rule 3265 6
+coop_survival_mp_crash_tropical,coop,1
+
+// @LOGAS="Survival Normal Cross Fire" 
+playlist 86
+displayorder 86
+category 23
+name chinese "Cross Fire" 
+name english "½»²æ»ðÁ¦" 
+description chinese "SURVIVAL NORMAL" 
+description english "µÖ¿¹Ò»²¨ÓÖÒ»²¨µÐÈËµÄÇÖÏ®£¬Í¨¹ý»÷É±µÐÈË»ñÈ¡½ðÇ®£¬ÓÃ½ðÇ®À´»»È¡µ¯Ò©¡¢¼¼ÄÜ¡¢·Àµ¯ÒÂÒÔ¼°Á¬É±¼¼ÄÜ°ïÖúÄã¼á³Öµ½Õ½¶·½áÊø£¡" 
+buildversion default cb3 release
+difficulty 0
+//unlocklevelstart 7 
+unlocklevelend 70
+survival
+minparty 1 
+maxparty 6
+rule 1011 1 
+rule 3265 6
+coop_survival_mp_cross_fire,coop,1
+
+// @LOGAS="Survival Normal Favela" 
+playlist 113
+displayorder 113
+category 23
+name chinese "Favela" 
+name english "Æ¶Ãñ¿ß" 
+description chinese "SURVIVAL NORMAL" 
+description english "µÖ¿¹Ò»²¨ÓÖÒ»²¨µÐÈËµÄÇÖÏ®£¬Í¨¹ý»÷É±µÐÈË»ñÈ¡½ðÇ®£¬ÓÃ½ðÇ®À´»»È¡µ¯Ò©¡¢¼¼ÄÜ¡¢·Àµ¯ÒÂÒÔ¼°Á¬É±¼¼ÄÜ°ïÖúÄã¼á³Öµ½Õ½¶·½áÊø£¡" 
+buildversion default cb3 release
+difficulty 0
+//unlocklevelstart 7 
+unlocklevelend 70
+survival
+minparty 1 
+maxparty 6
+rule 1011 1 
+rule 3265 6
+coop_survival_mp_fav_tropical,coop,1
+
+// *****************************************************************
+// *****************************************************************
+// *** FULL CLIENT ***
+// *****************************************************************
+// *****************************************************************
+
+
+// *****************************************************************
+// *** MP Playlists ***
+// *****************************************************************
+
+// @LOGAS="TDM Skirmish"
+playlist 30
+displayorder 1
+category 3
+name chinese "Skirmish" 
+name english "ÊµÕ½¶Ô¿¹" 
+description chinese "Combat Training TDM with bots." 
+description english "´óÕ½³¡(Ëæ»úµØÍ¼)-Õ½ÊõÍÅ¶Ó¾º¼¼Ä£Ê½£¬ÈËÊý9V9£¬ËÀÍöºóÔÚ¶ÓÓÑ¸½½ü¸´»î£¬ÔÚ10·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½100»÷É±µÄ¶ÓÎé»ñÊ¤¡£" 
+buildversion default cb3 release
+//unlocklevelstart 1 
+unlocklevelend 70
+vsrule "9V9"
+combattraining
+onboardbonus
+difficulty 0
+minparty 0 
+maxparty 0
+rule scr_ground_war 1
+rule 1011 1 
+rule 3265 8
+maxhumanplayersperteam 4
+rule scr_war_scorelimit 100 
+rule scr_war_timelimit 10
+mp_afghan,tdm,1
+mp_estate_tropical,tdm,1
+mp_overgrown,tdm,1
+mp_storm_spring,tdm,1
+mp_fav_tropical,tdm,1
+mp_seatown,tdm,1
+mp_mountain,tdm,1
+mp_terminal_cls,tdm,1
+mp_subbase_sh,tdm,1
+mp_hardhat_sh,tdm,1
+mp_village,tdm,1
+mp_raid,tdm,1
+mp_dome,tdm,1
+
+// @LOGAS="Search and Destroy - Express"
+playlist 133
+displayorder 29
+category 2
+name chinese "Express" 
+name english "¼«ËÙ±¬ÆÆ" 
+description chinese "Take turns defending and destroying an objective. Best of 7. Switch sides every round. Top 5 maps." 
+description english "¾­µä±¬ÆÆ¹æÔò£¬7¾Ö4Ê¤£¬Ã¿¾ÖÖ®ºóÁ½¶Ó½»»»³¡µØ¡£" 
+buildversion
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+rule scr_sd_roundswitch 1
+rule scr_sd_roundlimit 7
+rule scr_sd_winlimit 4
+mp_cross_fire,sd,1
+mp_crash_tropical,sd,1
+mp_fav_tropical,sd,1
+mp_overgrown,sd,1
+mp_firingrange,sd,1
+mp_subbase_sh,sd,1
+mp_hardhat_sh,sd,1
+
+// @LOGAS="Search and Destroy - Assault"
+playlist 6
+displayorder 4
+category 2
+name chinese "Assault" 
+name english "¾­µä±¬ÆÆ6V6" 
+description chinese "Take turns defending and destroying an objective." 
+description english "ÈËÊý6V6£¬½ø¹¥·½±ØÐëÔÚ¹æ¶¨Ê±¼äÄÚÔÚÄ¿±êÎ»ÖÃ°²×°²¢Òý±¬Õ¨µ¯£¬·ÀÊØ·½ÒªÈ«Á¦×èÖ¹Õ¨µ¯±»Òý±¬¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£" 
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+//rule scr_sd_timelimit 2.0
+//rule scr_sd_roundlimit 7
+//rule scr_sd_winlimit 4
+//mindlclevel 1
+mp_crash_tropical,sd,1
+mp_cross_fire,sd,1
+mp_estate_tropical,sd,1
+mp_fav_tropical,sd,1
+mp_firingrange,sd,1
+mp_storm_spring,sd,1
+mp_overgrown,sd,1
+mp_tunisia,sd,1
+mp_sd_proto1,sd,1
+mp_dome,sd,1
+mp_strike_sh,sd,1
+mp_qadeem_sh,sd,1
+mp_sd_jardin,sd,1
+mp_mogadishu_sh,sd,1
+mp_district,sd,1
+mp_overwatch_sh,sd,1
+mp_nightshift_sh,sd,1
+mp_italy_sh,sd,1
+mp_radiation_sh,sd,1
+mp_backlot_sh,sd,1
+mp_arkaden_sh,sd,1
+mp_derail_sh,sd,1
+mp_fallen_sh,sd,1
+mp_bootleg_sh,sd,1
+mp_lockdown_sh,sd,1
+mp_foundation_sh,sd,1
+mp_underground_sh,sd,1
+streakBreakId 159
+newbieBitMask 2
+wargodNewbieBitMask 8
+
+
+// @LOGAS="Search and Destroy - Hardcore"
+playlist 206
+displayorder 3
+category 2
+name chinese "Assault - Hardcore" 
+name english "¾­µä±¬ÆÆ6V6 - ÕæÊµÄ£Ê½" 
+description chinese "Take turns defending and destroying an objective." 
+description english "6V6¾­µä±¬ÆÆµÄÕæÊµÄ£Ê½£¬ÔÚÆÕÍ¨±¬ÆÆµÄ»ù´¡ÉÏÒþ²ØÁËÕ½¶·½çÃæÐÅÏ¢£¬ÎäÆ÷Ò²±äµÃ¸ü¼ÓÖÂÃü¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£" 
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 6
+hardcore
+itemban all_kis uav airdrop counter_uav airdrop_sentry_minigun predator_missile precision_airstrike helicopter helicopter_flares helicopter_minigun ac130 sentry mortar_mp sr71_mp dogs_mp sam_turret uav_pro mortar_mp_pro dogs_mp_pro ac130_pro juggernaut missile_drone armor_locker umbrella_system juggernaut_pro tabun_gas_mp molotovcocktail_mp emp sentry_wargod missile_drone_wargod helicopter_shark sentry_graffiti juggernaut_wargod airdrop_wargod
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+//rule scr_sd_timelimit 2.0
+//rule scr_sd_roundlimit 7
+//rule scr_sd_winlimit 4
+//mindlclevel 1
+mp_crash_tropical,sd,1
+mp_cross_fire,sd,1
+mp_estate_tropical,sd,1
+mp_fav_tropical,sd,1
+mp_firingrange,sd,1
+mp_storm_spring,sd,1
+mp_overgrown,sd,1
+mp_tunisia,sd,1
+mp_sd_proto1,sd,1
+mp_dome,sd,1
+mp_strike_sh,sd,1
+mp_qadeem_sh,sd,1
+mp_sd_jardin,sd,1
+mp_mogadishu_sh,sd,1
+mp_district,sd,1
+mp_overwatch_sh,sd,1
+mp_nightshift_sh,sd,1
+mp_italy_sh,sd,1
+mp_radiation_sh,sd,1
+mp_backlot_sh,sd,1
+mp_arkaden_sh,sd,1
+mp_derail_sh,sd,1
+mp_fallen_sh,sd,1
+mp_bootleg_sh,sd,1
+mp_lockdown_sh,sd,1
+mp_foundation_sh,sd,1
+mp_underground_sh,sd,1
+
+// @LOGAS="Search and Destroy - Ground War"
+playlist 126
+displayorder 2
+category 2
+name chinese "Ground War" 
+name english "¾­µä±¬ÆÆ9V9" 
+description chinese "Take turns defending and destroying an objective." 
+description english "ÈËÊý9V9£¬½ø¹¥·½±ØÐëÔÚ¹æ¶¨Ê±¼äÄÚÔÚÄ¿±êÎ»ÖÃ°²×°²¢Òý±¬Õ¨µ¯£¬·ÀÊØ·½ÒªÈ«Á¦×èÖ¹Õ¨µ¯±»Òý±¬¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£" 
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 9
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "9V9"
+rule 1011 12
+rule 3265 18
+rule scr_ground_war 1
+//rule scr_sd_timelimit 2.0
+//rule scr_sd_roundlimit 7
+//rule scr_sd_winlimit 4
+//mindlclevel 1
+mp_crash_tropical,sd,1
+mp_cross_fire,sd,1
+mp_estate_tropical,sd,1
+mp_fav_tropical,sd,1
+mp_firingrange,sd,1
+mp_storm_spring,sd,1
+mp_overgrown,sd,1
+mp_tunisia,sd,1
+mp_sd_proto1,sd,1
+mp_strike_sh,sd,1
+mp_qadeem_sh,sd,1
+mp_sd_jardin,sd,1
+mp_overwatch_sh,sd,1
+mp_nightshift_sh,sd,1
+mp_italy_sh,sd,1
+mp_radiation_sh,sd,1
+mp_backlot_sh,sd,1
+mp_arkaden_sh,sd,1
+mp_derail_sh,sd,1
+mp_fallen_sh,sd,1
+mp_bootleg_sh,sd,1
+mp_lockdown_sh,sd,1
+mp_foundation_sh,sd,1
+mp_underground_sh,sd,1
+streakBreakId 161
+
+// @LOGAS="Search and Destroy - Crash"
+playlist 111
+displayorder 10
+category 2
+name chinese "Map: Crash Tropical" 
+name english "-×¹»úÖ®µØ" 
+description chinese "Search and Destroy on Crash Tropical only." 
+description english "ÈËÊý6V6£¬×¹»úÖ®µØ×¨ÊôÈüµ¥¡£½ø¹¥·½±ØÐëÔÚ¹æ¶¨Ê±¼äÄÚÔÚÄ¿±êÎ»ÖÃ°²×°²¢Òý±¬Õ¨µ¯£¬·ÀÊØ·½ÒªÈ«Á¦×èÖ¹Õ¨µ¯±»Òý±¬¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£" 
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+//rule scr_sd_timelimit 2.0
+//rule scr_sd_roundlimit 7
+//rule scr_sd_winlimit 4
+//mindlclevel 1
+mp_crash_tropical,sd,1
+
+// @LOGAS="Search and Destroy - Tunisia 6V6"
+playlist 125
+displayorder 9
+category 2
+name chinese "Map: Tunisia 6V6" 
+name english "-Í»ÄáË¹Ð¡Õò"
+description chinese "6V6, Attacking team must place and detonate the bomb; defending team must prevent the bomb from being detonated. First team win 9 rounds win the match, no respawn in match. switch sides after 8 rounds." 
+description english "¾­µä±¬ÆÆ6V6Ä£Ê½µØÍ¼¡£½ø¹¥·½ÐëÔÚ¹æ¶¨Ê±¼äÄÚÔÚÄ¿±êÎ»ÖÃ°²×°²¢Òý±¬Õ¨µ¯£¬·ÀÊØ·½ÒªÈ«Á¦×èÖ¹Õ¨µ¯±»Òý±¬¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£"
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+//rule scr_sd_timelimit 2.0
+//rule scr_sd_roundlimit 7
+//rule scr_sd_winlimit 4
+//mindlclevel 1
+mp_tunisia,sd,1
+
+// @LOGAS="Search and Destroy - Backlot 6V6"
+playlist 224
+displayorder 8
+category 2
+name chinese "Map: District 6V6" 
+name english "-»ÄÒ°Î§³Ç"
+description chinese "6V6, Attacking team must place and detonate the bomb; defending team must prevent the bomb from being detonated. First team win 9 rounds win the match, no respawn in match. switch sides after 8 rounds." 
+description english "¾­µä±¬ÆÆ6V6Ä£Ê½µØÍ¼¡£½ø¹¥·½ÐëÔÚ¹æ¶¨Ê±¼äÄÚÔÚÄ¿±êÎ»ÖÃ°²×°²¢Òý±¬Õ¨µ¯£¬·ÀÊØ·½ÒªÈ«Á¦×èÖ¹Õ¨µ¯±»Òý±¬¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£"
+buildversion
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+//rule scr_sd_timelimit 2.0
+//rule scr_sd_roundlimit 7
+//rule scr_sd_winlimit 4
+//mindlclevel 1
+mp_backlot_sh,sd,1
+
+// @LOGAS="Search and Destroy - Arkaden 6V6"
+playlist 239
+displayorder 6
+category 2
+name chinese "Map: Arkaden 6V6" 
+name english "-ÉÌÒµÖÐÐÄ"
+description chinese "6V6, Attacking team must place and detonate the bomb; defending team must prevent the bomb from being detonated. First team win 9 rounds win the match, no respawn in match. switch sides after 8 rounds." 
+description english "¾­µä±¬ÆÆ6V6Ä£Ê½µØÍ¼¡£½ø¹¥·½ÐëÔÚ¹æ¶¨Ê±¼äÄÚÔÚÄ¿±êÎ»ÖÃ°²×°²¢Òý±¬Õ¨µ¯£¬·ÀÊØ·½ÒªÈ«Á¦×èÖ¹Õ¨µ¯±»Òý±¬¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£"
+buildversion
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+//rule scr_sd_timelimit 2.0
+//rule scr_sd_roundlimit 7
+//rule scr_sd_winlimit 4
+//mindlclevel 1
+mp_arkaden_sh,sd,1
+
+// @LOGAS="Search and Destroy - Derail 6V6"
+playlist 240
+displayorder 7
+category 2
+name chinese "Map: Derail 6V6" 
+name english "-±±¾³ÖÐ×ªÕ¾"
+description chinese "6V6, Attacking team must place and detonate the bomb; defending team must prevent the bomb from being detonated. First team win 9 rounds win the match, no respawn in match. switch sides after 8 rounds." 
+description english "¾­µä±¬ÆÆ6V6Ä£Ê½µØÍ¼¡£½ø¹¥·½ÐëÔÚ¹æ¶¨Ê±¼äÄÚÔÚÄ¿±êÎ»ÖÃ°²×°²¢Òý±¬Õ¨µ¯£¬·ÀÊØ·½ÒªÈ«Á¦×èÖ¹Õ¨µ¯±»Òý±¬¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£"
+buildversion
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+//rule scr_sd_timelimit 2.0
+//rule scr_sd_roundlimit 7
+//rule scr_sd_winlimit 4
+//mindlclevel 1
+mp_derail_sh,sd,1
+
+// @LOGAS="Search and Destroy - Fallen 6V6"
+playlist 241
+displayorder 5
+category 2
+name chinese "Map: Fallen 6V6" 
+name english "-ÎÞÈËÇø"
+description chinese "6V6, Attacking team must place and detonate the bomb; defending team must prevent the bomb from being detonated. First team win 9 rounds win the match, no respawn in match. switch sides after 8 rounds." 
+description english "¾­µä±¬ÆÆ6V6Ä£Ê½µØÍ¼¡£½ø¹¥·½ÐëÔÚ¹æ¶¨Ê±¼äÄÚÔÚÄ¿±êÎ»ÖÃ°²×°²¢Òý±¬Õ¨µ¯£¬·ÀÊØ·½ÒªÈ«Á¦×èÖ¹Õ¨µ¯±»Òý±¬¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£"
+buildversion
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+//rule scr_sd_timelimit 2.0
+//rule scr_sd_roundlimit 7
+//rule scr_sd_winlimit 4
+//mindlclevel 1
+mp_fallen_sh,sd,1
+new
+
+// @LOGAS="Search and Destroy - Lockdown 6V6"
+playlist 247
+displayorder 7
+category 2
+name chinese "Map: Lockdown 6V6" 
+name english "-´ó¶¼»á"
+description chinese "6V6, Attacking team must place and detonate the bomb; defending team must prevent the bomb from being detonated. First team win 9 rounds win the match, no respawn in match. switch sides after 8 rounds." 
+description english "¾­µä±¬ÆÆ6V6Ä£Ê½µØÍ¼¡£½ø¹¥·½ÐëÔÚ¹æ¶¨Ê±¼äÄÚÔÚÄ¿±êÎ»ÖÃ°²×°²¢Òý±¬Õ¨µ¯£¬·ÀÊØ·½ÒªÈ«Á¦×èÖ¹Õ¨µ¯±»Òý±¬¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£"
+buildversion
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+//rule scr_sd_timelimit 2.0
+//rule scr_sd_roundlimit 7
+//rule scr_sd_winlimit 4
+//mindlclevel 1
+mp_lockdown_sh,sd,1
+new
+
+// @LOGAS="Search and Destroy - Foundation 6V6"
+playlist 248
+displayorder 5
+category 2
+name chinese "Map: Foundation 6V6" 
+name english "-ºìÍÁ¿ó³§"
+description chinese "6V6, Attacking team must place and detonate the bomb; defending team must prevent the bomb from being detonated. First team win 9 rounds win the match, no respawn in match. switch sides after 8 rounds." 
+description english "¾­µä±¬ÆÆ6V6Ä£Ê½µØÍ¼¡£½ø¹¥·½ÐëÔÚ¹æ¶¨Ê±¼äÄÚÔÚÄ¿±êÎ»ÖÃ°²×°²¢Òý±¬Õ¨µ¯£¬·ÀÊØ·½ÒªÈ«Á¦×èÖ¹Õ¨µ¯±»Òý±¬¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£"
+buildversion
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+//rule scr_sd_timelimit 2.0
+//rule scr_sd_roundlimit 7
+//rule scr_sd_winlimit 4
+//mindlclevel 1
+mp_foundation_sh,sd,1
+new
+
+// @LOGAS="Search and Destroy - Underground 6V6"
+playlist 252
+displayorder 5
+category 2
+name chinese "Map: Underground 6V6" 
+name english "-Ã×µÂ¶û¶ÙÕ¾"
+description chinese "6V6, Attacking team must place and detonate the bomb; defending team must prevent the bomb from being detonated. First team win 9 rounds win the match, no respawn in match. switch sides after 8 rounds." 
+description english "¾­µä±¬ÆÆ6V6Ä£Ê½µØÍ¼¡£½ø¹¥·½ÐëÔÚ¹æ¶¨Ê±¼äÄÚÔÚÄ¿±êÎ»ÖÃ°²×°²¢Òý±¬Õ¨µ¯£¬·ÀÊØ·½ÒªÈ«Á¦×èÖ¹Õ¨µ¯±»Òý±¬¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£"
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+//rule scr_sd_timelimit 2.0
+//rule scr_sd_roundlimit 7
+//rule scr_sd_winlimit 4
+//mindlclevel 1
+mp_underground_sh,sd,1
+new
+
+// @LOGAS="Search and Destroy - Snow Maps"
+playlist 179
+displayorder 2
+category 2
+name chinese "S&D: Snow Maps" 
+name english "°×É«¾ÞÈËÐÐ¶¯" 
+description chinese "Special Search and Destroy playlist featuring snowy maps" 
+description english "¾­µä±¬ÆÆÄ£Ê½£¬ÈËÊý6V6¡£°×É«¾ÞÈËÐÐ¶¯×¨ÊôÈüµ¥£¬Èüµ¥×Ü¹²°üÀ¨Ñ©É½Ö®áÛ¡¢»¯Ñ§¹¤³§¡¢Ç±Í§»ùµØÓë±±¾³ÖÐ×ªÕ¾ËÄÕÅµØÍ¼¡£°×É«¾ÞÈËÐÐ¶¯ÊÇ²ÎÕÕÓÎÏ·ÊÀ½ç¹ÛÉè¶¨£¬ÓÚ°¢À­Ë¹¼ÓÕ¹¿ªµÄÎªÆÚ10ÌìµÄ¼«µØÌØÖÖ±ø×÷Õ½ÊµÑµ¡£ÔÚÁãÏÂ30¶ÈµÄÖÕ¼«¶Ô¾öÖÐ£¬¡°141ÌØÇ²¶Ó¡±ºÍ¡°°µÓ°¾üÍÅ¡±¾¿¾¹Ë­ÄÜ³ÉÎªÕæÕýµÄÎÞÎ·Õ½Ê¿£¿" 
+buildversion
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+//rule scr_sd_timelimit 2.0
+//rule scr_sd_roundlimit 7
+//rule scr_sd_winlimit 4
+//mindlclevel 1
+mp_storm_spring,sd,1
+mp_mountain,sd,1
+mp_subbase_sh,sd,1
+mp_derail_sh,sd,1
+
+// @LOGAS="VIP - Assault"
+playlist 243
+displayorder 1
+category 15
+name chinese "VIP - Assault" 
+name english "ÎÞÎ·»¤ËÍ 6V6" 
+description chinese "Take turns escorting vip to successfully retreat from the specific zone." 
+description english "ÈËÊý6V6£¬»¤ËÍ·½±ØÐëÔÚ¹æ¶¨Ê±¼äÄÚ³É¹¦±£»¤VIPÈËÎïÍê³É³·Àë£¬·ÀÊØ·½ÔòÒªÈ«Á¦×èÖ¹¡£ÂÊÏÈÈ¡Ê¤7»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬¶ÓÓÑµ¹µØºó¿ÉÒÔ¾ÈÔ®£¬5»ØºÏºóË«·½»»±ß¡£" 
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+set scr_vip_roundlimit		13
+set scr_vip_winlimit		7
+set scr_vip_roundswitch		5 
+
+mp_tunisia,vip,1
+mp_resistance_sh,vip,1
+mp_derail_sh,vip,1
+featured
+
+// @LOGAS="ROBBERY - Assault"
+playlist 249
+displayorder 1
+category 16
+name chinese "ROBBERY - Assault" 
+name english "¶á±¦Ææ±ø 6V6" 
+description chinese "Successfully rob coins from nuetral and enemy boxes in the battlefield." 
+description english "ÈËÊý6V6£¬ÇÀ¶áÖÐÁ¢Ç®ÏäºÍµÐ·½Ç®ÏäÖÐµÄ½ðÇ®²¢´æÈë¼º·½Ç®ÏäÖÐ¡£ÂÊÏÈÓµÓÐ10000½ðÇ®µÄ¶ÓÎé»òµ½´ïÊ±¼äºó½ðÇ®¶àµÄÒ»·½»ñÊ¤£¬Èç¹ûÊ±¼äµ½´ïÊ±Ë«·½½ðÇ®Ò»ÖÂÔò½øÈë¼ÓÊ±£¬6·ÖÖÓ»òÈÎÒ»·½´ïµ½ÊÕ¼¯5000½ðÇ®ºó»»±ß¡£" 
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+//set scr_vip_roundlimit		13
+//set scr_vip_winlimit		7
+//set scr_vip_roundswitch		5 
+
+mp_overgrown,robbery,1
+mp_italy_sh,robbery,1
+
+// @LOGAS="Search and Rescue"
+playlist 122
+displayorder 11
+category 9
+name chinese "Search and Rescue" 
+name english "ËÑË÷¾ÈÔ®" 
+description chinese "Teams take turns defending and destroying an objective. Recover dog tags to allow or deny respawns." 
+description english "´«Í³¾­µä±¬ÆÆ¹æÔòÖ®ÉÏ£¬¼ÓÈëÓÐÈ¤µÄÐÂÍ»ÆÆ¡£Íæ¼ÒËÑ¼¯ÓÑ·½¶ÓÓÑ¹·ÅÆ¿ÉÒÔ¸´»î¶ÓÓÑ£¬ËÑ¼¯µÐ·½¹·ÅÆ¿ÉÒÔ×èÖ¹µÐÈË¸´»î¡£" 
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 20 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+//mindlclevel 1
+mp_afghan,sr,1
+mp_crash_tropical,sr,1
+mp_cross_fire,sr,1
+mp_estate_tropical,sr,1
+mp_fav_tropical,sr,1
+mp_firingrange,sr,1
+mp_storm_spring,sr,1
+mp_overgrown,sr,1
+mp_seatown,sr,1
+mp_highrise,sr,1
+mp_mountain,sr,1
+mp_terminal_cls,sr,1
+mp_subbase_sh,sr,1
+mp_hardhat_sh,sr,1
+
+// @LOGAS="TDM - Assault"
+playlist 13
+displayorder 5
+category 3
+name chinese "Assault" 
+name english "Õ½ÊõÍÅ¾º6V6" 
+description chinese "Eliminate the enemy team to score. First team to reach the score limit wins." 
+description english "ÈËÊý6V6£¬ËÀÍöºóÔÚ¶ÓÓÑ¸½½ü¸´»î£¬ÔÚ10·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½75»÷É±µÄ¶ÓÎé»òÊ±¼ä½áÊø»÷É±Êý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£" 
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6 
+rule 3265 12 
+rule scr_war_scorelimit 75 
+rule scr_war_timelimit 10
+mp_cargoship,tdm,1
+mp_crash_tropical,tdm,1
+mp_cross_fire,tdm,1
+mp_fav_tropical,tdm,1
+mp_firingrange,tdm,1
+mp_killhouse_sh,tdm,1
+mp_nuked,tdm,1
+mp_rust_long,tdm,1
+mp_storm_spring,tdm,1
+mp_seatown,tdm,1
+mp_highrise,tdm,1
+mp_mountain,tdm,1
+mp_terminal_cls,tdm,1
+mp_subbase_sh,tdm,1
+mp_hardhat_sh,tdm,1
+mp_village,tdm,1
+mp_raid,tdm,1
+mp_dome,tdm,1
+mp_strike_sh,tdm,1
+mp_qadeem_sh,tdm,1
+mp_mogadishu_sh,tdm,1
+mp_district,tdm,1
+mp_overwatch_sh,tdm,1
+mp_nightshift_sh,tdm,1
+mp_italy_sh,tdm,1
+mp_backlot_sh,tdm,1
+mp_radiation_sh,tdm,1
+mp_arkaden_sh,tdm,1
+mp_derail_sh,tdm,1
+mp_fallen_sh,tdm,1
+mp_bootleg_sh,tdm,1
+mp_lockdown_sh,tdm,1
+mp_foundation_sh,tdm,1
+mp_underground_sh,tdm,1
+
+// @LOGAS="TDM - Ground War"
+playlist 14
+displayorder 3
+category 3
+name chinese "Ground War" 
+name english "Õ½ÊõÍÅ¾º9V9" 
+description chinese "Big team games of Team Deathmatch." 
+description english "ÈËÊý9V9£¬ËÀÍöºóÔÚ¶ÓÓÑ¸½½ü¸´»î£¬ÔÚ10·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½150»÷É±µÄ¶ÓÎé»òÊ±¼ä½áÊø»÷É±Êý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£" 
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 9
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "9V9"
+rule 1011 12
+rule 3265 18 
+rule scr_war_scorelimit 150
+rule scr_war_timelimit 10
+rule scr_ground_war 1
+mp_afghan,tdm,1
+mp_estate_tropical,tdm,1
+mp_fav_tropical,tdm,1
+mp_overgrown,tdm,1
+mp_storm_spring,tdm,1
+mp_seatown,tdm,1
+mp_highrise,tdm,1
+mp_mountain,tdm,1
+mp_terminal_cls,tdm,1
+mp_subbase_sh,tdm,1
+mp_hardhat_sh,tdm,1
+mp_village,tdm,1
+mp_raid,tdm,1
+mp_dome,tdm,1
+mp_strike_sh,tdm,1
+mp_qadeem_sh,tdm,1
+mp_mogadishu_sh,tdm,1
+mp_district,tdm,1
+mp_overwatch_sh,tdm,1
+mp_nightshift_sh,tdm,1
+mp_italy_sh,tdm,1
+mp_radiation_sh,tdm,1
+mp_backlot_sh,tdm,1
+mp_arkaden_sh,tdm,1
+mp_derail_sh,tdm,1
+mp_fallen_sh,tdm,1
+mp_bootleg_sh,tdm,1
+mp_lockdown_sh,tdm,1
+mp_foundation_sh,tdm,1
+mp_underground_sh,tdm,1
+
+// @LOGAS="TDM - Ground War - Hardcore"
+playlist 207
+displayorder 4
+category 3
+name chinese "Ground War - Hardcore" 
+name english "Õ½ÊõÍÅ¾º9V9 - ÕæÊµÄ£Ê½" 
+description chinese "Big team games of Team Deathmatch." 
+description english "9V9Õ½ÊõÍÅ¾ºµÄÕæÊµÄ£Ê½£¬ÔÚÆÕÍ¨Õ½ÊõÍÅ¾ºµÄ»ù´¡ÉÏÒþ²ØÁËÕ½¶·½çÃæÐÅÏ¢£¬ÎäÆ÷Ò²±äµÃ¸ü¼ÓÖÂÃü¡£ÔÚ10·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½150»÷É±µÄ¶ÓÎé»òÊ±¼ä½áÊø»÷É±Êý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£" 
+buildversion default cb3 release
+ranked   
+hardcore
+itemban all_kis uav airdrop counter_uav airdrop_sentry_minigun predator_missile precision_airstrike helicopter helicopter_flares helicopter_minigun ac130 sentry mortar_mp sr71_mp dogs_mp sam_turret uav_pro mortar_mp_pro dogs_mp_pro ac130_pro juggernaut missile_drone armor_locker umbrella_system juggernaut_pro tabun_gas_mp molotovcocktail_mp emp sentry_wargod missile_drone_wargod helicopter_shark sentry_graffiti juggernaut_wargod airdrop_wargod
+minparty 1 
+maxparty 9
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "9V9"
+rule 1011 12
+rule 3265 18 
+rule scr_war_scorelimit 150
+rule scr_war_timelimit 10
+rule scr_ground_war 1
+mp_afghan,tdm,1
+mp_estate_tropical,tdm,1
+mp_fav_tropical,tdm,1
+mp_overgrown,tdm,1
+mp_storm_spring,tdm,1
+mp_seatown,tdm,1
+mp_highrise,tdm,1
+mp_mountain,tdm,1
+mp_terminal_cls,tdm,1
+mp_subbase_sh,tdm,1
+mp_hardhat_sh,tdm,1
+mp_village,tdm,1
+mp_raid,tdm,1
+mp_dome,tdm,1
+mp_strike_sh,tdm,1
+mp_qadeem_sh,tdm,1
+mp_mogadishu_sh,tdm,1
+mp_district,tdm,1
+mp_overwatch_sh,tdm,1
+mp_nightshift_sh,tdm,1
+mp_italy_sh,tdm,1
+mp_radiation_sh,tdm,1
+mp_backlot_sh,tdm,1
+mp_arkaden_sh,tdm,1
+mp_derail_sh,tdm,1
+mp_fallen_sh,tdm,1
+mp_bootleg_sh,tdm,1
+mp_lockdown_sh,tdm,1
+mp_foundation_sh,tdm,1
+mp_underground_sh,tdm,1
+
+// @LOGAS="Domination"
+playlist 15
+displayorder 1
+category 9
+name chinese "Domination" 
+name english "¾ÝµãÕù¶á" 
+description chinese "Capture and hold the designated positions to score. The first team to reach the score limit wins." 
+description english "¾ÝµãÕù¶áÄ£Ê½£ºÕ¼ÁìµØÍ¼ÉÏµÄ3¸ö¾ÝµãÀ´°ïÖúÍÅ¶Ó»ñµÃÊ¤Àû£¬Íæ¼ÒÃ¿¶áÈ¡Ò»¸ö¾Ýµã¿É»ñµÃÁ¬É±½±Àøµã¡£" 
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 20 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6 
+rule 3265 12
+mp_fav_tropical,dom,1
+mp_overgrown,dom,1
+mp_seatown,dom,1
+mp_mountain,dom,1
+mp_storm_spring,dom,1
+mp_dome,dom,1
+mp_strike_sh,dom,1
+mp_qadeem_sh,dom,1
+mp_mogadishu_sh,dom,1
+mp_district,dom,1
+mp_overwatch_sh,dom,1
+mp_nightshift_sh,dom,1
+mp_italy_sh,dom,1
+mp_radiation_sh,dom,1
+mp_backlot_sh,dom,1
+mp_arkaden_sh,dom,1
+mp_derail_sh,dom,1
+mp_fallen_sh,dom,1
+mp_bootleg_sh,dom,1
+mp_lockdown_sh,dom,1
+mp_foundation_sh,dom,1
+mp_underground_sh,dom,1
+
+// @LOGAS="Charge Ground War"
+playlist 71
+displayorder 2
+category 1
+name chinese "Ground War" 
+name english "³å·æÍÅ¾º9V9" 
+description chinese "Big team games of Charge TDM." 
+description english "ÈËÊý9V9£¬ËÀÍöºó¹Ì¶¨¸´»îµã¸´»î£¬ÔÚ20·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½150»÷É±µÄ¶ÓÎé»òÊ±¼ä½áÊø»÷É±Êý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£" 
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 3
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "9V9"
+rule 1011 12 
+rule 3265 18 
+rule scr_cha_scorelimit 150 
+rule scr_cha_timelimit 20
+rule scr_ground_war 1
+mp_nuked,cha,1
+//mp_rust_long,cha,1
+mp_shipment_long,cha,1
+mp_cha_quad,cha,1
+mp_mideast,cha,1
+mp_highrise,cha,1
+mp_mountain,cha,1
+mp_streamline,cha,1
+mp_offshore,cha,1
+mp_qadeem_sh,cha,1
+mp_showdown,cha,1
+mp_overwatch_sh,cha,1
+mp_wasteland_sh,cha,1
+mp_lookout_sh,cha,1
+mp_interchange_sh,cha,1
+mp_mission_sh,cha,1
+streakBreakId 160
+newbieBitMask 1
+wargodNewbieBitMask 4
+
+// @LOGAS="Charge Ground War - Hardcore"
+playlist 208
+displayorder 3
+category 1
+name chinese "Ground War - Hardcore" 
+name english "³å·æÍÅ¾º9V9 - ÕæÊµÄ£Ê½" 
+description chinese "Big team games of Charge TDM." 
+description english "9V9³å·æÍÅ¾ºµÄÕæÊµÄ£Ê½£¬ÔÚÆÕÍ¨³å·æÍÅ¾ºµÄ»ù´¡ÉÏÒþ²ØÁËÕ½¶·½çÃæÐÅÏ¢£¬ÎäÆ÷Ò²±äµÃ¸ü¼ÓÖÂÃü¡£ÔÚ20·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½150»÷É±µÄ¶ÓÎé»òÊ±¼ä½áÊø»÷É±Êý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£" 
+buildversion
+ranked  
+hardcore 
+minparty 1 
+maxparty 9
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "9V9"
+rule 1011 12 
+rule 3265 18 
+rule scr_cha_scorelimit 150 
+rule scr_cha_timelimit 20
+rule scr_ground_war 1
+mp_nuked,cha,1
+//mp_rust_long,cha,1
+mp_shipment_long,cha,1
+mp_cha_quad,cha,1
+mp_mideast,cha,1
+mp_highrise,cha,1
+mp_mountain,cha,1
+mp_streamline,cha,1
+mp_offshore,cha,1
+mp_qadeem_sh,cha,1
+mp_showdown,cha,1
+mp_overwatch_sh,cha,1
+mp_wasteland_sh,cha,1
+mp_lookout_sh,cha,1
+mp_interchange_sh,cha,1
+mp_mission_sh,cha,1
+
+// @LOGAS="Charge Ground War - Rust ONLY"
+playlist 180
+displayorder 2
+category 9
+name chinese "Charge 9v9 - Rust" 
+name english "³å·æÍÅ¾º9V9-´¢ÓÍÕ¾" 
+description chinese "Big team games of Charge TDM." 
+description english "ÈËÊý9V9£¬ËÀÍöºó¹Ì¶¨¸´»îµã¸´»î£¬ÔÚ20·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½150»÷É±µÄ¶ÓÎé»òÊ±¼ä½áÊø»÷É±Êý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£" 
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 9
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "9V9"
+rule 1011 12 
+rule 3265 18 
+rule scr_cha_scorelimit 150 
+rule scr_cha_timelimit 20
+rule scr_ground_war 1
+mp_rust_long,cha,1
+
+// @LOGAS="Hardpoint"
+playlist 148
+displayorder 9
+category 9
+name chinese "Hardpoint" 
+name english "ÈÈµãÕù¶á" 
+description chinese "Hold the point to score points for your team!" 
+description english "ÈËÊý6V6£¬Õ¼Áì²¢ÊØÎÀÈÈµã»ñµÃ·ÖÊý£¬ËÀÍöºóÔÚËæ»úÎ»ÖÃ¸´»î¡£ÈÈµã»áÔÚÌØ¶¨Ê±¼äºó°´ÕÕÒ»¶¨¹æÂÉÒÆ¶¯¡£" 
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+mp_raid,hp,1
+mp_village,hp,1
+mp_mountain,hp,1
+mp_nuked,hp,1
+mp_terminal_cls,hp,1
+mp_firingrange,hp,1
+
+// @LOGAS="Assimilation"
+playlist 120
+displayorder 10
+category 10
+name chinese "Assimilation" 
+name english "»úÐµ¹«µÐ-¸ÐÈ¾" 
+description chinese "Try to survive the robot onslaught. If you fall, return as a robot to eradicate the remaining players!" 
+description english "Å¬Á¦¶Ô¿¹»úÐµ¾üÍÅµÄ½ø¹¥£¬Èç¹ûÈËÀàÕ½Ê¿±»¸Éµô£¬½«±»Òì»¯³ÉÎª»úÐµÕ½Ê¿£¬ÖØÉúºó¼ÓÈë»úÐµ¾üÍÅÕóÓª¶Ô¿¹ÈËÀà¡£" 
+buildversion default cb3 release
+ranked   
+//unlocklevelstart 20 
+unlocklevelend 70
+noteamsplitting
+noteambalancing
+minparty 1 
+maxparty 6
+rule 1011 8 
+rule 3265 18
+mp_crash_tropical,borg,1
+mp_estate_tropical,borg,1
+mp_fav_tropical,borg,1
+mp_firingrange,borg,1
+mp_overgrown,borg,1
+mp_seatown,borg,1
+
+// @LOGAS="S&D Plus"
+playlist 156
+displayorder 5
+category 9
+name chinese "S&D Plus" 
+name english "¿Æ¼¼±¬ÆÆ6V6" 
+description chinese "Take turns defending and destroying an objective." 
+description english "ÈËÊý6V6£¬±È¾­µä±¬ÆÆÍæ·¨¸ü·á¸»¡£Íæ¼ÒÐ¯´øÄ¬ÈÏ±³°ü½øÈëÓÎÏ·£¬Ã¿ÂÖ¿ªÊ¼Ç°¿É¹ºÂòÎäÆ÷ºÍ×¨ÊôµÀ¾ß£¬Ò»µ©ËÀÍö±³°üÎïÆ·½«±»Çå¿Õ¡£½ø¹¥·½±ØÐëÔÚ¹æ¶¨Ê±¼äÄÚÔÚÄ¿±êÎ»ÖÃ°²×°²¢Òý±¬Õ¨µ¯£¬·ÀÊØ·½ÒªÈ«Á¦×èÖ¹Õ¨µ¯±»Òý±¬¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£" 
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 10
+rule 3265 12
+mp_tunisia,sdp,1
+mp_storm_spring,sdp,1
+mp_crash_tropical,sdp,1
+mp_sd_proto1,sdp,1
+mp_seatown,sdp,1
+mp_mountain,sdp,1
+mp_conflict,sdp,1
+mp_sd_jardin,sdp,1
+
+// @LOGAS="S&D Plus - Skirmish"
+playlist 184
+displayorder 4
+category 9
+name chinese "S&D Plus: Skirmish" 
+name english "¿Æ¼¼±¬ÆÆ6V6-ÊµÕ½¶Ô¿¹" 
+description chinese "Take turns defending and destroying an objective." 
+description english "ÈËÊý6V6£¬±È¾­µä±¬ÆÆÍæ·¨¸ü·á¸»¡£Íæ¼ÒÐ¯´øÄ¬ÈÏ±³°ü½øÈëÓÎÏ·£¬Ã¿ÂÖ¿ªÊ¼Ç°¿É¹ºÂòÎäÆ÷ºÍ×¨ÊôµÀ¾ß£¬Ò»µ©ËÀÍö±³°üÎïÆ·½«±»Çå¿Õ¡£½ø¹¥·½±ØÐëÔÚ¹æ¶¨Ê±¼äÄÚÔÚÄ¿±êÎ»ÖÃ°²×°²¢Òý±¬Õ¨µ¯£¬·ÀÊØ·½ÒªÈ«Á¦×èÖ¹Õ¨µ¯±»Òý±¬¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£"
+buildversion default cb3 release
+//unlocklevelstart 1
+unlocklevelend 70
+vsrule "6V6"
+combattraining
+onboardbonus
+difficulty 1
+minparty 0 
+maxparty 0
+rule 1011 1
+rule 3265 6
+maxhumanplayersperteam 3
+//mindlclevel 1
+mp_tunisia,sdp,1
+mp_storm_spring,sdp,1
+mp_crash_tropical,sdp,1
+mp_sd_proto1,sdp,1
+mp_seatown,sdp,1
+mp_mountain,sdp,1
+mp_conflict,sdp,1
+
+// @LOGAS="S&D Plus - Conflict"
+playlist 186
+displayorder 6
+category 9
+name chinese "S&D Plus: Conflict" 
+name english "¿Æ¼¼±¬ÆÆ6V6-ÄÜÔ´»ùµØ" 
+description chinese "Take turns defending and destroying an objective." 
+description english "ÈËÊý6V6£¬ÄÜÔ´»ùµØ×¨ÊôÈüµ¥¡£Íæ¼ÒÐ¯´øÄ¬ÈÏ±³°ü½øÈëÓÎÏ·£¬Ã¿ÂÖ¿ªÊ¼Ç°¿É¹ºÂòÎäÆ÷ºÍ×¨ÊôµÀ¾ß£¬Ò»µ©ËÀÍö±³°üÎïÆ·½«±»Çå¿Õ¡£½ø¹¥·½±ØÐëÔÚ¹æ¶¨Ê±¼äÄÚÔÚÄ¿±êÎ»ÖÃ°²×°²¢Òý±¬Õ¨µ¯£¬·ÀÊØ·½ÒªÈ«Á¦×èÖ¹Õ¨µ¯±»Òý±¬¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£" 
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 10
+rule 3265 12
+mp_conflict,sdp,1
+
+// @LOGAS="Search and Destroy - Assault - Chaos Maps"
+playlist 188
+displayorder 7
+category 9
+name chinese "S&D - Assault - Chaos" 
+name english "¾­µä±¬ÆÆ6V6-ÂÒ¶·Èüµ¥" 
+description chinese "Take turns defending and destroying an objective." 
+description english "ÈËÊý6V6£¬Ëùº¬µØÍ¼ÓëÕý³£¾­µä±¬ÆÆÈüµ¥²»Í¬¡£½ø¹¥·½±ØÐëÔÚ¹æ¶¨Ê±¼äÄÚÔÚÄ¿±êÎ»ÖÃ°²×°²¢Òý±¬Õ¨µ¯£¬·ÀÊØ·½ÒªÈ«Á¦×èÖ¹Õ¨µ¯±»Òý±¬¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£" 
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+//rule scr_sd_timelimit 2.0
+//rule scr_sd_roundlimit 7
+//rule scr_sd_winlimit 4
+//mindlclevel 1
+mp_afghan,sd,1
+mp_seatown,sd,1
+mp_highrise,sd,1
+mp_mountain,sd,1
+mp_terminal_cls,sd,1
+mp_subbase_sh,sd,1
+mp_hardhat_sh,sd,1
+mp_village,sd,1
+mp_raid,sd,1
+
+// @LOGAS="Search and Destroy - Ground War"
+playlist 189
+displayorder 8
+category 9
+name chinese "S&D - Ground War - Chaos" 
+name english "¾­µä±¬ÆÆ9V9-ÂÒ¶·Èüµ¥" 
+description chinese "Take turns defending and destroying an objective." 
+description english "ÈËÊý9V9£¬Ëùº¬µØÍ¼ÓëÕý³£¾­µä±¬ÆÆÈüµ¥²»Í¬¡£½ø¹¥·½±ØÐëÔÚ¹æ¶¨Ê±¼äÄÚÔÚÄ¿±êÎ»ÖÃ°²×°²¢Òý±¬Õ¨µ¯£¬·ÀÊØ·½ÒªÈ«Á¦×èÖ¹Õ¨µ¯±»Òý±¬¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£" 
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 9
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "9V9"
+rule 1011 12
+rule 3265 18
+rule scr_ground_war 1
+//rule scr_sd_timelimit 2.0
+//rule scr_sd_roundlimit 7
+//rule scr_sd_winlimit 4
+//mindlclevel 1
+mp_afghan,sd,1
+mp_seatown,sd,1
+mp_highrise,sd,1
+mp_mountain,sd,1
+mp_terminal_cls,sd,1
+mp_subbase_sh,sd,1
+mp_hardhat_sh,sd,1
+mp_village,sd,1
+mp_raid,sd,1
+
+
+
+// *****************************************************************
+// *** Party Mode Cycle ***
+// *****************************************************************
+
+// @LOGAS="Dark Room"
+playlist 16
+displayorder 2
+category 10
+name chinese "Party Cycle - Crazy Little Dark Room" 
+name english "·è¿ñÐ¡ºÚÎÝ" 
+description chinese "Make your enemies fear the dark in intense TDM battles where muzzle flashes become your only source of light. " 
+description english "Íæ¼Ò¿ÉÐ¯´ø·¢¹âÎäÆ÷»òÕ½Êõ×°±¸½øÈëÐ¡ºÚÎÝ£¬Í¨¹ýÖÆÔì¸ü¶àÁÁ¹â¹Û²ìµÐÈËµÄÎ»ÖÃ£¬ÔÚ¼¤ÁÒµÄÍÅ¶Ó¾º¼¼±ÈÈüÖÐÈÃÄãµÄµÐÈË¸ÐÊÜºÚ°µµÄ¿Ö¾å°É¡£" 
+buildversion default cb3 release
+ranked
+itemban all_wea_rkt all_equ all_kis all_wat_sco_tar the_fixsmallak104gld the_variablemsr for_greswatm203type95army
+minparty 1 
+maxparty 6
+//unlocklevelstart 20 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6 
+rule 3265 12
+rule scr_cha_scorelimit 255 
+rule scr_cha_timelimit 20
+set scr_enable_jugg_transform 1  
+
+//validtime1 1-23					//0-24, BJ time, seperate time buckets by ',', time buckets maximum is 3
+//validday1 0							// from 0: Sunday to 6: Saturday; comment validday if every day is valid
+//validdate1 2017/08/22-2017/08/28
+//validtime2 1-23
+//validday2 0
+//validdate2 2017/09/26-2017/10/02
+//validtime3 1-23
+//validday3 0
+//validdate3 2017/10/31-2017/11/06
+//validtime4 1-23
+//validday4 0
+//validdate4 2017/12/05-2017/12/11
+//validtime5 1-23
+//validday5 0
+//validdate5 2018/01/09-2018/01/15
+mp_dr_shipment,tdm,1
+new
+
+// @LOGAS="Snipers Only"
+playlist 154
+displayorder 12
+category 10
+name chinese "Snipers Only" 
+name english "¾Ñ»÷Õ½" 
+description chinese "This FFA playlist allows only Sniper Rifles to be used." 
+description english "¸öÈË¾º¼¼Èüµ¥£¬Íæ¼ÒÖ»ÄÜÊ¹ÓÃ¾Ñ»÷²½Ç¹½øÐÐÓÎÏ·¡£ÏûÃðÆäËûÍæ¼Ò¿ÉµÃ·Ö£¬ÂÊÏÈ»ñµÃ30»÷É±µÄÍæ¼Ò»ñµÃ×îÖÕÊ¤Àû¡£\n\nÃ¿ÖÜ¶þ½øÐÐÄ£Ê½Ñ­»·¸üÐÂ" 
+buildversion default cb3 release
+ranked   
+itemban all_wea_oth all_wea_mps all_wea_rkt all_wea_sho all_wea_lmg all_wea_pst all_wea_smg all_wea_ast all_wea_swd all_kis all_equ 
+noteamsplitting
+noteambalancing
+minparty 0 
+maxparty 0
+//unlocklevelstart 20 
+unlocklevelend 70
+rule 1011 6 
+rule 3265 12 
+set scr_special_game_mode 1 
+set scr_game_disable_melee 1
+//validdate1 2018/08/21-2018/08/27
+//validdate2 2018/09/11-2018/09/17
+//validdate3 2018/10/02-2018/10/08
+//validdate4 2018/10/23-2018/10/29
+//validdate5 2018/11/13-2018/11/19
+//validdate6 2018/12/04-2018/12/10
+mp_afghan,ffa,1
+mp_cargoship,ffa,1
+mp_crash_tropical,ffa,1
+mp_cross_fire,ffa,1
+mp_estate_tropical,ffa,1
+mp_fav_tropical,ffa,1
+mp_overgrown,ffa,1
+mp_storm_spring,ffa,1
+mp_highrise,ffa,1
+mp_terminal_cls,ffa,1
+mp_subbase_sh,ffa,1
+
+// @LOGAS="Party - One in the Chamber"
+playlist 181
+displayorder 12
+category 10
+name chinese "One in the Chamber" 
+name english "ÖÂÃüÒ»·¢" 
+description chinese "Player's spawn with only one bullet, kill players to get more bullets!" 
+description english "Íæ¼ÒÐ¯´øÖ»ÓÐÒ»·¢×Óµ¯µÄÎäÆ÷£¬Ã¿Íê³ÉÒ»´Î»÷É±¿ÉÒÔ»ñµÃÒ»·¢×Óµ¯£¡×Ü¹²ÈýÂÖ±ÈÈü£¬ÂÊÏÈ»ñµÃ20»÷É±µÄÍæ¼Ò»ñÊ¤¡£\n\nÃ¿ÖÜ¶þ½øÐÐÄ£Ê½Ñ­»·¸üÐÂ" 
+buildversion default cb3 release
+ranked   
+noteamsplitting
+noteambalancing
+rule scr_oic_timelimit 3
+minparty 0 
+maxparty 0
+//unlocklevelstart 20 
+unlocklevelend 70
+rule 1011 6 
+rule 3265 12 
+//validdate1 2018/08/28-2018/09/03
+//validdate2 2018/09/18-2018/09/24
+//validdate3 2018/10/09-2018/10/15
+//validdate4 2018/10/30-2018/11/05
+//validdate5 2018/11/20-2018/11/26
+//validdate6 2018/12/11-2018/12/17
+mp_seatown,oic,1
+mp_highrise,oic,1
+mp_nuked,oic,1
+mp_firingrange,oic,1
+mp_terminal_cls,oic,1
+mp_crash_tropical,oic,1
+
+// @LOGAS="Party - Sticks and Stones"
+playlist 182
+displayorder 12
+category 10
+name chinese "Sticks and Stones" 
+name english "Ô­Ê¼Õ½Õù" 
+description chinese "Use crossbows and ballistic knife to destroy other players! Throwing axe kills reset the player's score!" 
+description english "Íæ¼ÒÖ»ÄÜÊ¹ÓÃÊ®×Öåó¡¢Õ½Êõµ¯»Éµ¶ºÍ·É¸«½øÐÐÓÎÏ·£¬²¢É±µÐµÃ·Ö¡£±»·É¸«É±ËÀµÄÍæ¼ÒµÃ·Ö½«±»ÇåÁã£¡±ÈÈü½áÊøÊ±£¬»ñµÃ·ÖÊý×î¸ßµÄÍæ¼Ò»ñÊ¤¡£\n\nÃ¿ÖÜ¶þ½øÐÐÄ£Ê½Ñ­»·¸üÐÂ" 
+buildversion default cb3 release
+ranked   
+noteamsplitting
+noteambalancing
+minparty 0 
+maxparty 0
+//unlocklevelstart 20 
+unlocklevelend 70
+rule 1011 6 
+rule 3265 12 
+//validdate1 2018/09/04-2018/09/10
+//validdate2 2018/09/25-2018/10/01
+//validdate3 2018/10/16-2018/10/22
+//validdate4 2018/11/06-2018/11/12
+//validdate5 2018/11/27-2018/12/03
+//validdate6 2018/12/18-2018/12/24
+mp_crash_tropical,sas,1
+mp_nuked,sas,1
+mp_cross_fire,sas,1
+mp_fav_tropical,sas,1
+mp_firingrange,sas,1
+mp_seatown,sas,1
+mp_highrise,sas,1
+mp_terminal_cls,sas,1
+
+// @LOGAS="Party - Pistol Only"
+playlist 198
+displayorder 3
+category 9
+name chinese "Party Cycle - Training"
+name english "°Ð³¡Õù°Ô"
+description chinese "Training"
+description english "µ¥ÈË°Ð³¡"
+buildversion default cb3 release 
+ranked
+itemban csg12ss_mp all_wea_oth all_wea_mps all_wea_rkt all_wea_pst all_wea_lmg all_wea_snp all_wea_smg all_wea_ast all_wea_swd all_kis all_equ 
+minparty 0 
+maxparty 0
+//unlocklevelstart 0
+unlocklevelend 70
+rule 1011 1 
+rule 3265 1 
+rule scr_firingRangePartyStartTime 2018/5/22
+coop_train_mp_firingrange,coop,1
+
+// @LOGAS="Party -  DWARF"
+playlist 235
+displayorder 2
+category 3
+name chinese "Party - DWARF"
+name english "ÃÔÄãÕ½Õù"
+description chinese "DWARF"
+description english "ÈËÊý6V6£¬ËÀÍöºóÔÚ¶ÓÓÑ¸½½ü¸´»î£¬ÔÚ10·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½100»÷É±µÄ¶ÓÎé»òÊ±¼ä½áÊø»÷É±Êý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£"
+buildversion default cb3 release 
+ranked
+itemban all_kis
+minparty 1
+maxparty 6
+vsrule "6V6"
+//unlocklevelstart 0
+unlocklevelend 70
+rule 1011 6
+rule 3265 12
+mp_dwarf_sh,tdm,1
+
+// @LOGAS="Party -  AWP"
+playlist 236
+displayorder 2
+category 1
+name chinese "Party - AWP"
+name english "ÉúËÀ¾Ñ»÷"
+description chinese "AWP"
+description english "¾º¼¼Èüµ¥£¬Íæ¼ÒÖ»ÄÜÊ¹ÓÃ¾Ñ»÷²½Ç¹½øÐÐÓÎÏ·¡£ÏûÃð¶Ô·½Íæ¼Ò¿ÉµÃ·Ö¡£"
+buildversion default cb3 release
+ranked
+itemban all_wea_oth all_wea_mps all_wea_rkt all_wea_sho all_wea_lmg all_wea_pst all_wea_smg all_wea_ast all_wea_swd all_kis all_equ
+minparty 1 
+maxparty 6
+vsrule "6V6"
+//unlocklevelstart 0
+unlocklevelend 70
+rule 1011 6
+rule 3265 12
+set scr_game_disable_melee 1
+mp_awp_arena,cha,1
+// *****************************************************************
+// *** StreakBreak / WarmRound Playlists ***
+// *****************************************************************
+
+// @LOGAS="Charge - 6v6 - streakbreak"
+playlist 158
+name chinese "Charge - 6v6 - streakbreak" 
+name english "³å·æÍÅ¾º6V6" 
+description chinese "Combat training in Charge TDM with humans againts bots." 
+description english "ÈËÊý6V6£¬ËÀÍöºó¹Ì¶¨¸´»îµã¸´»î£¬ÔÚ20·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½100»÷É±µÄ¶ÓÎé»òÊ±¼ä½áÊø»÷É±Êý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£" 
+buildversion default cb3 release 
+//unlocklevelstart 1 
+unlocklevelend 70
+vsrule "6V6"
+combattraining
+difficulty 0
+minparty 0 
+maxparty 0
+rule 1011 2
+rule 3265 6 
+maxhumanplayersperteam 4
+rule scr_cha_scorelimit 100 
+rule scr_cha_timelimit 20
+rule scr_cha_roundlimit 2
+rule scr_cha_roundswitch 2
+rule scr_cha_winlimit 1
+rule scr_cha_halftime 1
+rule scr_cha_scorelimithalftime 1 
+mp_nuked,cha,1
+mp_shipment_long,cha,1
+mp_cha_quad,cha,1
+
+// @LOGAS="Charge - 9v9 - streakbreak"
+playlist 160
+name chinese "Charge - 9v9 - streakbreak" 
+name english "³å·æÍÅ¾º9V9" 
+description chinese "Big team games of Charge TDM." 
+description english "ÈËÊý9V9£¬ËÀÍöºó¹Ì¶¨¸´»îµã¸´»î£¬ÔÚ20·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½150»÷É±µÄ¶ÓÎé»òÊ±¼ä½áÊø»÷É±Êý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£" 
+buildversion default cb3 release
+//unlocklevelstart 1 
+unlocklevelend 70
+minparty 1 
+maxparty 9
+vsrule "9V9"
+combattraining
+difficulty 0
+rule 1011 2
+rule 3265 9
+rule scr_ground_war 1
+maxhumanplayersperteam 5
+rule scr_cha_scorelimit 150 
+rule scr_cha_timelimit 20 
+mp_nuked,cha,1
+mp_shipment_long,cha,1
+mp_cha_quad,cha,1
+
+// @LOGAS="Search & Destroy - 6v6 - streakbreak"
+playlist 159
+name chinese "S&D - 6v6 - StreakBreak" 
+name english "¾­µä±¬ÆÆ6V6" 
+description chinese "Take turns defending and destroying an objective." 
+description english "ÈËÊý6V6£¬½ø¹¥·½±ØÐëÔÚ¹æ¶¨Ê±¼äÄÚÔÚÄ¿±êÎ»ÖÃ°²×°²¢Òý±¬Õ¨µ¯£¬·ÀÊØ·½ÒªÈ«Á¦×èÖ¹Õ¨µ¯±»Òý±¬¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£" 
+buildversion default cb3 release
+//unlocklevelstart 1
+unlocklevelend 70
+vsrule "6V6"
+combattraining
+difficulty 1
+minparty 0 
+maxparty 0
+rule 1011 2
+rule 3265 6
+maxhumanplayersperteam 3
+//mindlclevel 1
+mp_crash_tropical,sd,1
+mp_estate_tropical,sd,1
+mp_mountain,sd,1
+mp_terminal_cls,sd,1
+
+// @LOGAS="Search & Destroy - 9v9 - streakbreak"
+playlist 161
+name chinese "Search & Destroy - 9v9 - streakbreak" 
+name english "¾­µä±¬ÆÆ9V9" 
+description chinese "Take turns defending and destroying an objective." 
+description english "ÈËÊý9V9£¬½ø¹¥·½±ØÐëÔÚ¹æ¶¨Ê±¼äÄÚÔÚÄ¿±êÎ»ÖÃ°²×°²¢Òý±¬Õ¨µ¯£¬·ÀÊØ·½ÒªÈ«Á¦×èÖ¹Õ¨µ¯±»Òý±¬¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£" 
+buildversion default cb3 release
+minparty 1 
+maxparty 9
+//unlocklevelstart 5 
+unlocklevelend 70
+vsrule "9V9"
+combattraining
+difficulty 0
+rule 1011 2
+rule 3265 8
+rule scr_ground_war 1
+maxhumanplayersperteam 5
+//rule scr_sd_timelimit 2.0
+//rule scr_sd_roundlimit 7
+//rule scr_sd_winlimit 4
+//mindlclevel 1
+mp_crash_tropical,sd,1
+mp_estate_tropical,sd,1
+mp_firingrange,sd,1
+mp_storm_spring,sd,1
+mp_mountain,sd,1
+
+
+// *****************************************************************
+// *** PVE Playlists ***
+// *****************************************************************
+
+// @LOGAS="Evacuation Hero"
+// playlist 9, 88, 89 reserved evac
+
+// @LOGAS="Survival Hero"
+playlist 12
+displayorder 12
+category 23
+name chinese "Survival Hero" 
+name english "Éú´æÄ£Ê½" 
+description chinese "SURVIVAL HERO" 
+description english "Íê³ÉÆÕÍ¨ÄÑ¶È²ÅÄÜ½âËø¡£ÕâÀïµÄµÐÈËÒÑ¾­É¥ÐÄ²¡¿ñÁË£¬ÎªÁË¸ÉµôÄãÉõÖÁ³ö¶¯ÁË´ÓÎ´ÅÉ³ö¹ýµÄ²¿¶Ó£¬Óë¶ÓÓÑÄ¬ÆõµØÅäºÏ²ÅÄÜ°ïÖúÄã»ñµÃ×îºóµÄÊ¤Àû¡£" 
+buildversion default cb3 release
+survival
+difficulty 2
+unlockflag uf_survival_completed_easy
+//unlocklevelstart 7 
+unlocklevelend 70
+minparty 1 
+maxparty 6
+rule 1011 1 
+rule 3265 6
+rule scr_xp_scale 1.2
+rule scr_gp_scale 1.2
+coop_survival_mp_cross_fire,coop,1
+coop_survival_mp_crash_tropical,coop,1
+coop_survival_mp_fav_tropical,coop,1
+coop_survival_mp_firingrange,coop,1
+coop_survival_mp_storm_spring,coop,1
+coop_survival_mp_seatown,coop,1
+coop_survival_mp_highrise,coop,1
+coop_survival_mp_mountain,coop,1
+coop_survival_mp_terminal_cls,coop,1
+coop_survival_mp_subbase_sh,coop,1
+coop_survival_mp_village,coop,1
+coop_survival_mp_raid,coop,1
+
+// @LOGAS="Survival Hero Crash Tropical" 
+playlist 116
+displayorder 116
+category 23
+name chinese "Crash Tropical" 
+name english "×¹»úÖ®µØ" 
+description chinese "SURVIVAL HERO" 
+description english "Íê³ÉÆÕÍ¨ÄÑ¶È²ÅÄÜ½âËø¡£ÕâÀïµÄµÐÈËÒÑ¾­É¥ÐÄ²¡¿ñÁË£¬ÎªÁË¸ÉµôÄãÉõÖÁ³ö¶¯ÁË´ÓÎ´ÅÉ³ö¹ýµÄ²¿¶Ó£¬Óë¶ÓÓÑÄ¬ÆõµØÅäºÏ²ÅÄÜ°ïÖúÄã»ñµÃ×îºóµÄÊ¤Àû¡£" 
+buildversion default cb3 release
+survival
+difficulty 2
+unlockflag uf_survival_completed_easy
+//unlocklevelstart 7 
+unlocklevelend 70
+minparty 1 
+maxparty 6
+rule 1011 1 
+rule 3265 6
+rule scr_xp_scale 1.2
+rule scr_gp_scale 1.2
+coop_survival_mp_crash_tropical,coop,1
+
+// @LOGAS="Survival Hero Cross Fire" 
+playlist 90
+displayorder 90
+category 23
+name chinese "Crossfire" 
+name english "½»²æ»ðÁ¦" 
+description chinese "SURVIVAL HERO" 
+description english "Íê³ÉÆÕÍ¨ÄÑ¶È²ÅÄÜ½âËø¡£ÕâÀïµÄµÐÈËÒÑ¾­É¥ÐÄ²¡¿ñÁË£¬ÎªÁË¸ÉµôÄãÉõÖÁ³ö¶¯ÁË´ÓÎ´ÅÉ³ö¹ýµÄ²¿¶Ó£¬Óë¶ÓÓÑÄ¬ÆõµØÅäºÏ²ÅÄÜ°ïÖúÄã»ñµÃ×îºóµÄÊ¤Àû¡£" 
+buildversion default cb3 release
+survival
+difficulty 2
+unlockflag uf_survival_completed_easy
+//unlocklevelstart 7 
+unlocklevelend 70
+minparty 1 
+maxparty 6
+rule 1011 1 
+rule 3265 6
+rule scr_xp_scale 1.2
+rule scr_gp_scale 1.2
+coop_survival_mp_cross_fire,coop,1
+
+// @LOGAS="Survival Hero Favela" 
+playlist 117
+displayorder 117
+category 23
+name chinese "Favela" 
+name english "Æ¶Ãñ¿ß" 
+description chinese "SURVIVAL HERO" 
+description english "Íê³ÉÆÕÍ¨ÄÑ¶È²ÅÄÜ½âËø¡£ÕâÀïµÄµÐÈËÒÑ¾­É¥ÐÄ²¡¿ñÁË£¬ÎªÁË¸ÉµôÄãÉõÖÁ³ö¶¯ÁË´ÓÎ´ÅÉ³ö¹ýµÄ²¿¶Ó£¬Óë¶ÓÓÑÄ¬ÆõµØÅäºÏ²ÅÄÜ°ïÖúÄã»ñµÃ×îºóµÄÊ¤Àû¡£" 
+buildversion default cb3 release
+survival
+difficulty 2
+unlockflag uf_survival_completed_easy
+//unlocklevelstart 7 
+unlocklevelend 70
+minparty 1 
+maxparty 6
+rule 1011 1 
+rule 3265 6
+rule scr_xp_scale 1.2
+rule scr_gp_scale 1.2
+coop_survival_mp_fav_tropical,coop,1
+
+// @LOGAS="Unlimited Survival" 
+playlist 109
+displayorder 3
+category 23
+name chinese "Survival - Unlimited" 
+name english "ÎÞ¾¡Éú´æ" 
+description chinese "Fight through endless waves of enemies. How long can you survive? Unlock by completing Veteran difficulty in Survival" 
+description english "µÖµ²µÐÈËÒ»ÂÖÓÖÒ»ÂÖµÄ½ø¹¥£¬ÌôÕ½ÄãµÄ¼«ÏÞ£¡" 
+buildversion default cb3 release
+survival
+difficulty 2
+//unlocklevelstart 7 
+unlocklevelend 70
+minparty 1 
+maxparty 6
+rule 1011 1 
+rule 3265 6
+rule scr_survival_unlimited_waves 1
+rule scr_survival_unlim_max_tokens_per_game 15
+rule scr_xp_scale 1.1
+rule scr_gp_scale 1.1
+coop_survival_mp_cross_fire,coop,1
+coop_survival_mp_crash_tropical,coop,1
+coop_survival_mp_fav_tropical,coop,1
+coop_survival_mp_firingrange,coop,1
+coop_survival_mp_storm_spring,coop,1
+coop_survival_mp_seatown,coop,1
+coop_survival_mp_highrise,coop,1
+coop_survival_mp_mountain,coop,1
+coop_survival_mp_terminal_cls,coop,1
+coop_survival_mp_subbase_sh,coop,1
+coop_survival_mp_village,coop,1
+coop_survival_mp_raid,coop,1
+
+// @LOGAS="Unlimited Survival Plus" 
+playlist 155
+displayorder 1
+category 23
+name chinese "Survival Plus: Unlimited" 
+name english "ÎÞ¾¡ÐÒ´æÕß" 
+description chinese "Unlimited Survival with random events that offer new challenges and rewards." 
+description english "µÖµ²Ò»ÂÖÓÖÒ»ÂÖµÄ½ø¹¥£¬¶ÔÕ½ÖÖÀà¸ü·á¸»µÄµÐÈË£¬ÌôÕ½ÄãµÄ¼«ÏÞ£¬³ÉÎª×îºóµÄÐÒ´æÕß£¡" 
+buildversion default cb3 release
+survival
+difficulty 2
+//unlocklevelstart 7 
+unlocklevelend 70
+minparty 1 
+maxparty 6
+rule 1011 1 
+rule 3265 6
+rule scr_survival_unlimited_waves 1
+rule scr_survival_unlim_max_tokens_per_game 15
+rule scr_xp_scale 1.1
+rule scr_gp_scale 1.1
+rule scr_survival_unlimited_waves 1
+rule scr_survival_plus_mode 1
+coop_survival_mp_cross_fire,coop,1
+coop_survival_mp_crash_tropical,coop,1
+coop_survival_mp_fav_tropical,coop,1
+coop_survival_mp_raid,coop,1
+coop_survival_mp_village,coop,1
+coop_survival_mp_terminal_cls,coop,1
+coop_survival_mp_qadeem_sh,coop,1
+coop_survival_mp_overgrown,coop,1
+featured
+
+// @LOGAS="Future Cyborgs Normal"
+playlist 19
+displayorder 18
+category 22
+name chinese "Future Cyborgs Normal" 
+name english "Ëæ»úµØÍ¼" 
+description chinese "FUTURE CYBORGS NORMAL" 
+description english "µÖ¿¹Ò»ÂÖÂÖ½©Ê¬µÄÇÖÏ®£¬Í¨¹ýÉ±µÐºÍÐÞ²¹´°»§À´»ñÈ¡µç³Ø£¬ÀûÓÃºÃÉñÃØÏäÀïµÄÌØÊâµÀ¾ß£¬¼á³Öµ½×îºóÒ»ÂÖ£¡" 
+buildversion default cb3 release
+cyborg
+difficulty 0
+//unlocklevelstart 13 
+unlocklevelend 70
+minparty 1 
+maxparty 4
+rule 1011 1 
+rule 3265 4
+zm_asylum_sh,zm,1
+zm_prototype_sh,zm,1
+zm_sumpf_sh,zm,1
+zm_factory_sh,zm,1
+
+// @LOGAS="Future Cyborgs Normal Asylum" 
+playlist 94
+displayorder 94
+category 22
+name chinese "Asylum" 
+name english "»úÐµÌåÑÐ¾¿Ëù" 
+description chinese "FUTURE CYBORGS NORMAL" 
+description english "µÖ¿¹Ò»ÂÖÂÖ½©Ê¬µÄÇÖÏ®£¬Í¨¹ýÉ±µÐºÍÐÞ²¹´°»§À´»ñÈ¡µç³Ø£¬ÀûÓÃºÃÉñÃØÏäÀïµÄÌØÊâµÀ¾ß£¬¼á³Öµ½×îºóÒ»ÂÖ£¡" 
+buildversion default cb3 release
+cyborg
+difficulty 0
+//unlocklevelstart 13 
+unlocklevelend 70
+minparty 1 
+maxparty 4
+rule 1011 1 
+rule 3265 4
+zm_asylum_sh,zm,1
+
+// @LOGAS="Future Cyborgs Normal Swamp" 
+playlist 95
+displayorder 95
+category 22
+name chinese "Swamp" 
+name english "¶ñÁéÕÓÔó" 
+description chinese "FUTURE CYBORGS NORMAL" 
+description english "µÖ¿¹Ò»ÂÖÂÖ½©Ê¬µÄÇÖÏ®£¬Í¨¹ýÉ±µÐºÍÐÞ²¹´°»§À´»ñÈ¡µç³Ø£¬ÀûÓÃºÃÉñÃØÏäÀïµÄÌØÊâµÀ¾ß£¬¼á³Öµ½×îºóÒ»ÂÖ£¡" 
+buildversion default cb3 release
+cyborg
+difficulty 0
+//unlocklevelstart 13 
+unlocklevelend 70
+minparty 1 
+maxparty 4
+rule 1011 1 
+rule 3265 4
+zm_sumpf_sh,zm,1
+
+// @LOGAS="Future Cyborgs Normal Factory" 
+playlist 191
+displayorder 191
+category 22
+name chinese "Factory" 
+name english "»úÐµÌåÖÆÔì¹¤³§" 
+description chinese "FUTURE CYBORGS NORMAL" 
+description english "½©Ê¬Î§³ÇÐÂµØÍ¼¡£µÖ¿¹Ò»ÂÖÂÖ½©Ê¬µÄÇÖÏ®£¬Í¨¹ýÉ±µÐºÍÐÞ²¹´°»§À´»ñÈ¡µç³Ø£¬ÀûÓÃºÃÉñÃØÏäÀïµÄÌØÊâµÀ¾ß£¬¼á³Öµ½×îºóÒ»ÂÖ£¡" 
+buildversion default cb3 release
+cyborg
+difficulty 0
+//unlocklevelstart 13 
+unlocklevelend 70
+minparty 1 
+maxparty 4
+rule 1011 1 
+rule 3265 4
+zm_factory_sh,zm,1
+new
+
+// @LOGAS="Future Cyborgs Hero"
+playlist 21
+displayorder 20
+category 22
+name chinese "Future Cyborgs Hero" 
+name english "Ëæ»úµØÍ¼" 
+description chinese "FUTURE CYBORGS HERO" 
+description english "Íê³ÉÆÕÍ¨ÄÑ¶È²ÅÄÜ½âËø¡£Ó¢ÐÛÄÑ¶ÈÏÂ£¬½©Ê¬²»½ö½öÊÇ´Ó²¨ÊýºÍÊýÁ¿ÉÏÔö¼ÓÄÇÃ´¼òµ¥ÁË£¬½©Ê¬ÎªÁË¸ÉµôÄãÉõÖÁ³ö¶¯ÁË´ÓÎ´ÅÉ³ö¹ýµÄ²¿¶Ó£¬ÌýÆðÀ´ºÜ´Ì¼¤²»ÊÇÂï£¬ÓÂÊ¿À´ÌôÕ½°É£¡" 
+buildversion default cb3 release
+cyborg
+difficulty 2
+unlockflag uf_fc_completed_easy
+//unlocklevelstart 13 
+unlocklevelend 70
+minparty 1 
+maxparty 4
+rule 1011 1 
+rule 3265 4
+rule scr_xp_scale 1.2
+rule scr_gp_scale 1.2
+zm_asylum_sh,zm,1
+zm_prototype_sh,zm,1
+zm_sumpf_sh,zm,1
+zm_factory_sh,zm,1
+
+// @LOGAS="Future Cyborgs Hero Asylum" 
+playlist 98
+displayorder 98
+category 22
+name chinese "Asylum" 
+name english "»úÐµÌåÑÐ¾¿Ëù" 
+description chinese "FUTURE CYBORGS HERO" 
+description english "Íê³ÉÆÕÍ¨ÄÑ¶È²ÅÄÜ½âËø¡£Ó¢ÐÛÄÑ¶ÈÏÂ£¬½©Ê¬²»½ö½öÊÇ´Ó²¨ÊýºÍÊýÁ¿ÉÏÔö¼ÓÄÇÃ´¼òµ¥ÁË£¬½©Ê¬ÎªÁË¸ÉµôÄãÉõÖÁ³ö¶¯ÁË´ÓÎ´ÅÉ³ö¹ýµÄ²¿¶Ó£¬ÌýÆðÀ´ºÜ´Ì¼¤²»ÊÇÂï£¬ÓÂÊ¿À´ÌôÕ½°É£¡" 
+buildversion default cb3 release
+cyborg
+difficulty 2
+unlockflag uf_fc_completed_easy
+//unlocklevelstart 13 
+unlocklevelend 70
+minparty 1 
+maxparty 4
+rule 1011 1 
+rule 3265 4
+rule scr_xp_scale 1.2
+rule scr_gp_scale 1.2
+zm_asylum_sh,zm,1
+
+// @LOGAS="Future Cyborgs Hero Swamp" 
+playlist 99
+displayorder 99
+category 22
+name chinese "Swamp" 
+name english "¶ñÁéÕÓÔó" 
+description chinese "FUTURE CYBORGS HERO" 
+description english "Íê³ÉÆÕÍ¨ÄÑ¶È²ÅÄÜ½âËø¡£Ó¢ÐÛÄÑ¶ÈÏÂ£¬½©Ê¬²»½ö½öÊÇ´Ó²¨ÊýºÍÊýÁ¿ÉÏÔö¼ÓÄÇÃ´¼òµ¥ÁË£¬½©Ê¬ÎªÁË¸ÉµôÄãÉõÖÁ³ö¶¯ÁË´ÓÎ´ÅÉ³ö¹ýµÄ²¿¶Ó£¬ÌýÆðÀ´ºÜ´Ì¼¤²»ÊÇÂï£¬ÓÂÊ¿À´ÌôÕ½°É£¡" 
+buildversion default cb3 release
+cyborg
+difficulty 2
+unlockflag uf_fc_completed_easy
+//unlocklevelstart 13 
+unlocklevelend 70
+minparty 1 
+maxparty 4
+rule 1011 1 
+rule 3265 4
+rule scr_xp_scale 1.2
+rule scr_gp_scale 1.2
+zm_sumpf_sh,zm,1
+
+// @LOGAS="Future Cyborgs Hero Factory" 
+playlist 193
+displayorder 193
+category 22
+name chinese "Factory" 
+name english "»úÐµÌåÖÆÔì¹¤³§" 
+description chinese "FUTURE CYBORGS HERO" 
+description english "Íê³ÉÆÕÍ¨ÄÑ¶È²ÅÄÜ½âËø¡£Ó¢ÐÛÄÑ¶ÈÏÂ£¬½©Ê¬²»½ö½öÊÇ´Ó²¨ÊýºÍÊýÁ¿ÉÏÔö¼ÓÄÇÃ´¼òµ¥ÁË£¬½©Ê¬ÎªÁË¸ÉµôÄãÉõÖÁ³ö¶¯ÁË´ÓÎ´ÅÉ³ö¹ýµÄ²¿¶Ó£¬ÌýÆðÀ´ºÜ´Ì¼¤²»ÊÇÂï£¬ÓÂÊ¿À´ÌôÕ½°É£¡" 
+buildversion default cb3 release
+cyborg
+difficulty 2
+unlockflag uf_fc_completed_easy
+//unlocklevelstart 13 
+unlocklevelend 70
+minparty 1 
+maxparty 4
+rule 1011 1 
+rule 3265 4
+rule scr_xp_scale 1.2
+rule scr_gp_scale 1.2
+zm_factory_sh,zm,1
+new
+
+// @LOGAS="Deathmarch Normal"
+// Playlist 24-26 = deatchmarch reserved
+
+// @LOGAS="Gunship Normal"
+// Playlist 61-62 = gunship reserved
+
+
+// @LOGAS="Zombie Arena Normal"
+playlist 69
+displayorder 1
+category 20
+name chinese "ZOMBIE ARENA" 
+name english "É¥Ê¬¾º¼¼³¡" 
+description chinese "Join your fellow Gladiators in the most epic of game shows placing your team against the zombie Horde. Empower yourself with abilities to defend against waves of zombies and defeat the final Boss to gain the admiration of your fan base." 
+description english "Óë½Ç¶·Ê¿Í¬°éÃÇÒ»Æð¼ÓÈë×î×³¹ÛµÄÓÎÏ·Ðã£¬ÎªÄãµÄ¶ÓÎéÔÚÓëÉ¥Ê¬Èº¶Ô¿¹µÄÌôÕ½ÖÐÓ®µÃÒ»Ï¯Ö®µØ¡£ÓÃ¼¼ÄÜÀ´ÔöÇ¿ÄãÃÇµÄÕ½¶·Á¦£¬¶Ô¿¹Êý²¨É¥Ê¬µÄÀ´Ï®²¢´ò°Ü×îÖÕBossÀ´Ó®µÃ·ÛË¿ÃÇ¶ÔÄãÃÇµÄ³ç°Ý£¡" 
+buildversion default cb3 release
+zarena
+difficulty 0
+//unlocklevelstart 13 
+unlocklevelend 70
+noteamsplitting
+noteambalancing
+minparty 1 
+maxparty 4
+rule 1011 1
+rule 3265 4
+rule scr_xp_scale 1.1
+rule scr_gp_scale 1.1
+rule zarena_round_table recruit
+za_coliseum,zarena,1
+
+// @LOGAS="Zombie Arena Hero"
+playlist 130
+displayorder 3
+category 20
+name chinese "ZOMBIE ARENA" 
+name english "É¥Ê¬¾º¼¼³¡" 
+description chinese "Join your fellow Gladiators in the most epic of game shows placing your team against the zombie Horde. Empower yourself with abilities to defend against waves of zombies and defeat the final Boss to gain the admiration of your fan base." 
+description english "Óë½Ç¶·Ê¿Í¬°éÃÇÒ»Æð¼ÓÈë×î×³¹ÛµÄÓÎÏ·Ðã£¬ÎªÄãµÄ¶ÓÎéÔÚÓëÉ¥Ê¬Èº¶Ô¿¹µÄÌôÕ½ÖÐÓ®µÃÒ»Ï¯Ö®µØ¡£ÓÃ¼¼ÄÜÀ´ÔöÇ¿ÄãÃÇµÄÕ½¶·Á¦£¬¶Ô¿¹Êý²¨É¥Ê¬µÄÀ´Ï®²¢´ò°Ü×îÖÕBossÀ´Ó®µÃ·ÛË¿ÃÇ¶ÔÄãÃÇµÄ³ç°Ý£¡" 
+buildversion default cb3 release
+zarena
+difficulty 2
+unlockflag uf_zarena_completed_easy
+//unlocklevelstart 13 
+unlocklevelend 70
+noteamsplitting
+noteambalancing
+minparty 1 
+maxparty 4
+rule 1011 1
+rule 3265 4
+rule scr_xp_scale 1.3
+rule scr_gp_scale 1.3
+rule zarena_round_table hero
+za_coliseum,zarena,1
+
+// @LOGAS="Zombie Arena Unlimited"
+playlist 157
+displayorder 2
+category 20
+name chinese "Zombie Arena: Unlimited" 
+name english "ÎÞ¾¡É¥Ê¬¾º¼¼³¡" 
+description chinese "Fight through endless waves of zombies in the arena. How long can you survive? Unlock by completing Veteran difficulty in Zombie Arena." 
+description english "ÔÚ¾º¼¼³¡ÖÐ¶Ô¿¹ÎÞÇîÎÞ¾¡µÄÉ¥Ê¬¿ñ³±¡£ÄãÄÜ¹»¼á³Ö¶à¾ÃÄØ£¿" 
+buildversion default cb3 release
+zarena
+difficulty 2
+//unlocklevelstart 7 
+unlocklevelend 70
+noteamsplitting
+noteambalancing
+minparty 1 
+maxparty 4
+rule 1011 1
+rule 3265 4
+rule scr_xp_scale 1.3
+rule scr_gp_scale 1.3
+rule zarena_round_table unlimited
+za_coliseum,zarena,1
+featured
+
+// @LOGAS="Zombie Island Normal"
+playlist 135
+displayorder 50
+category 20
+name chinese "Soul Shaking Zombie Island" 
+name english "¾ª»êÉ¥Ê¬µº" 
+description chinese "Rejoin your fellow Gladiators and survive the next chapter of the epic game show in the Soul Shaking Zombie Island. Fight through waves of the zombie Horde and uncover the Island's hidden secrets to the glory and adoration of your fans." 
+description english "ÈÈ´ø¶É¼Ù´å±ä³ÉÉ¥Ê¬ºáÐÐµÄÄ©ÊÀÀÖÔ°¡£Õ½Ê¿ÃÇÔÚ¾ª»êÉ¥Ê¬µºÔÙ´ÎÆë¾Û£¬Í¶Èë¾ªÐÄ¶¯ÆÇ´Ì¼¤²»¶ÏµÄÉúËÀ²«É±¡£É¨µ´É¥Ê¬£¬·¢ÏÖº£µºµÄÃØÃÜ£¬ÎÞÏÞÈÙÓþºÍ²Æ¸»ÊôÓÚÄã£¡" 
+img sfproto_za_island.tga
+buildversion default cb3 release
+zarena
+difficulty 0
+//unlocklevelstart 13 
+unlocklevelend 70
+noteamsplitting
+noteambalancing
+minparty 1 
+maxparty 4
+rule 1011 1
+rule 3265 4
+rule scr_xp_scale 1.1
+rule scr_gp_scale 1.1
+rule zarena_round_table recruit
+za_island,zarena,1
+
+// @LOGAS="Zombie Island Hero"
+playlist 140
+displayorder 52
+category 20
+name chinese "Soul Shaking Zombie Island" 
+name english "¾ª»êÉ¥Ê¬µº" 
+description chinese "Rejoin your fellow Gladiators and survive the next chapter of the epic game show in the Soul Shaking Zombie Island. Fight through waves of the zombie Horde and uncover the Island's hidden secrets to the glory and adoration of your fans." 
+description english "ÈÈ´ø¶É¼Ù´å±ä³ÉÉ¥Ê¬ºáÐÐµÄÄ©ÊÀÀÖÔ°¡£Õ½Ê¿ÃÇÔÚ¾ª»êÉ¥Ê¬µºÔÙ´ÎÆë¾Û£¬Í¶Èë¾ªÐÄ¶¯ÆÇ´Ì¼¤²»¶ÏµÄÉúËÀ²«É±¡£É¨µ´É¥Ê¬£¬·¢ÏÖº£µºµÄÃØÃÜ£¬ÎÞÏÞÈÙÓþºÍ²Æ¸»ÊôÓÚÄã£¡" 
+img sfproto_za_island.tga
+buildversion default cb3 release
+zarena
+difficulty 2
+unlockflag uf_zarena_completed_easy
+//unlocklevelstart 13 
+unlocklevelend 70
+noteamsplitting
+noteambalancing
+minparty 1 
+maxparty 4
+rule 1011 1
+rule 3265 4
+rule scr_xp_scale 1.3
+rule scr_gp_scale 1.3
+rule zarena_round_table hero
+za_island,zarena,1
+
+// @LOGAS="Zombie Island Unlimited"
+playlist 143
+displayorder 4
+category 20
+name chinese "Zombie Island: Unlimited"
+name english "ÎÞ¾¡¾ª»êÉ¥Ê¬µº"
+description chinese "Fight through endless waves of zombies on the island. How long can you survive? Unlock by completing Veteran difficulty in Super Zombie Battle"
+description english "ÔÚ¾ª»êÉ¥Ê¬µº£¬Ãæ¶ÔÎÞ¾¡É¥Ê¬¿ñ³±£¬ÄãÄÜ¼á³Ö¶à¾Ã£¿"
+img sfproto_za_island.tga
+buildversion default cb3 release
+zarena
+difficulty 2
+//unlocklevelstart 7
+unlocklevelend 70
+noteamsplitting
+noteambalancing
+minparty 1 
+maxparty 4
+rule 1011 1
+rule 3265 4
+rule scr_xp_scale 1.3
+rule scr_gp_scale 1.3
+rule zarena_round_table unlimited
+za_island,zarena,1
+
+// @LOGAS="Zombie Survival - recruit"
+playlist 151
+displayorder 55
+category 26
+name chinese "Zombie Survival"
+name english "É¥Ê¬Éú´æ"
+description chinese "Fight through some of your favorite Survival maps, but now against the Zombie Horde!"
+description english "ÔÚÕâÐ©¾­µäµÄÉú´æÄ£Ê½µØÍ¼ÉÏ£¬¶Ô¿¹É¥Ê¬³±µÄÀ´Ï®£¡"
+buildversion default cb3 release
+zsurv
+difficulty 0
+//unlocklevelstart 13
+unlocklevelend 70
+noteamsplitting
+noteambalancing
+minparty 1 
+maxparty 4
+rule 1011 4 
+rule 3265 4
+rule scr_xp_scale 1.1
+rule scr_gp_scale 1.1
+rule zarena_round_table recruit
+mp_crash_tropical,zsurv,1
+mp_seatown,zsurv,1
+mp_village,zsurv,1
+mp_raid,zsurv,1
+mp_cross_fire,zsurv,1
+
+// @LOGAS="Zombie Survival - Hero"
+playlist 147
+displayorder 54
+category 26
+name chinese "Zombie Survival"
+name english "É¥Ê¬Éú´æ"
+description chinese "Fight through some of your favorite Survival maps, but now against the Zombie Horde!"
+description english "ÔÚÕâÐ©¾­µäµÄÉú´æÄ£Ê½µØÍ¼ÉÏ£¬¶Ô¿¹É¥Ê¬³±µÄÀ´Ï®£¡"
+buildversion default cb3 release
+zsurv
+difficulty 2
+//unlocklevelstart 13
+unlocklevelend 70
+noteamsplitting
+noteambalancing
+minparty 1 
+maxparty 4
+rule 1011 4 
+rule 3265 4
+rule scr_xp_scale 1.3
+rule scr_gp_scale 1.3
+rule zarena_round_table hero
+mp_crash_tropical,zsurv,1
+mp_seatown,zsurv,1
+mp_village,zsurv,1
+mp_raid,zsurv,1
+mp_cross_fire,zsurv,1
+
+
+// *****************************************************************
+// *** GAPP ZONE MP AND PVE ***
+// *****************************************************************
+
+// Playlist 163-173 = GAPP Zone Reserved
+
+
+// *****************************************************************
+// *** CURRENTLY UNUSED MP ***
+// *****************************************************************
+
+// @LOGAS="Boomtown Charge" 
+playlist 81
+displayorder 81
+category 1
+name chinese "Boomtown (OFFLINE)" 
+name english "Î÷²¿ÀÖÔ°" 
+description chinese "Charge" 
+description english "ÈËÊý6V6£¬ËÀÍöºó¹Ì¶¨¸´»îµã¸´»î£¬ÔÚ20·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½100»÷É±µÄ¶ÓÎé»òÊ±¼ä½áÊø»÷É±Êý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£" 
+buildversion
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6 
+rule 3265 12 
+rule scr_cha_scorelimit 100
+rule scr_cha_timelimit 20
+rule scr_cha_roundlimit 2
+rule scr_cha_roundswitch 2
+rule scr_cha_winlimit 1
+rule scr_cha_halftime 1
+rule scr_cha_scorelimithalftime 1
+mp_boomtown,cha,1
+
+// @LOGAS="War God 2" - disabled per TC request
+playlist 127
+displayorder 13
+category 8
+name chinese "Charge" 
+name english "³å·æÍÅ¾º-Õ½ÉñÅÅÎ»Èü" 
+description chinese "Playlist with Charge mode for Ladder competition." 
+description english "Õ¹ÏÖÍæ¼ÒÕæÊµÊµÁ¦µÄ×î¼ÑÎèÌ¨£¬ÎÞÊýÍæ¼Ò×·ÇóµÄÕ½ÉñÃÎÏë¡£²ÉÈ¡Ëæ»úÄ£Ê½ºÍµØÍ¼µÄ±ÈÈü·½Ê½£¬ÌôÕ½È«ÄÜÕ½Éñ¡£×¨ÊôÄ£Ê½£¬×¨Êô½±Àø£¬ÆÚ´ýÄãµÄ²ÎÓë¡£Ã¿ÈÕ¿ªÆôÊ±¼ä£ºÏÂÎç13µã-ÍíÉÏ11µã¡£" 
+buildversion
+ranked
+novoting
+minparty 1 
+maxparty 2
+//unlocklevelstart 40
+unlocklevelend  70
+vsrule "5V5"
+rule 1011 5 
+rule 3265 10
+rule scr_cha_scorelimit 100 
+levelrestricted
+validtime1 13-23					//0-24, BJ time, seperate time buckets by ',', time buckets maximum is 3
+validday1 0,1,2,3,4,5,6				// from 0: Sunday to 6: Saturday; comment validday if every day is valid
+validdate1 2016/01/14-2016/12/31	// YYYY/MM/DD-YYYY/MM/DD, BJ time
+//validtime2 0-24					
+//validday2 0,1,2,3,4,5,6				
+//validdate2 2015/06/09-2016/07/14
+mp_nuked,cha,1
+mp_mideast,cha,1
+mp_cha_quad,cha,1
+mp_rust_long,cha,1
+mp_shipment_long,cha,1
+
+// @LOGAS="War God 3" - Disabled per TC request
+playlist 128
+displayorder 14
+category 8
+name chinese "Dom" 
+name english "¾ÝµãÕù¶á£¨Õ½ÉñÅÅÎ»Èü£©" 
+description chinese "Playlist with Domination mode for Ladder competition." 
+description english "Õ¹ÏÖÍæ¼ÒÕæÊµÊµÁ¦µÄ×î¼ÑÎèÌ¨£¬ÎÞÊýÍæ¼Ò×·ÇóµÄÕ½ÉñÃÎÏë¡£²ÉÈ¡Ëæ»úÄ£Ê½ºÍµØÍ¼µÄ±ÈÈü·½Ê½£¬ÌôÕ½È«ÄÜÕ½Éñ¡£×¨ÊôÄ£Ê½£¬×¨Êô½±Àø£¬ÆÚ´ýÄãµÄ²ÎÓë¡£Ã¿ÈÕ¿ªÆôÊ±¼ä£ºÏÂÎç13µã-ÍíÉÏ11µã¡£" 
+buildversion
+ranked
+novoting
+minparty 1 
+maxparty 2
+//unlocklevelstart 40
+unlocklevelend  70
+vsrule "5V5"
+rule 1011 5 
+rule 3265 10
+levelrestricted
+validtime1 13-23					//0-24, BJ time, seperate time buckets by ',', time buckets maximum is 3
+validday1 0,1,2,3,4,5,6				// from 0: Sunday to 6: Saturday; comment validday if every day is valid
+validdate1 2016/01/14-2016/12/31	// YYYY/MM/DD-YYYY/MM/DD, BJ time
+//validtime2 0-24					
+//validday2 0,1,2,3,4,5,6				
+//validdate2 2015/06/09-2016/07/14
+mp_seatown,dom,1
+mp_fav_tropical,dom,1
+
+// @LOGAS="Asymmetric"
+playlist 76
+displayorder 76
+category 9
+name chinese "Machine Public Enemy" 
+name english "»úÐµÕóµØÕ½" 
+description chinese "Robots protect their beacons from capture in this 6v6 objective based mode. Defeating Robots and capturing the beacons empowers the Humans...but at what cost?"
+description english "ÈËÀàÒª²»Ï§Ò»ÇÐ´ú¼Û¹¥»÷²¢Õ¼ÁìÓÉ»úÐµ¾üÍÅÊØÎÀµÄ±êÊ¶µã¡£6v6 Ä¿±êÐÍ¶ÔÕ½Ä£Ê½¡£" 
+buildversion
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 20 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 8
+rule 3265 12
+mp_seatown,asym,1
+mp_crash_tropical,asym,1
+mp_firingrange,asym,1
+mp_nuked,asym,1
+
+// @LOGAS="Asymmetric"  DISABLED
+playlist 118
+displayorder 118
+category 9
+name chinese "Machine Public Enemy" 
+name english "»úÐµÕóµØÕ½" 
+description chinese "Robots protect their beacons from capture in this 6v6 objective based mode. Defeating Robots and capturing the beacons empowers the Humans...but at what cost?"
+description english "ÈËÀàÒª²»Ï§Ò»ÇÐ´ú¼Û¹¥»÷²¢Õ¼ÁìÓÉ»úÐµ¾üÍÅÊØÎÀµÄ±êÊ¶µã¡£6v6 Ä¿±êÐÍ¶ÔÕ½Ä£Ê½¡£" 
+buildversion
+//unlocklevelstart 20 
+unlocklevelend 70
+vsrule "6V6"
+combattraining
+onboardbonus
+noteamsplitting
+difficulty 0
+minparty 0 
+maxparty 0
+rule 1011 1 
+rule 3265 6
+maxhumanplayersperteam 6
+rule 3225 humans
+mp_nuked,asym,1
+mp_seatown,asym,1
+mp_crash_tropical,asym,1
+mp_firingrange,asym,1
+
+// @LOGAS="Leader TDM" aka Team Juggernaut
+playlist 67
+displayorder 13
+category 9
+name chinese "Leader TDM" 
+name english "Ê×ÁìÍÅ¶Ó¾º¼¼" 
+description chinese "Team Deathmatch with a leader on each team. Kill the enemy leader for additional points." 
+description english "Ê×ÁìÍÅ¶Ó¾º¼¼£ºÃ¿Ö§¶ÓÎé¸÷ÓÐÒ»ÃûÊ×Áì£¬É±ËÀµÐ·½Ê×Áì½«»ñµÃ¶îÍâµãÊý¡£" 
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 20 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6 
+rule 3265 12 
+mp_mideast,tjugg,1
+mp_shipment_long,tjugg,1
+mp_rust_long,tjugg,1
+mp_nuked,tjugg,1
+mp_highrise,tjugg,1
+mp_mountain,tjugg,1
+mp_terminal_cls,tjugg,1
+
+// @LOGAS="Death Ray Charge"
+playlist 23
+displayorder 11
+category 10
+name chinese "Free For All" 
+name english "¸öÈË¾º¼¼" 
+description chinese "Eliminate the enemies to score. First player to reach the score limit wins." 
+description english "¸öÈË¾º¼¼£ºÖ»Îª×Ô¼º¶øÕ½£¬²»Ö§³Ö×é¶Ó¡£" 
+buildversion default cb3 release
+ranked   
+noteamsplitting
+noteambalancing
+minparty 0 
+maxparty 0
+//unlocklevelstart 20 
+unlocklevelend 70
+rule 1011 4 
+rule 3265 8 
+mp_afghan,ffa,1
+mp_cargoship,ffa,1
+mp_crash_tropical,ffa,1
+mp_cross_fire,ffa,1
+mp_estate_tropical,ffa,1
+mp_fav_tropical,ffa,1
+mp_overgrown,ffa,1
+mp_storm_spring,ffa,1
+mp_seatown,ffa,1
+mp_highrise,ffa,1
+mp_mountain,ffa,1
+mp_terminal_cls,ffa,1
+mp_subbase_sh,ffa,1
+mp_hardhat_sh,ffa,1
+
+// @LOGAS="Demolition"
+playlist 77
+displayorder 12
+category 9
+name chinese "Kill Confirmed Ground War" 
+name english "ÇÀ×ê´óÕ½9V9" 
+description chinese "Recover Gems to score for your team and deny enemy scores."
+description english "É±µÐÇÀ×êÊ¯£¡µÐÈËËÀºó»áµôÂä½ÛÉ«×êÊ¯£¬¶ÓÓÑËÀºó»áµôÂäÀ¶É«×êÊ¯¡£ÊÕ¼¯½ÛÉ«×êÊ¯µÃ·Ö£¬ÊÕ¼¯À¶É«×êÊ¯×èÖ¹µÐ·½µÃ·Ö¡£×îÏÈ´ïµ½·ÖÊýÉÏÏÞ£¬»òÕßÔÚÊ±ÏÞÄÚ·ÖÊý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£"
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 9
+//unlocklevelstart 20 
+unlocklevelend 70
+vsrule "9V9"
+rule 1011 12
+rule 3265 18 
+rule scr_conf_scorelimit 100
+mp_nuked,kc,1
+mp_rust_long,kc,1
+mp_shipment_long,kc,1
+mp_cha_quad,kc,1
+mp_mideast,kc,1
+mp_highrise,kc,1
+mp_mountain,kc,1
+mp_subbase_sh,kc,1
+mp_hardhat_sh,kc,1
+
+// @LOGAS="Loot Drop" 
+playlist 124
+displayorder 3
+category 9
+name chinese "Loot Drop" 
+name english "¶á½ð´óÕ½" 
+description chinese "Players explode into a pile of Coins upon death. Collect the enemy Coins to score for your team."
+description english "É±µÐÇÀ½ð±Ò£¡µÐÈËËÀºó»áµôÂä½ð±Ò£¬¶ÓÓÑËÀºó»áµôÂäÒø±Ò¡£ÊÕ¼¯½ð±ÒµÃ·Ö£¬ÊÕ¼¯Òø±Ò×èÖ¹µÐ·½µÃ·Ö¡£×îÏÈ´ïµ½·ÖÊýÉÏÏß£¬»òÕßÔÚÊ±ÏÞÄÚ·ÖÊý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£"
+buildversion
+ranked
+minparty 1
+maxparty 6
+//unlocklevelstart 20 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+rule scr_tag_scorelimit 300
+mp_nuked,tag,1
+mp_rust_long,tag,1
+mp_shipment_long,tag,1
+mp_cha_quad,tag,1
+mp_mideast,tag,1
+mp_highrise,tag,1
+mp_mountain,tag,1
+mp_subbase_sh,tag,1
+mp_hardhat_sh,tag,1
+
+// @LOGAS="Hostage 6v6"
+playlist 194
+displayorder 3
+category 5
+name chinese "Hostage 6v6" 
+name english "Óª¾ÈÐ¡¶Ó6V6" 
+description chinese "Hostage 6v6"
+description english "ÈËÊý6V6£¬Íæ¼Ò¿ÉÒÔÔÚÃ¿ÂÖ¿ªÊ¼Ê±Ñ¡ÔñÒ»¸öÖ¸¶¨µÄ½ÇÉ«½øÈëÓÎÏ·¡£½ø¹¥·½±ØÐëÔÚÊ±ÏÞÄÚÕÒµ½²¢½â¾ÈÈËÖÊ£¬·ÀÊØ·½ÒªÐ®³ÖÈËÖÊ²¢×èÖ¹ËûÃÇ±»½â¾È¡£5»ØºÏºóË«·½»»±ß¡£10ÂÖºó´òÆ½Ôò»á¼ÓÈüÒ»ÂÖ¡£×îÖÕÀÛ¼Æ½â¾È×î¶àÈËÖÊµÄ¶ÓÎé»ñµÃÊ¤Àû£¡"
+buildversion default cb3 release
+ranked
+minparty 1
+maxparty 6
+//unlocklevelstart 20 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+mp_estate_tropical,hostage,1
+mp_storm_spring,hostage,1
+mp_crash_tropical,hostage,1
+mp_conflict,hostage,1
+mp_fav_tropical,hostage,1
+mp_overgrown,hostage,1
+mp_tunisia,hostage,1
+
+// @LOGAS="Hostage Skirmish"
+playlist 195
+displayorder 2
+category 5
+name chinese "Hostage Skirmish" 
+name english "ÊµÕ½¶Ô¿¹" 
+description chinese "Hostage Skirmish" 
+description english "ÈËÊý6V6£¬Íæ¼Ò¿ÉÒÔÔÚÃ¿ÂÖ¿ªÊ¼Ê±Ñ¡ÔñÒ»¸öÖ¸¶¨µÄ½ÇÉ«½øÈëÓÎÏ·¡£½ø¹¥·½±ØÐëÔÚÊ±ÏÞÄÚÕÒµ½²¢½â¾ÈÈËÖÊ£¬·ÀÊØ·½ÒªÐ®³ÖÈËÖÊ²¢×èÖ¹ËûÃÇ±»½â¾È¡£5»ØºÏºóË«·½»»±ß¡£10ÂÖºó´òÆ½Ôò»á¼ÓÈüÒ»ÂÖ¡£×îÖÕÀÛ¼Æ½â¾È×î¶àÈËÖÊµÄ¶ÓÎé»ñµÃÊ¤Àû£¡"
+buildversion default cb3 release
+//unlocklevelstart 1
+unlocklevelend 70
+vsrule "6V6"
+combattraining
+onboardbonus
+difficulty 1
+minparty 0 
+maxparty 0
+rule 1011 1
+rule 3265 6
+maxhumanplayersperteam 3
+//mindlclevel 1
+mp_estate_tropical,hostage,1
+mp_storm_spring,hostage,1
+mp_crash_tropical,hostage,1
+mp_conflict,hostage,1
+mp_fav_tropical,hostage,1
+mp_overgrown,hostage,1
+mp_tunisia,hostage,1
+
+// @LOGAS="Prop Hunt 6v6"
+playlist 196
+displayorder 1
+category 10
+name chinese "Prop Hunt" 
+name english "¶ãÃ¨Ã¨" 
+description chinese "prop hunt"
+description english "±ÈÈü·ÖÎªÁ½¶Ó£¬·ÀÊØ·½Í¨¹ýÎ±×°³ÉÓÎÏ·ÄÚµÄÎïÆ·²ØÄä×Ô¼º£¬½ø¹¥·½ÊÔÍ¼ÕÒµ½²¢ÏûÃðÕýÔÚ¶ã²ØµÄ±äÉíÍæ¼Ò¡£¹æ¶¨Ê±¼äÄÚ£¬·ÀÊØ·½´æ»îµ½»ØºÏ½áÊøÔòµÃ·Ö£¬½ø¹¥·½ÕÒµ½²¢ÏûÃð±äÉíµÄÍæ¼ÒÔòµÃ·Ö¡£Ã¿»ØºÏ½áÊøºó»á½øÐÐ»»±ß¡£±ÈÈü½áÊ±ÊøµÃ·Ö¸ßµÄ¶ÓÎé»ñµÃÊ¤Àû¡£ "
+buildversion default cb3 release
+ranked
+minparty 1
+maxparty 6
+//unlocklevelstart 1 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6
+rule 3265 12
+mp_qadeem_sh,ph,1
+mp_mountain,ph,1
+mp_seatown,ph,1
+mp_crash_tropical,ph,1
+mp_fav_tropical,ph,1
+mp_highrise,ph,1
+mp_raid,ph,1
+mp_village,ph,1
+
+// @LOGAS="Gun Game"
+playlist 204
+displayorder 4
+category 10
+name chinese "Gun Game" 
+name english "Ç¹ÐµÓÎÏ·" 
+description chinese "Get a kill with all weapons. Stab players to demote them."
+description english "Íæ¼ÒÒªÓÃÃ¿°ÑÎäÆ÷Íê³ÉÒ»´Î»÷É±£¬±»½üÕ½µ¶É±»áµ¼ÖÂÄãµ¹ÍËÒ»°ÑÎäÆ÷£¬ÂÊÏÈÓÃÍêÈ«²¿20°ÑÎäÆ÷µÄÍæ¼Ò»ñµÃÊ¤Àû£¨×îºóÒ»°Ñµ¯»Éµ¶ÐèÒªÔ¶¾àÀë»÷É±²ÅËãÊ¤Àû£©¡£"
+buildversion default cb3 release
+ranked   
+noteamsplitting
+noteambalancing
+minparty 0 
+maxparty 0
+//unlocklevelstart 1
+unlocklevelend 70
+rule 1011 6 
+rule 3265 12 
+mp_crash_tropical,gun,1
+mp_nuked,gun,1
+mp_cross_fire,gun,1
+mp_fav_tropical,gun,1
+mp_firingrange,gun,1
+mp_seatown,gun,1
+mp_highrise,gun,1
+mp_terminal_cls,gun,1
+
+// @LOGAS="Chicken Mode - 6v6"
+playlist 218
+displayorder 2
+category 10
+name chinese "Chicken 6v6" 
+name english "·è¿ñµÄÐ¡¼¦ 6V6" 
+description chinese "Bawk" 
+description english "ÈËÊý6V6£¬Íæ¼ÒÊ¹ÓÃ¼¦¹âÅÚ½«µÐÈË±ä³É¼¦²¢ÏûÃðËü»ñµÃµãÊý¡£±ä³É³¬¼¶´ó¼¦¿ÉÒÔ¹¥»÷µÐÈË£¬±ä³ÉÐ¡¼¦£¬Ö»ºÃÆíµ»µÐÈËÊÖÏÂÁôÇé¡£±ÈÈü½áÊøÊ±µÃ·Ö¸ßµÄ¶ÓÎé»ñÊ¤¡£" 
+buildversion default cb3 release
+ranked   
+minparty 1 
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 6 
+rule 3265 12 
+rule scr_chicken_scorelimit 300 
+rule scr_chicken_timelimit 15
+mp_crash_tropical,chicken,1
+mp_firingrange,chicken,1
+mp_nuked,chicken,1
+mp_seatown,chicken,1
+mp_village,chicken,1
+
+// @LOGAS="Nuclear Football"
+playlist 254
+displayorder 12
+category 10
+name chinese "Nuclear Football" 
+name english "ºË×ÓéÏé­Çò" 
+description chinese "Advance the ball, touchdown and score." 
+description english "ÈËÊý5V5¡£Á½¶ÓÔÚÖÐÈ¦ÕùÇò£¬´øÇò½ø¹¥£¬Í¨¹ý´«Çò½«ÇòÍ¶½ø¶Ô·½ÇòÃÅµÃ·Ö¡£±ÈÈü½áÊø£¬·ÖÊý¸ßµÄ¶ÓÎé»ñÊ¤£¡" 
+buildversion default cb3 release
+ranked 
+itemban all_equ riotshield_mp gre_pulseradarr5rgpneon all_kis
+minparty 1 
+maxparty 5
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "5V5"
+rule 1011 10
+rule 3265 10
+mp_nukearena_sh,nftbl,1
+
+// @LOGAS="Party -  DWARF"
+playlist 255
+displayorder 12
+category 10
+name chinese "Party - DWARF"
+name english "ÃÔÄãÕ½Õù"
+description chinese "DWARF"
+description english "ÈËÊý6V6£¬ËÀÍöºóÔÚ¶ÓÓÑ¸½½ü¸´»î£¬ÔÚ10·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½100»÷É±µÄ¶ÓÎé»òÊ±¼ä½áÊø»÷É±Êý×î¸ßµÄ¶ÓÎé»ñÊ¤¡£"
+buildversion default cb3 release 
+ranked
+itemban all_kis
+minparty 1
+maxparty 6
+vsrule "6V6"
+//unlocklevelstart 0
+unlocklevelend 70
+rule 1011 6
+rule 3265 12
+mp_dwarf_sh,tdm,1
+
+// *****************************************************************
+// *** CURRENTLY UNUSED PVE ***
+// *****************************************************************
+
+// @LOGAS="Survival Normal Ambush" 
+// playlist 91, 92, 93 reserved for survival
+
+// @LOGAS="Evacuation Latest Hero"
+// playlist 17 evac reserved
+
+// @LOGAS="Survival Latest Hero"
+playlist 150
+displayorder 14
+category 10
+name chinese "Clash - Team Deathmatch" 
+name english "µ¶·æÕ½³¡-Õ½ÊõÍÅ¾º" 
+description chinese "6V6, Third person TDM melee mode, showoff your close quarter combat skills! Use Buffs to help you and your team" 
+description english "ÈËÊý6v6, µÚÈýÈË³ÆµÄ½üÕ½Õ½ÊõÍÅ¶Ó¾º¼¼Ä£Ê½, Ê¹ÓÃÄãµÄ½üÕ½ÎäÆ÷Õ¹ÏÖ³öÄã³öÉ«µÄ½üÕ½ÄÜÁ¦£¡Ê¹ÓÃµØÍ¼ÉÏµÄ¼Ó³ÉµÀ¾ß°ïÖúÄãºÍÄãµÄÍÅ¶Ó¡£" 
+buildversion default cb3 release
+ranked
+minparty 1
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 4
+rule 3265 12
+rule scr_clash_mode_flag 2
+rule scr_clash_allow_change_rule 1
+rule scr_clash_timelimit 10
+rule scr_clash_scorelimit 100
+rule scr_clash_roundlimit 1
+rule scr_clash_winlimit 1
+rule scr_clash_roundswitch 1
+mp_melee_resort,clash,1
+//mp_killhouse_sh,clash,1
+//mp_terminal_cls,clash,1
+mp_highrise,clash,1
+mp_mountain,clash,1
+//mp_shipment_long,clash,1
+//mp_cross_fire,clash,1
+//mp_mideast,clash,1
+//mp_rust_long,clash,1
+//mp_storm_spring,clash,1
+
+// @LOGAS="Clash - Hardcore TDM"
+playlist 152
+displayorder 15
+category 9
+name chinese "Clash Hardcore - Team Deathmatch" 
+name english "´«Í³µ¶Õ½-Õ½ÊõÍÅ¾º" 
+description chinese "6V6, First person TDM melee mode, you can bring your Perks and melee weapons into the game.One-hit kill!" 
+description english "ÈËÊý6v6£¬µÚÒ»ÈË³ÆµÄ½üÕ½Õ½ÊõÍÅ¶Ó¾º¼¼Ä£Ê½£¬Äã¿ÉÒÔ×Ô¶¨ÒåÄãµÄ¼¼ÄÜ£¬²¢½«ÄãµÄ½üÕ½ÎäÆ÷´øÈëÓÎÏ·¡£¶ÔµÐÈË¿ÉÒÔÒ»»÷±ØÉ±£¡" 
+buildversion default cb3 release
+ranked
+itemban type95_mp 
+minparty 1
+maxparty 6
+//unlocklevelstart 20 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 4
+rule 3265 12
+rule scr_clash_mode_flag 4
+rule scr_clash_allow_change_rule 1
+rule scr_clash_timelimit 10
+rule scr_clash_scorelimit 50
+rule scr_clash_roundlimit 1
+rule scr_clash_winlimit 1
+rule scr_clash_roundswitch 3
+mp_melee_resort,clash,1
+//mp_killhouse_sh,clash,1
+//mp_terminal_cls,clash,1
+mp_highrise,clash,1
+mp_mountain,clash,1
+//mp_shipment_long,clash,1
+//mp_cross_fire,clash,1
+//mp_mideast,clash,1
+//mp_rust_long,clash,1
+//mp_storm_spring,clash,1
+
+// @LOGAS="Clash - CTF"
+playlist 153
+displayorder 16
+category 9
+name chinese "Clash - CTF" 
+name english "µ¶·æÕ½³¡-¶áÆìÄ£Ê½" 
+description chinese "6V6, Third person CTF melee mode, capture enemy team's flag and bring it back to your base! Use Buffs to help you and your team" 
+description english "ÈËÊý6v6£¬µÚÈýÈË³ÆµÄ¶áÆìµ¶Õ½Ä£Ê½£¬¶áÈ¡µÐÈËµÄÆìÖÄ²¢½«Ëü´ø»ØÄãµÄ»ùµØ£¡Ê¹ÓÃµØÍ¼ÉÏµÄ¼Ó³ÉµÀ¾ß°ïÖúÄãºÍÄãµÄÍÅ¶Ó¡£" 
+buildversion default cb3 release
+ranked
+minparty 1
+maxparty 6
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "6V6"
+rule 1011 4
+rule 3265 12
+rule scr_clash_mode_flag 3
+mp_melee_resort,clash,1
+mp_killhouse_sh,clash,1
+mp_nuked,clash,1
+mp_rust_long,clash,1
+mp_cargoship,clash,1
+
+// @LOGAS="S&D Champions"
+playlist 175
+displayorder 80
+category 28
+name chinese "Zombie Survival: Champions Hero"
+name english "Ä©ÈÕÐ¡¶Ó"
+description chinese "Take on the zombie horde as a champion of legend!"
+description english "ÔÚÕ¨µ¯×¨¼Ò-µËÆÕÏ£¡¢ÊØ»¤Õß-Äá¹ÅÀ­¡¢ÉñÇ¹ÊÖ-ÈðÆæ¡¢µ¶¿Í-É³ÄÂËÄÎ»Õ½Ê¿ÖÐÑ¡ÔñÒ»¸ö×÷ÎªÄãµÄ½ÇÉ«£¬ÓëÆäËûÍæ¼Ò×é³ÉËÄÈËÐ¡¶Ó£¬ÁªÊÖµÖµ²Ò»ÂÖÓÖÒ»ÂÖµÄÉ¥Ê¬½ø¹¥£¬³É¾ÍÄã×Ô¼ºµÄ´«Ææ£¡"
+buildversion default cb3 release
+zchamp
+difficulty 2
+//unlocklevelstart 13
+unlocklevelend 70
+noteamsplitting
+noteambalancing
+minparty 1 
+maxparty 4
+rule 1011 1
+rule 3265 4
+rule scr_xp_scale 1.3
+rule scr_gp_scale 1.3
+rule zarena_round_table hard
+mp_village,zchamp,1
+mp_raid,zchamp,1
+mp_crash_tropical,zchamp,1
+mp_cross_fire,zchamp,1
+mp_qadeem_sh,zchamp,1
+mp_strike_sh,zchamp,1
+mp_fav_tropical,zchamp,1
+new
+
+playlist 185
+displayorder 79
+category 28
+name chinese "Zombie Survival: Champions Recruit"
+name english "Ä©ÈÕÐ¡¶Ó"
+description chinese "Take on the zombie horde as a champion of legend!"
+description english "ÔÚÕ¨µ¯×¨¼Ò-µËÆÕÏ£¡¢ÊØ»¤Õß-Äá¹ÅÀ­¡¢ÉñÇ¹ÊÖ-ÈðÆæ¡¢µ¶¿Í-É³ÄÂËÄÎ»Õ½Ê¿ÖÐÑ¡ÔñÒ»¸ö×÷ÎªÄãµÄ½ÇÉ«£¬ÓëÆäËûÍæ¼Ò×é³ÉËÄÈËÐ¡¶Ó£¬ÁªÊÖµÖµ²Ò»ÂÖÓÖÒ»ÂÖµÄÉ¥Ê¬½ø¹¥£¬³É¾ÍÄã×Ô¼ºµÄ´«Ææ£¡"
+buildversion default cb3 release
+zchamp
+difficulty 0
+//unlocklevelstart 13
+unlocklevelend 70
+noteamsplitting
+noteambalancing
+minparty 1 
+maxparty 4
+rule 1011 1
+rule 3265 4
+rule scr_xp_scale 1.1
+rule scr_gp_scale 1.1
+rule zarena_round_table easy
+mp_village,zchamp,1
+mp_raid,zchamp,1
+mp_crash_tropical,zchamp,1
+mp_cross_fire,zchamp,1
+mp_qadeem_sh,zchamp,1
+mp_strike_sh,zchamp,1
+mp_fav_tropical,zchamp,1
+new
+
+playlist 205
+displayorder 2
+category 29
+name chinese "Chap1 Offtrack"
+name english "µÚÒ»ÕÂ ÍÑ¹ì"
+description chinese "2084Äê£¬Ä©ÈÕºóÐÒ´æµÄÈËÀàÈÔÈ»ÔÚÓë¶ñÁÓµÄ×ÔÈ»»·¾³×÷¶·Õù¡£·øÉä·ç±©ºÍ±é²¼µÄ½©Ê¬ÈºÈÃ´àÈõµÄÈËÀàÄÑÒÔÉú´æ¡£»Æ·äÐ¡¶ÓÕýÔÚ»¤ËÍÔËÊä³µ½«²É¼¯µ½µÄ¿ó¾§Ô­Ê¯ËÍ»Ø±Ó»¤Ëù¡ª¡ªÎ÷ËþµÂ¶û£¬À´¹©¸øÐÒ´æÆäÖÐµÄ·½ÖÛ¾ÓÃñ¡£±¾¸ÃÊìÏ¤µÄµÀÂ·£¬ÐÂµÄÎ£»úÈ´Ç±·üÆäÖÐ¡­¡­"
+description english "2084Äê£¬Ä©ÈÕºóÐÒ´æµÄÈËÀàÈÔÈ»ÔÚÓë¶ñÁÓµÄ×ÔÈ»»·¾³×÷¶·Õù¡£·øÉä·ç±©ºÍ±é²¼µÄ½©Ê¬ÈºÈÃ´àÈõµÄÈËÀàÄÑÒÔÉú´æ¡£»Æ·äÐ¡¶ÓÕýÔÚ»¤ËÍÔËÊä³µ½«²É¼¯µ½µÄ¿ó¾§Ô­Ê¯ËÍ»Ø±Ó»¤Ëù¡ª¡ªÎ÷ËþµÂ¶û£¬À´¹©¸øÐÒ´æÆäÖÐµÄ·½ÖÛ¾ÓÃñ¡£±¾¸ÃÊìÏ¤µÄµÀÂ·£¬ÐÂµÄÎ£»úÈ´Ç±·üÆäÖÐ¡­¡­"
+buildversion default cb3 release
+itemban wild_overkill all_per
+zhunt
+difficulty 0
+//unlocklevelstart 1
+unlocklevelend 70
+noteamsplitting
+noteambalancing
+nolevelbucketmatchesforjip
+noskillbucketmatchesforjip
+nominmatchesforjip
+minparty 1 
+maxparty 6
+novoting
+rule 1011 1
+rule 3265 6
+rule playlistMapRotateSequentially 1
+mp_deathmarch_chap1,zhunt,1
+mp_deathmarch_chap1_b,zhunt,1
+
+playlist 230
+displayorder 25
+category 29
+name chinese "Chap1.2"
+name english "µÚÒ»ÕÂ£¨¶þ£©"
+description chinese "Playlist for Zombie Hunter."
+description english "Playlist for Zombie Hunter."
+buildversion
+zhunt
+difficulty 0
+//unlocklevelstart 1
+unlocklevelend 70
+noteamsplitting
+noteambalancing
+minparty 1 
+maxparty 6
+rule 1011 1
+rule 3265 6
+mp_deathmarch_chap1_b,zhunt,1
+
+playlist 231
+displayorder 3
+category 29
+name chinese "Chap 2 Clue"
+name english "µÚ¶þÕÂ ÏßË÷"
+description chinese "²¶»ñ¿ÞÆüÕßÊÇÃ¿¸öÁÔÈËµÄÃÀÃÎ¡£´«ÎÅ£¬Á÷·ÅÕßÁÔÈË¼ÖÂí¶û·¢ÏÖÁËÕÒµ½¿ÞÆüÕßµÄ·½·¨£¬µ«Ëû±»Çô½ûÔÚÅµÉ­±¤¼àÓü¡£ÁÔÈËÂüÉ­ÕÐÄ¼ÁËÒ»¸öÁÔÈËÐ¡¶Ó£¬Ï£ÍûÓª¾È¼ÖÂí¶û£¬²¢»ñµÃ¿ÞÆüÕßµÄÏßË÷......"
+description english "²¶»ñ¿ÞÆüÕßÊÇÃ¿¸öÁÔÈËµÄÃÀÃÎ¡£´«ÎÅ£¬Á÷·ÅÕßÁÔÈË¼ÖÂí¶û·¢ÏÖÁËÕÒµ½¿ÞÆüÕßµÄ·½·¨£¬µ«Ëû±»Çô½ûÔÚÅµÉ­±¤¼àÓü¡£ÁÔÈËÂüÉ­ÕÐÄ¼ÁËÒ»¸öÁÔÈËÐ¡¶Ó£¬Ï£ÍûÓª¾È¼ÖÂí¶û£¬²¢»ñµÃ¿ÞÆüÕßµÄÏßË÷......"
+buildversion default cb3 release
+itemban wild_overkill all_per
+zhunt
+difficulty 0
+//unlocklevelstart 1
+unlocklevelend 70
+noteamsplitting
+noteambalancing
+nolevelbucketmatchesforjip
+noskillbucketmatchesforjip
+nominmatchesforjip
+minparty 1 
+maxparty 6
+novoting
+rule 1011 1
+rule 3265 6
+rule playlistMapRotateSequentially 1
+mp_deathmarch_chap1_c,zhunt,1
+mp_deathmarch_chap1_d,zhunt,1
+
+playlist 232
+displayorder 35
+category 29
+name chinese "Chap2.2"
+name english "µÚ¶þÕÂ£¨¶þ£©"
+description chinese "Playlist for Zombie Hunter."
+description english "Playlist for Zombie Hunter."
+buildversion
+zhunt
+difficulty 0
+//unlocklevelstart 1
+unlocklevelend 70
+noteamsplitting
+noteambalancing
+minparty 1 
+maxparty 6
+rule 1011 1
+rule 3265 6
+mp_deathmarch_chap1_d,zhunt,1
+
+playlist 229
+displayorder 4
+category 29
+name chinese "Chap 3"
+name english "µÚÁãÕÂ ÁÑÏ¶"
+description chinese "......"
+description english "ÔÚ2064ÄêµÄÔÉÊ¯×²»÷ºó£¬·½ÖÛ½¨Á¢ÁË±£»¤É¡ÕóÁÐ£¬ÓÃÀ´·ÀÖ¹·øÉä³¾Ïò·½ÖÛÁìµØÀ©É¢¡£2069Äê£¬Í»ÈçÆäÀ´µÄÔÉÊ¯ÓêËð»µÁË±£»¤É¡ÕóÁÐÖÐµÄÒ»Ð©·À»¤µ¥Ôª¡£À¥µÂÀ¼±Ó»¤ËùÅÉ³öÁË×Ô¼ºµÄÌØÇÚÎÀ¶Ó£¬ÈÎÎñÊÇ²éÃ÷ËðÊ§£¬²¢ÐÞ¸´ËðÉËµÄ±£»¤É¡·¢ÉúÆ÷¡­¡­"
+buildversion default cb3 release
+itemban wild_overkill all_per
+zhunt
+difficulty 0
+//unlocklevelstart 1
+unlocklevelend 70
+noteamsplitting
+noteambalancing
+nolevelbucketmatchesforjip
+noskillbucketmatchesforjip
+nominmatchesforjip
+minparty 1 
+maxparty 6
+novoting
+rule 1011 1
+rule 3265 6
+rule playlistMapRotateSequentially 1
+mp_deathmarch_chap3_a,zhunt,1
+mp_deathmarch_chap3_b,zhunt,1
+
+
+playlist 233
+displayorder 5
+category 29
+name chinese "Chap3.2"
+name english "µÚÁãÕÂ£¨¶þ£©"
+description chinese "Playlist for Zombie Hunter."
+description english "Playlist for Zombie Hunter."
+buildversion
+zhunt
+difficulty 0
+//unlocklevelstart 1
+unlocklevelend 70
+noteamsplitting
+noteambalancing
+minparty 1 
+maxparty 6
+rule 1011 1
+rule 3265 6
+mp_deathmarch_chap3_b,zhunt,1
+
+playlist 245
+displayorder 1
+category 29
+name chinese "Chap 4"
+name english "µÚÈýÕÂ Õ÷Õ×(È«ÐÂ¹¤·»)"
+description chinese "......"
+description english "ÔÚÅµÉ­±¤ÊÂ¼þºó£¬µ±Ê±²ÎÓëÐÐ¶¯µÄÁ÷·ÅÕßÁÔÈËÃÇÔÚ¼¸Äê¼ä±»ÖðÒ»×¥»ñ£¬²¢¼¯ÖÐ¹ØÑºÓÚÎ÷ËþµÂ¶ûµÄÍâÎ§ÇøÓò¡£ÂüÉ­ÕýÔÚ¼Æ»®Óª¾ÈÕâÐ©ÁÔÈË£¬µ«ËûµÄÐ­Öú´ÓÀ´²»»áÊÇÃâ·ÑµÄ£¬ËûÓÐÒ»¸ö¸ü¼Ó¸´ÔÓµÄ¼Æ»®£¬¶øÓª¾ÈËûÃÇ½ö½öÊÇ¼Æ»®µÄ¿ªÊ¼¡­¡­"
+buildversion default cb3 release
+itemban wild_overkill all_per
+zhunt
+difficulty 0
+//unlocklevelstart 1
+unlocklevelend 70
+noteamsplitting
+noteambalancing
+nolevelbucketmatchesforjip
+noskillbucketmatchesforjip
+nominmatchesforjip
+minparty 1 
+maxparty 6
+novoting
+rule 1011 1
+rule 3265 6
+rule playlistMapRotateSequentially 1
+mp_deathmarch_chap4_a,zhunt,1
+mp_deathmarch_chap4_b,zhunt,1
+featured
+
+playlist 246
+displayorder 5
+category 29
+name chinese "Chap4.2"
+name english "µÚÈýÕÂ£¨¶þ£©"
+description chinese "Playlist for Zombie Hunter."
+description english "Playlist for Zombie Hunter."
+buildversion
+zhunt
+difficulty 0
+//unlocklevelstart 1
+unlocklevelend 70
+noteamsplitting
+noteambalancing
+minparty 1 
+maxparty 6
+rule 1011 1
+rule 3265 6
+mp_deathmarch_chap4_b,zhunt,1
+
+playlist 251
+displayorder 1
+category 30
+name chinese "Infected Area"
+name english "¸ÐÈ¾Çø"
+description chinese "Playlist for Tower Defence."
+description english "ÔÚÎ÷ËþµÂ¶ûÏÝÂä¼¸¸öÔÂºó£¬·½ÖÛÓëÁ÷·ÅÕß³ÉÁ¢ÁËÒ»Ö§ÁªºÏÔ¶Õ÷¶Ó£¬ËûÃÇµÄÄ¿µÄÊÇÇ°Íù¸ÐÈ¾ÇøÉî´¦£¬²¢ÇÀÔÚËûÃÇÄÇÎ»¹²Í¬µÄµÐÈËÖ®Ç°£¬¶¨Î»ÄÇ¸öÓÎÀëµÄµÄÑ¶ºÅ¡£Õâ´ÎÐÐ¶¯²¢²»Ë³Àû£¬ÔÚÌ½²âÕ¾µÄ·ÉÐÐ¹ý³ÌÖÐ£¬Ô¶Õ÷¶ÓÓöµ½ÁËÇ°ËùÎ´ÓÐµÄ·øÉä·ç±©£¬²¢×¼±¸ÆÈ½µ¡­¡­"
+buildversion default cb3 release
+td
+difficulty 0
+//unlocklevelstart 15
+unlocklevelend 70
+noteamsplitting
+noteambalancing
+minparty 1 
+maxparty 4
+rule 1011 1
+rule 3265 4
+mp_battlecity_mountains_td,td,1
+new
+homepagead 7
+
+playlist 142
+displayorder 142
+category 11
+name chinese "SPY"
+name english "ÀÇÈËÐÐ¶¯"
+description chinese "SPY playlist"
+description english "Ã¿¸öÈË½«Ëæ»ú°çÑÝÒ»¸ö½ÇÉ«¡£Æ½ÃñºÍ¾¯Ì½ÐèÒªÊ¶±ð²¢ÌÔÌ­ÀÇÈË£»ÀÇÈËÔòÒªÐ¡ÐÄÒíÒíµÄÌÔÌ­Æ½ÃñºÍ¾¯Ì½¡£Çë²ÁÁÁÄãµÄË«ÑÛ£¬¿ªÊ¼ÄãµÄ±íÑÝ£¬Å¬Á¦È¡µÃÊ¤Àû°É£¡"
+buildversion default cb3 release
+ranked
+difficulty 0
+noteamsplitting
+noteambalancing
+minparty 0 
+maxparty 0
+//unlocklevelstart 1
+unlocklevelend 70
+rule 1011 6
+rule 3265 18
+mp_raid,spy,1
+mp_village,spy,1
+mp_strike_sh,spy,1
+mp_overwatch_sh,spy,1
+mp_district,spy,1
+mp_fav_tropical,spy,1
+mp_storm_spring,spy,1
+mp_radiation_sh,spy,1
+mp_arkaden_sh,spy,1
+mp_backlot_sh,spy,1
+
+homepagead 7
+
+// *****************************************************************
+// *** BattleCity Playlists ***
+// *****************************************************************
+// @LOGAS="BattleCity - SOLO"
+playlist 199
+displayorder 13
+category 13
+name chinese "BattleCity - SOLO" 
+name english "ÓÂÕßÓÎÏ· µ¥ÈË" 
+overridename chinese "BattleCity" 
+overridename english "ÓÂÕßÓÎÏ·"
+description chinese "You are on your own, survive to be the winner." 
+description english "ÓÂÕßÓÎÏ·µ¥ÈËÄ£Ê½¡£ÔÚ·ÏÆúµÄÎ´À´³ÇÊÐÖÐ£¬¿Ë·þ¶à±äµÄ×ÔÈ»»·¾³£¬ÊÕ¼¯ÎäÆ÷×°±¸£¬ÌÔÌ­ÆäËûÑ¡ÊÖ£¬³ÉÎª×îÇ¿ÓÂÕß£¡" 
+overridedescription chinese "Survive to be the winner." 
+overridedescription english "ÔÚ·ÏÆúµÄÎ´À´³ÇÊÐÖÐ£¬¿Ë·þ¶à±äµÄ×ÔÈ»»·¾³£¬ÊÕ¼¯ÎäÆ÷×°±¸£¬ÌÔÌ­ÆäËûÑ¡ÊÖ£¬³ÉÎª×îÇ¿ÓÂÕß£¡" 
+buildversion default cb3 release
+set scr_dmz_buddymode 0
+ranked   
+nojip
+noteamsplitting
+noteambalancing
+minparty 0 
+maxparty 0
+//unlocklevelstart 1 
+unlocklevelend 70
+rule 1011 17 
+rule 3265 18 
+mp_battlecity_mountains,dmz,3
+mp_battlecity,dmz,1
+buddy_playlist 200
+featured
+
+// @LOGAS="BattleCity - BUDDY"
+playlist 200
+displayorder 12
+category 13
+name chinese "BattleCity - BUDDY" 
+name english "ÓÂÕßÓÎÏ· Ë«ÈË" 
+description chinese "You have one teammate, work together to emerge victorious." 
+description english "ÓÂÕßÓÎÏ·Ë«ÈËÄ£Ê½¡£ÔÚ·ÏÆúµÄÎ´À´³ÇÊÐÖÐ£¬ºÍ¶ÓÓÑÒ»Æð£¬¿Ë·þ¶à±äµÄ×ÔÈ»»·¾³£¬ÊÕ¼¯ÎäÆ÷×°±¸£¬ÌÔÌ­ÆäËûÑ¡ÊÖ£¬³ÉÎª×îÇ¿¶ÓÎé£¡" 
+buildversion default cb3 release
+set scr_dmz_buddymode 1
+ranked
+nojip   
+noteamsplitting
+noteambalancing
+minparty 0 
+maxparty 2
+//unlocklevelstart 1 
+unlocklevelend 70
+rule 1011 16 
+rule 3265 18 
+mp_battlecity,dmz,1
+mp_battlecity_mountains,dmz,3
+featured
+
+// @LOGAS="BattleCity - HARDCORE - SOLO"
+playlist 202
+displayorder 14
+category 13
+name chinese "BattleCity - HARDCORE - Solo" 
+name english "ÓÂÕßÓÎÏ· ¼«ÏÞµ¥ÈË" 
+description chinese "Same as the Solo gametype, less map information and HUD information." 
+description english "ÓÂÕßÓÎÏ·¼«ÏÞµ¥ÈËÄ£Ê½¡£18ÇøµÄÕ½³¡»·¾³±äµÃ¸ü¼Ó²Ð¿á£¨ÎÞÐ¡µØÍ¼¡¢ÎÞ°²È«ÇøÌáÊ¾µÈ£©¡£¿Ë·þ»·¾³Ó°Ïì£¬ÊÕ¼¯ÎäÆ÷×°±¸£¬ÌÔÌ­ÆäËûÑ¡ÊÖ£¬³ÉÎª×îÇ¿ÓÂÕß£¡" 
+buildversion
+set scr_dmz_buddymode 0
+ranked
+hardcore
+nojip  
+noteamsplitting
+noteambalancing
+minparty 0 
+maxparty 0
+//unlocklevelstart 1 
+unlocklevelend 70
+rule 1011 17 
+rule 3265 18 
+mp_battlecity,dmz,1
+mp_battlecity_mountains,dmz,3
+unlockflag uf_dmz_hardcore_unlocked
+
+// @LOGAS="BattleCity - HARDCORE - BUDDY"
+playlist 203
+displayorder 15
+category 13
+name chinese "BattleCity - HARDCORE - Buddy" 
+name english "ÓÂÕßÓÎÏ· ¼«ÏÞË«ÈË" 
+description chinese "BattleCity - HARDCORE" 
+description english "ÓÂÕßÓÎÏ·¼«ÏÞË«ÈËÄ£Ê½¡£18ÇøµÄÕ½³¡»·¾³±äµÃ¸ü¼Ó²Ð¿á£¨ÎÞÐ¡µØÍ¼¡¢ÎÞ°²È«ÇøÌáÊ¾µÈ£©¡£ºÍ¶ÓÓÑÒ»Æð£¬¿Ë·þ»·¾³Ó°Ïì£¬ÊÕ¼¯ÎäÆ÷×°±¸£¬ÌÔÌ­ÆäËûÑ¡ÊÖ£¬³ÉÎª×îÇ¿¶ÓÎé£¡" 
+buildversion
+set scr_dmz_buddymode 1
+ranked
+hardcore
+nojip  
+noteamsplitting
+noteambalancing
+minparty 0 
+maxparty 2
+//unlocklevelstart 1 
+unlocklevelend 70
+rule 1011 16 
+rule 3265 18 
+mp_battlecity,dmz,1
+unlockflag uf_dmz_hardcore_unlocked
+
+// @LOGAS="BattleCity - SOLO - reverse circle"
+playlist 214
+displayorder 23
+category 13
+name chinese "BattleCity - Reverse Circle" 
+name english "ÓÂÕßÓÎÏ· ¾øÃüÌÓÉú" 
+description chinese "You are on your own, survive to be the winner." 
+description english "ÓÂÕßÓÎÏ·ÌÓÉú£¨µ¥ÈË£©Íæ·¨¡£µØÃæ×ÊÔ´½ÏÎªØÑ·¦£¬¿ÕÖÐ²¹¸øÓÈÎªÕä¹ó¡£Ëæ×ÅÖÐÐÄÈ¦µÄÖð½¥ËõÐ¡£¬ÕÒµ½³ö¿ÚÌÓÀë»òÌÔÌ­ÆäËûÈË·½¿ÉÈ¡µÃÊ¤Àû£¬Äã»áÈçºÎÑ¡Ôñ£¿" 
+buildversion default cb3 release
+set dmz_circle_reversed 1
+set scr_dmz_lootTableOption ReversedCircle
+set scr_dmz_buddymode 0
+ranked   
+nojip
+noteamsplitting
+noteambalancing
+minparty 0 
+maxparty 0
+//unlocklevelstart 1 
+unlocklevelend 70
+rule 1011 17 
+rule 3265 18 
+mp_battlecity,dmz,1
+homepagead 3
+
+// @LOGAS="Charge - Skirmish" WarGod warm round playlist
+playlist 216
+displayorder 1
+name chinese "Skirmish" 
+name english "ÊµÕ½¶Ô¿¹" 
+description chinese "Charge TDM with bots." 
+description english "³å·æ(Ëæ»úµØÍ¼)-³å·æÍÅ¶Ó¾º¼¼Ä£Ê½£¬ÈËÊý6V6£¬ËÀÍöºó¹Ì¶¨¸´»îµã¸´»î£¬ÔÚ10·ÖÖÓÄÚ£¬ÂÊÏÈ´ïµ½50»÷É±µÄ¶ÓÎé»ñÊ¤¡£" 
+buildversion default cb3 release
+//unlocklevelstart 1 
+unlocklevelend 70
+vsrule "6V6"
+combattraining
+onboardbonus 
+difficulty 0
+minparty 0 
+maxparty 0
+rule 1011 1 
+rule 3265 1 
+maxhumanplayersperteam 3
+rule scr_cha_scorelimit 50 
+rule scr_cha_timelimit 10 
+rule scr_cha_roundlimit 2
+rule scr_cha_roundswitch 2
+rule scr_cha_winlimit 1
+rule scr_cha_halftime 1
+rule scr_cha_scorelimithalftime 1
+mp_nuked,cha,1
+mp_mideast,cha,1
+mp_shipment_long,cha,1
+mp_cha_quad,cha,1
+mp_mountain,cha,1
+
+// @LOGAS="Search & Destroy - Skirmish" WarGod warm round playlist
+playlist 217
+displayorder 1
+name chinese "Skirmish" 
+name english "ÊµÕ½¶Ô¿¹" 
+description chinese "Take turns defending and destroying an objective." 
+description english "ÈËÊý6V6£¬½ø¹¥·½±ØÐëÔÚÊ±ÏÞÄÚÔÚÄ¿±êÎ»ÖÃ°²×°²¢Òý±¬Õ¨µ¯£¬·ÀÊØ·½Òª×èÖ¹Õ¨µ¯Òý±¬¡£ÂÊÏÈÈ¡Ê¤9»ØºÏµÄ¶ÓÎé»ñµÃ×îÖÕÊ¤Àû£¬»ØºÏÄÚ²»ÄÜÖØÉú£¬8»ØºÏºóË«·½»»±ß¡£"
+buildversion default cb3 release
+//unlocklevelstart 1
+unlocklevelend 70
+vsrule "6V6"
+combattraining
+onboardbonus
+difficulty 1
+minparty 0 
+maxparty 0
+rule 1011 1
+rule 3265 1
+maxhumanplayersperteam 3
+//mindlclevel 1
+mp_crash_tropical,sd,1
+mp_estate_tropical,sd,1
+mp_fav_tropical,sd,1
+mp_cross_fire,sd,1
+mp_mountain,sd,1
+mp_terminal_cls,sd,1
+mp_tunisia,sd,1
+mp_dome,sd,1
+
+// @LOGAS="BattleCityLeague - SOLO"
+playlist 220
+displayorder 1
+category 8
+name chinese "BattleCityLeague - SOLO" 
+name english "ÖÜÄ©ÓÂÕßÁªÈü µ¥ÈË" 
+overridename chinese "BattleCity League" 
+overridename english "ÖÜÄ©ÓÂÕßÁªÈü"
+description chinese "BattleCity League solo description" 
+description english "ÓÂÕßÓÎÏ·ÁªÈüµ¥ÈËÄ£Ê½¡£ÔÚ·ÏÆúµÄÎ´À´³ÇÊÐÖÐ£¬¿Ë·þ¶à±äµÄ×ÔÈ»»·¾³£¬ÊÕ¼¯ÎäÆ÷×°±¸£¬ÌÔÌ­ÆäËûÑ¡ÊÖ£¬³ÉÎª×îÇ¿ÓÂÕß£¡" 
+overridedescription chinese "BattleCity League Description" 
+overridedescription english "[ÁªÈüÃ¿ÖÜÁù¡¢ÈÕ 10µã-24µã¿ª·Å]ÔÚÓÂÕßÓÎÏ·³£¹æ±ÈÈüÖÐ³ÉÎªÓÅÊ¤Õß£¬ÒÔ»ñµÃÁªÈüÈë³¡È¯£¬¿É²ÎÓëÖÜÄ©ÓÂÕßÁªÈü¡£²ÎÓëÃ¿³¡ÁªÈü¶¼»áÓ®È¡»ý·Ö£¬²¢ÒÔ´Ë¶Ò»»·áºñ½±Àø¡£ÓÂÕß£¬ÔÚ¾Û¹âµÆÏÂµÄÎèÌ¨ÉÏÖ¤Ã÷ÄãµÄÊµÁ¦°É£¡" 
+buildversion default cb3 release
+//validtime1 0-24					//0-24, BJ time, seperate time buckets by ',', time buckets maximum is 3
+//validday1 0,1,2,3,4,5,6			// from 0: Sunday to 6: Saturday; comment validday if every day is valid
+//validdate1 2018/01/14-2020/04/02	// YYYY/MM/DD-YYYY/MM/DD, BJ time
+validtime2 10-24					
+validday2 0,6				
+validdate2 2018/04/03-2020/04/31
+set scr_dmz_buddymode 0
+ranked   
+nojip
+noteamsplitting
+noteambalancing
+minparty 0 
+maxparty 0
+//unlocklevelstart 1 
+unlocklevelend 70
+rule 1011 17 
+rule 3265 18
+mp_battlecity_mountains,dmz,3 
+mp_battlecity,dmz,1
+buddy_playlist 221
+
+// @LOGAS="BattleCity - BUDDY"
+playlist 221
+displayorder 2
+category 8
+name chinese "BattleCityLeague - BUDDY" 
+name english "ÖÜÄ©ÓÂÕßÁªÈü Ë«ÈË" 
+description chinese "You have one teammate, work together to emerge victorious." 
+description english "ÓÂÕßÓÎÏ·ÁªÈüË«ÈËÄ£Ê½¡£ÔÚ·ÏÆúµÄÎ´À´³ÇÊÐÖÐ£¬ºÍ¶ÓÓÑÒ»Æð£¬¿Ë·þ¶à±äµÄ×ÔÈ»»·¾³£¬ÊÕ¼¯ÎäÆ÷×°±¸£¬ÌÔÌ­ÆäËûÑ¡ÊÖ£¬³ÉÎª×îÇ¿¶ÓÎé£¡" 
+buildversion default cb3 release
+//validtime1 0-24					//0-24, BJ time, seperate time buckets by ',', time buckets maximum is 3
+//validday1 0,1,2,3,4,5,6				// from 0: Sunday to 6: Saturday; comment validday if every day is valid
+//validdate1 2018/01/14-2020/04/02	// YYYY/MM/DD-YYYY/MM/DD, BJ time
+validtime2 10-24					
+validday2 0,6				
+validdate2 2018/04/03-2020/04/31
+set scr_dmz_buddymode 1
+ranked
+nojip   
+noteamsplitting
+noteambalancing
+minparty 0 
+maxparty 2
+//unlocklevelstart 1 
+unlocklevelend 70
+rule 1011 16 
+rule 3265 18
+mp_battlecity_mountains,dmz,3 
+mp_battlecity,dmz,1
+
+// @LOGAS="Nuclear Football"
+playlist 237
+displayorder 143
+category 14
+name chinese "Nuclear Football" 
+name english "ºË×ÓéÏé­Çò" 
+description chinese "Advance the ball, touchdown and score." 
+description english "ÈËÊý5V5¡£Á½¶ÓÔÚÖÐÈ¦ÕùÇò£¬´øÇò½ø¹¥£¬Í¨¹ý´«Çò½«ÇòÍ¶½ø¶Ô·½ÇòÃÅµÃ·Ö¡£±ÈÈü½áÊø£¬·ÖÊý¸ßµÄ¶ÓÎé»ñÊ¤£¡" 
+buildversion default cb3 release
+ranked 
+itemban all_equ riotshield_mp gre_pulseradarr5rgpneon all_kis
+minparty 1 
+maxparty 5
+//unlocklevelstart 6 
+unlocklevelend 70
+vsrule "5V5"
+rule 1011 10
+rule 3265 10
+mp_nukearena_sh,nftbl,1

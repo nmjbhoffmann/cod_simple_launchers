@@ -43,5 +43,12 @@ namespace Call_of_Duty_WWII_Launcher
             p.Start();
             Environment.Exit(0);
         }
+
+        private void NameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            var ConfigFile = Path.GetFullPath("steam_api.ini");
+
+            NameTextBox.Text = IniFile.ReadValue(ConfigFile, "Configuration", "UserName");
+        }
     }
 }

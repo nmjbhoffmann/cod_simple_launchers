@@ -1,0 +1,10 @@
+[TLog]
+uiclickcount=0
+uiclick=0
+uipage=1
+uilastpages=0
+dwdsmm_number=30
+dwdsmm_initvalue=50
+dwdsmm_slope=1.9
+loadoutchangeevent=0
+uipage_limit=30

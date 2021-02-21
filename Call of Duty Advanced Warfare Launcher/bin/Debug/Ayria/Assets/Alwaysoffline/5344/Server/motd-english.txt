@@ -1,0 +1,4 @@
+ProjectNova uses Alwaysoffline based on the plugin system for Ayria.
+It allows you to play with bots offline.
+
+Based on Ayria code by @Converysstuff

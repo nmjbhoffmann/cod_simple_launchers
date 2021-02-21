@@ -1,0 +1,3480 @@
+version 1337
+
+rule scr_teambalance 0
+rule team_rebalance 0
+rule switchTeamDisabled 0
+rule ui_allow_teamchange 1
+set ui_allow_teamchange 1
+set r_splitscreen 1
+rule SetSplitScreen 1
+set SetSplitScreen 1
+rule split_screen_flag 1
+set split_screen_flag 1
+set sv_cheats 1
+rule sv_cheats 1
+rule developer 1
+set developer 1
+rule isdeveloper 1
+set isdeveloper 1
+set monkeytoy 0
+rule monkeytoy 0
+rule sv_allowClientConsole 1
+set sv_allowClientConsole 1
+rule scr_xpscale 2
+rule scr_thirdPerson 0
+rule scr_restxp_enable 1
+rule party_minlobbytime 60
+rule com_maxfps 120
+rule lootservice 1
+set lootservice 1
+set Live_LootService_Initialize 1
+rule Live_LootService_Initialize 1
+set Inventory_Initialize 1
+rule Inventory_Initialize 1
+rule logfile 1
+rule ds_dcid 0
+rule s_max_search_dcids 5
+rule dw_matchmaking_fall_off 1
+rule dw_matchmaking_enable_skill_based 0
+rule pt_allMembersDoQoSTimeout 8000
+set msg_field_delta2 0
+set validate_apply_revert 1
+set validate_drop_on_fail 1
+set split_screen_flag 1
+rule split_screen_flag 1
+set scr_game_season 1
+rule session_advertiseFailedSearchCount 3
+rule mm_skill_enforcement 1
+rule practiceroundgame 0
+rule scr_current_playlist 0
+rule bot_autoconnectdefault 0
+rule bot_difficultydefault 0
+rule scr_team_fftype 2
+rule weapon_restrict iw5_em1
+gametype tdm
+name english  "Team Deathmatch"
+name french "Match à mort par équipe"
+name italian "Deathmatch a squadre"
+name german "Team-Deathmatch"
+name spanish "Duelo por equipos"
+name spanishna "Duelo por equipos"
+name arabic "Team Deathmatch"
+name polish "DM drużynowy"
+name russian "Командный бой"
+name british "TEAM DEATHMATCH"
+abbrv english  "TDM"
+abbrv french "MME"
+abbrv italian "DMS"
+abbrv german "TDM"
+abbrv spanish "DPE"
+abbrv spanishna "DPE"
+abbrv arabic "TDM"
+abbrv polish "DMD"
+abbrv russian "КБ"
+abbrv british "TDM"
+script war
+teambased
+rule scr_war_scorelimit 150
+gametype c_tdm
+name english  "Classic Team Deathmatch"
+name french "MME Classique"
+name italian "Deathmatch a squadre Classico"
+name german "Klassisches Team-Deathmatch"
+name spanish "Duelo por equipos clásico"
+name spanishna "Duelo por equipos clásico"
+name portuguese "Mata-Mata em Equipe clássico"
+name japanese "CL TEAM DEATHMATCH"
+name arabic "Classic Team Deathmatch"
+name polish "DM drużynowy klasyczny"
+name russian "Командный бой. Классика"
+name british "CL TEAM DEATHMATCH"
+abbrv english "C TDM"
+abbrv french "MME C"
+abbrv italian "DMS C"
+abbrv german "K TDM"
+abbrv spanish "DPE C"
+abbrv spanishna "DPE C"
+abbrv portuguese "MME C"
+abbrv japanese "C TDM"
+abbrv arabic "C TDM"
+abbrv polish "DMD K"
+abbrv russian "КБ К"
+abbrv british "C TDM"
+script war
+teambased
+rule scr_game_high_jump 0
+rule scr_war_scorelimit 100
+gametype hc_tdm
+name english  "Hardcore Team Deathmatch"
+name french "MME Hardcore"
+name italian "DM a squadre Veterano"
+name german "Hardcore-Team-Deathmatch"
+name spanish "Duelo por equipos extremo"
+name spanishna "Duelo por equipos extremo"
+name portuguese "Mata-Mata em Equipe Extremo"
+name japanese "HC TEAM DEATHMATCH"
+name arabic "Hardcore Team Deathmatch"
+name polish "DM drużynowy hardcore"
+name russian "Командный бой. Хардкор"
+name british "HC TEAM DEATHMATCH"
+abbrv english "HC TDM"
+abbrv french "MME HC"
+abbrv italian "DMS VET"
+abbrv german "HC-TDM"
+abbrv spanish "DPE EX"
+abbrv spanishna "DPE EX"
+abbrv portuguese "MME EX"
+abbrv japanese "HC TDM"
+abbrv arabic "HC TDM"
+abbrv polish "DDM HC"
+abbrv russian "КБ ХК"
+abbrv british "HC TDM"
+script war
+teambased
+hardcore
+rule scr_team_fftype 1
+rule scr_player_healthregentime 0
+rule scr_player_maxhealth 30
+rule scr_war_waverespawndelay 0
+rule scr_game_allowkillcam 1
+rule scr_hardcore 1
+rule ui_hud_hardcore 1
+rule g_hardcore 1
+rule scr_war_scorelimit 100
+gametype conf_tdm
+name english  "Kill Confirmed"
+name french "Élimination confirmée"
+name italian "Uccisione confermata"
+name german "Abschuss bestätigt"
+name spanish "Baja confirmada"
+name spanishna "Baja confirmada"
+name portuguese "Baixa Confirmada"
+name japanese "KILL CONFIRMED"
+name arabic "Kill Confirmed"
+name polish "Likwidacja potw."
+name russian "Убийство подтв."
+name british "KILL CONFIRMED"
+abbrv english  "KC"
+abbrv french "EC"
+abbrv italian "UC"
+abbrv german "AB"
+abbrv spanish "BC"
+abbrv spanishna "BC"
+abbrv portuguese "BC"
+abbrv japanese "KC"
+abbrv arabic "KC"
+abbrv polish "LP"
+abbrv russian "УП"
+abbrv british "KC"
+script conf
+teambased
+gametype c_conf_tdm
+name english  "Classic Kill Confirmed"
+name french "EC Classique"
+name italian "Uccisione confermata Classico"
+name german "Klassisches Abschuss bestätigt"
+name spanish "Baja confirmada clásico"
+name spanishna "Baja confirmada clásico"
+name portuguese "Baixa Confirmada clássica"
+name japanese "CL KILL CONFIRMED"
+name arabic "Classic Kill Confirmed"
+name polish "Likwidacja potw. klasyczny"
+name russian "УП К"
+name british "CL KILL CONFIRMED"
+abbrv english  "C KC"
+abbrv french "EC C"
+abbrv italian "UC C"
+abbrv german "K AB"
+abbrv spanish "BC C"
+abbrv spanishna "BC C"
+abbrv portuguese "BC C"
+abbrv japanese "C KC"
+abbrv arabic "C KC"
+abbrv polish "LP K"
+abbrv russian "УП К"
+abbrv british "C KC"
+name russian  "УП К"
+script conf
+teambased
+rule scr_game_high_jump 0
+gametype hc_conf_tdm
+name english  "Hardcore Kill Confirmed"
+name french "EC Hardcore"
+name italian "Uccisione confermata Veterano"
+name german "Hardcore-Abschuss bestätigt"
+name spanish "Baja confirmada extremo"
+name spanishna "Baja confirmada extremo"
+name portuguese "Baixa Confirmada Extrema"
+name japanese "HC KILL CONFIRMED"
+name arabic "Hardcore Kill Confirmed"
+name polish "Likwidacja potw. hardcore"
+name russian "Убийство подтверж. Хардкор"
+name british "HC KILL CONFIRMED"
+abbrv english  "HC KC"
+abbrv french "EC HC"
+abbrv italian "UC VET"
+abbrv german "HC-AB"
+abbrv spanish "BC EX"
+abbrv spanishna "BC EX"
+abbrv portuguese "BC EX"
+abbrv japanese "HC KC"
+abbrv arabic "HC KC"
+abbrv polish "LP HC"
+abbrv russian "УП ХК"
+abbrv british "HC KC"
+script conf
+teambased
+hardcore
+rule scr_team_fftype 1
+rule scr_player_healthregentime 0
+rule scr_player_maxhealth 30
+rule scr_war_waverespawndelay 0
+rule scr_game_allowkillcam 1
+rule scr_hardcore 1
+rule ui_hud_hardcore 1
+rule g_hardcore 1
+rule scr_conf_scorelimit 85
+gametype momentum
+name english  "Momentum"
+name french "Avantage"
+name italian "Momentum"
+name german "Momentum"
+name spanish "Iniciativa"
+name spanishna "Iniciativa"
+name portuguese "Momento"
+name japanese "MOMENTUM"
+name arabic "Momentum"
+name polish "Impet"
+name russian "Импульс. "
+name british "MOMENTUM"
+abbrv english  "MENT"
+abbrv french "AVAN"
+abbrv italian "MENT"
+abbrv german "MENT"
+abbrv spanish "INIC"
+abbrv spanishna "INIC"
+abbrv portuguese "MOMEN"
+abbrv japanese "MENT"
+abbrv arabic "MENT"
+abbrv polish "IMP"
+abbrv russian "ИМП."
+abbrv british "MENT"
+script twar
+teambased
+rule scr_twar_minionsmax 0
+gametype dom
+name english  "Domination"
+name french "Domination"
+name italian "Dominio"
+name german "Herrschaft"
+name spanish "Dominio"
+name spanishna "Dominio"
+name portuguese "Dominação"
+name japanese "DOMINATION"
+name arabic "Domination"
+name polish "Dominacja"
+name russian "Подавление"
+name british "DOMINATION"
+abbrv english  "DOM"
+abbrv french "DOM"
+abbrv italian "DOM"
+abbrv german "HER"
+abbrv spanish "DOM"
+abbrv spanishna "DOM"
+abbrv portuguese "DOM"
+abbrv japanese "DOM"
+abbrv arabic "DOM"
+abbrv polish "DOM"
+abbrv russian "ПОД."
+abbrv british "DOM"
+script dom
+teambased
+gametype c_dom
+name english  "Classic Domination"
+name french "Domination Classique"
+name italian "Dominio Classico"
+name german "Klassische Herrschaft"
+name spanish "Dominio clásico"
+name spanishna "Dominio clásico"
+name portuguese "Dominação clássico"
+name japanese "CL DOMINATION"
+name arabic "Classic Domination"
+name polish "Dominacja klasyczny"
+name russian "Подавление. Классика"
+name british "CL DOMINATION"
+abbrv english  "C DOM"
+abbrv french "DOM C"
+abbrv italian "DOM C"
+abbrv german "K HER"
+abbrv spanish "DOM C"
+abbrv spanishna "DOM C"
+abbrv portuguese "DOM C"
+abbrv japanese "C DOM"
+abbrv arabic "C DOM"
+abbrv polish "DOM K"
+abbrv russian "ПОД. К"
+abbrv british "C DOM"
+script dom
+teambased
+rule scr_game_high_jump 0
+gametype hc_dom
+name english  "Hardcore Domination"
+name french "Domination Hardcore"
+name italian "Dominio Veterano"
+name german "Hardcore-Herrschaft"
+name spanish "Dominio extremo"
+name spanishna "Dominio extremo"
+name portuguese "Dominação Extrema"
+name japanese "HC DOMINATION"
+name arabic "Hardcore Domination"
+name polish "Dominacja hardcore"
+name russian "Подавление. Хардкор"
+name british "HC DOMINATION"
+abbrv english  "HC DOM"
+abbrv french "DOM HC"
+abbrv italian "DOM VET"
+abbrv german "HC-HER"
+abbrv spanish "DOM EX"
+abbrv spanishna "DOM EX"
+abbrv portuguese "DOM EX"
+abbrv japanese "HC DOM"
+abbrv arabic "HC DOM"
+abbrv polish "DOM HC"
+abbrv russian "ПОД. ХК"
+abbrv british "HC DOM"
+script dom
+teambased
+hardcore
+rule scr_team_fftype 1
+rule scr_player_healthregentime 0
+rule scr_player_maxhealth 30
+rule scr_war_waverespawndelay 0
+rule scr_game_allowkillcam 1
+rule scr_hardcore 1
+rule ui_hud_hardcore 1
+rule g_hardcore 1
+gametype sd
+name english  "Search and Destroy"
+name french "Recherche et destruction"
+name italian "Cerca e distruggi"
+name german "Suchen & Zerstören"
+name spanish "Buscar y destruir"
+name spanishna "Buscar y destruir"
+name portuguese "Localizar e Destruir"
+name japanese "SEARCH & DESTROY"
+name arabic "Search and Destroy"
+name polish "Znajdź i zniszcz"
+name russian "Найти и уничт."
+name british "SEARCH & DESTROY"
+abbrv english  "S&D"
+abbrv french "R&D"
+abbrv italian "CED"
+abbrv german "S&Z"
+abbrv spanish "BYD"
+abbrv spanishna "BYD"
+abbrv portuguese "L&D"
+abbrv japanese "S&D"
+abbrv arabic "S&D"
+abbrv polish "Z&Z"
+abbrv russian "НиУ"
+abbrv british "S&D"
+script sd
+teambased
+gametype c_sd
+name english  "Classic Search and Destroy"
+name french "R&D Classique"
+name italian "Cerca e distruggi Classico"
+name german "Klassisches Suchen & Zerstören"
+name spanish "Buscar y destruir clásico"
+name spanishna "Buscar y destruir clásico"
+name portuguese "Localizar e Destruir clássico"
+name japanese "CL SEARCH & DESTROY"
+name arabic "Classic Search and Destroy"
+name polish "Znajdź i zniszcz klasyczny"
+name russian "Найти и уничтожить. Классика"
+name british "CL SEARCH & DESTROY"
+abbrv english  "C S&D"
+abbrv french "R&D C"
+abbrv italian "CED C"
+abbrv german "K S&Z"
+abbrv spanish "BYD C"
+abbrv spanishna "BYD C"
+abbrv portuguese "L&D C"
+abbrv japanese "C S&D"
+abbrv arabic "C S&D"
+abbrv polish "Z&Z K"
+abbrv russian "НиУ К"
+abbrv british "C S&D"
+script sd
+teambased
+rule scr_game_high_jump 0
+gametype hc_sd
+name english  "Hardcore Search and Destroy"
+name french "R&D Hardcore"
+name italian "Cerca e distruggi Veterano"
+name german "Hardcore-Suchen & Zerstören"
+name spanish "Buscar y destruir extremo"
+name spanishna "Buscar y destruir extremo"
+name portuguese "Localizar e Destruir Extremo"
+name japanese "HC SEARCH & DESTROY"
+name arabic "Hardcore Search and Destroy"
+name polish "Znajdź i zniszcz HC"
+name russian "Найти и уничт. Хардкор."
+name british "HC SEARCH & DESTROY"
+abbrv english  "HC S&D"
+abbrv french "R&D HC"
+abbrv italian "CED VET"
+abbrv german "HC-S&Z"
+abbrv spanish "BYD EX"
+abbrv spanishna "BYD EX"
+abbrv portuguese "L&D EX"
+abbrv japanese "HC S&D"
+abbrv arabic "HC S&D"
+abbrv polish "Z&Z HC"
+abbrv russian "НиУ ХК"
+abbrv british "HC S&D"
+script sd
+teambased
+hardcore
+rule scr_team_fftype 1
+rule scr_player_maxhealth 30
+rule scr_player_healthregentime 0
+rule scr_game_allowkillcam 0
+rule scr_hardcore 1
+rule ui_hud_hardcore 1
+rule g_hardcore 1
+gametype sr
+name english  "Search and Rescue"
+name french "Recherche et sauvetage"
+name italian "Salvataggio"
+name german "Suchen & Retten"
+name spanish "Buscar y rescatar"
+name spanishna "Buscar y rescatar"
+name portuguese "Buscar e Resgatar"
+name japanese "SEARCH & RESCUE"
+name arabic "Search and Rescue"
+name polish "Znajdź i uratuj"
+name russian "Найти и спасти"
+name british "SEARCH & RESCUE"
+abbrv english  "S&R"
+abbrv french "R&S"
+abbrv italian "SAL"
+abbrv german "S&R"
+abbrv spanish "BYR"
+abbrv spanishna "BYR"
+abbrv portuguese "B&R"
+abbrv japanese "S&R"
+abbrv arabic "S&R"
+abbrv polish "Z&U"
+abbrv russian "НиС"
+abbrv british "S&R"
+script sr
+teambased
+gametype ffa
+name english  "Free-for-all"
+name french "Mêlée générale"
+name italian "Tutti contro tutti"
+name german "Frei für alle"
+name spanish "Contra todos"
+name spanishna "Contra todos"
+name portuguese "Contra Todos"
+name japanese "FREE-FOR-ALL"
+name arabic "Free-for-all"
+name polish "Deathmatch"
+name russian "Свободная игра"
+name british "FREE-FOR-ALL"
+abbrv english  "FFA"
+abbrv french "MG"
+abbrv italian "TCT"
+abbrv german "FFA"
+abbrv spanish "CT"
+abbrv spanishna "CT"
+abbrv portuguese "CT"
+abbrv japanese "FFA"
+abbrv arabic "FFA"
+abbrv polish "DM"
+abbrv russian "СИ"
+abbrv british "FFA"
+script dm
+gametype c_ffa
+name english  "Classic Free-for-all"
+name french "MG Classique"
+name italian "Tutti contro tutti Classico"
+name german "Klassisches Frei für alle"
+name spanish "Contra todos clásico"
+name spanishna "Contra todos clásico"
+name portuguese "Contra Todos clássico"
+name japanese "CL FREE-FOR-ALL"
+name arabic "Classic Free-for-all"
+name polish "Deathmatch klasyczny"
+name russian "Свободная игра. Классика"
+name british "CL FREE-FOR-ALL"
+abbrv english  "C FFA"
+abbrv french "MG C"
+abbrv italian "TCT C"
+abbrv german "K FFA"
+abbrv spanish "CT C"
+abbrv spanishna "CT C"
+abbrv portuguese "CT C"
+abbrv japanese "C FFA"
+abbrv arabic "C FFA"
+abbrv polish "DM K"
+abbrv russian "СИ К"
+abbrv british "C FFA"
+script dm
+rule scr_game_high_jump 0
+gametype hc_ffa
+name english  "Hardcore Free-for-all"
+name french "MG Hardcore"
+name italian "Tutti contro tutti Veterano"
+name german "Hardcore-Frei für alle"
+name spanish "Contra todos extremo"
+name spanishna "Contra todos extremo"
+name portuguese "Contra Todos Extremo"
+name japanese "HC FREE-FOR-ALL"
+name arabic "Hardcore Free-for-all"
+name polish "Deathmatch HC"
+name russian "Свободная игра. Хардкор"
+name british "HC FREE-FOR-ALL"
+abbrv english  "HC FFA"
+abbrv french "MG HC"
+abbrv italian "TCT VET"
+abbrv german "HC-FFA"
+abbrv spanish "CT EX"
+abbrv spanishna "CT EX"
+abbrv portuguese "CT EX"
+abbrv japanese "HC FFA"
+abbrv arabic "HC FFA"
+abbrv polish "DM HC"
+abbrv russian "СИ ХК"
+abbrv british "HC FFA"
+script dm
+hardcore
+rule scr_player_healthregentime 0
+rule scr_player_maxhealth 30
+rule scr_game_allowkillcam 0
+rule set scr_dm_playerrespawndelay 7
+gametype ctf
+name english  "Capture the Flag"
+name french "Capture du drapeau"
+name italian "Cattura la bandiera"
+name german "Capture the Flag"
+name spanish "Tomar la bandera"
+name spanishna "Tomar la bandera"
+name portuguese "Capture a Bandeira"
+name japanese "CAPTURE THE FLAG"
+name arabic "Capture the Flag"
+name polish "Zdobądź flagę"
+name russian "Захват флага"
+name british "CAPTURE THE FLAG"
+abbrv english  "CTF"
+abbrv french "CDD"
+abbrv italian "CLB"
+abbrv german "CTF"
+abbrv spanish "TLB"
+abbrv spanishna "TLB"
+abbrv portuguese "CAB"
+abbrv japanese "CTF"
+abbrv arabic "CTF"
+abbrv polish "ZF"
+abbrv russian "ЗФ"
+abbrv british "CTF"
+script ctf
+teambased
+gametype c_ctf
+name english  "Classic Capture the Flag"
+name french "CDD Classique"
+name italian "Cattura la bandiera Classico"
+name german "Klassisches Capture the Flag"
+name spanish "Tomar la bandera clásico"
+name spanishna "Tomar la bandera clásico"
+name portuguese "Capture a Bandeira clássico"
+name japanese "CL CAPTURE THE FLAG"
+name arabic "Classic Capture the Flag"
+name polish "Zdobądź flagę klasyczny"
+name russian "Захват флага. Классика"
+name british "CL CAPTURE THE FLAG"
+abbrv english  "C CTF"
+abbrv french "CDD C"
+abbrv italian "CLB C"
+abbrv german "K CTF"
+abbrv spanish "TLB C"
+abbrv spanishna "TLB C"
+abbrv portuguese "CAB C"
+abbrv japanese "C CTF"
+abbrv arabic "C CTF"
+abbrv polish "ZF K"
+abbrv russian "ЗФ К"
+abbrv british "C CTF"
+script ctf
+teambased
+rule scr_game_high_jump 0
+gametype comp_ctf
+name english  "Capture the Flag"
+name french "Capture du drapeau"
+name italian "Cattura la bandiera"
+name german "Capture the Flag"
+name spanish "Tomar la bandera"
+name spanishna "Capturar la bandera"
+name portuguese "Capture a Bandeira"
+name japanese "CAPTURE THE FLAG"
+name arabic "Capture the Flag"
+name polish "Zdobądź flagę"
+name russian "Захват флага"
+name british "CAPTURE THE FLAG"
+abbrv english  "CTF"
+abbrv french "CDD"
+abbrv italian "CLB"
+abbrv german "CTF"
+abbrv spanish "TLB"
+abbrv spanishna "TLB"
+abbrv portuguese "CAB"
+abbrv japanese "CTF"
+abbrv arabic "CTF"
+abbrv polish "ZF"
+abbrv russian "ЗФ"
+abbrv british "CTF"
+script ctf
+recipe 0
+teambased
+gametype comp_sd
+name english  "Search and Destroy"
+name french "Recherche et destruction"
+name italian "Cerca e distruggi"
+name german "Suchen & Zerstören"
+name spanish "Buscar y destruir"
+name spanishna "Buscar y destruir"
+name portuguese "Localizar e Destruir"
+name japanese "SEARCH & DESTROY"
+name arabic "Search and Destroy"
+name polish "Znajdź i zniszcz"
+name russian "Найти и уничт."
+name british "SEARCH & DESTROY"
+abbrv english  "S&D"
+abbrv french "R&D"
+abbrv italian "CED"
+abbrv german "S&Z"
+abbrv spanish "BYD"
+abbrv spanishna "BYD"
+abbrv portuguese "L&D"
+abbrv japanese "S&D"
+abbrv arabic "S&D"
+abbrv polish "Z&Z"
+abbrv russian "НиУ"
+abbrv british "S&D"
+script sd
+recipe 1
+teambased
+gametype comp_hp
+name english  "Hardpoint"
+name french "Point stratégique"
+name italian "Postazione"
+name german "Stellung"
+name spanish "Punto caliente"
+name spanishna "Punto caliente"
+name portuguese "Zona de Conflito"
+name japanese "HARDPOINT"
+name arabic "Hardpoint"
+name polish "Umocniony punkt"
+name russian "Опорный пункт"
+name british "HARDPOINT"
+abbrv english  "HP"
+abbrv french "PS"
+abbrv italian "POS"
+abbrv german "STE"
+abbrv spanish "PC"
+abbrv spanishna "PC"
+abbrv portuguese "ZC"
+abbrv japanese "HP"
+abbrv arabic "HP"
+abbrv polish "UP"
+abbrv russian "ОП"
+abbrv british "HP"
+script hp
+recipe 2
+teambased
+gametype comp_uplink
+name english  "Uplink"
+name french "Liaison satellite"
+name italian "Uplink"
+name german "Uplink"
+name spanish "Enlace"
+name spanishna "Enlace"
+name portuguese "Link"
+name japanese "UPLINK"
+name arabic "Uplink"
+name polish "Uplink"
+name russian "Станция связи"
+name british "UPLINK"
+abbrv english  "LINK"
+abbrv french "LIAISON"
+abbrv italian "LINK"
+abbrv german "LINK"
+abbrv spanish "ENL"
+abbrv spanishna "ENL"
+abbrv portuguese "LINK"
+abbrv japanese "LINK"
+abbrv arabic "LINK"
+abbrv polish "LINK"
+abbrv russian "СВЯЗЬ"
+abbrv british "LINK"
+script ball
+recipe 3
+teambased
+gametype gun
+name english  "Gun Game"
+name french "Jeu d'armes"
+name italian "Gioco delle armi"
+name german "Waffenspiel"
+name spanish "Juego de armas"
+name spanishna "Juego de armas"
+name portuguese "Jogo de Armas"
+name japanese "GUN GAME"
+name arabic "Gun Game"
+name polish "Zabawa z bronią"
+name russian "Оружие"
+name british "GUN GAME"
+abbrv english  "GG"
+abbrv french "JA"
+abbrv italian "GDA"
+abbrv german "WS"
+abbrv spanish "JA"
+abbrv spanishna "JA"
+abbrv portuguese "JA"
+abbrv japanese "GG"
+abbrv arabic "GG"
+abbrv polish "ZzB"
+abbrv russian "Оружие"
+abbrv british "GG"
+script gun
+gametype infect
+name english  "Infected"
+name french "Infectés"
+name italian "Infetto"
+name german "Infiziert"
+name spanish "Infectado"
+name spanishna "Infectado"
+name portuguese "Infectado"
+name japanese "INFECTED"
+name arabic "Infected"
+name polish "Zarażony"
+name russian "Заражение"
+name british "INFECTED"
+abbrv english  "INF"
+abbrv french "INF"
+abbrv italian "INF"
+abbrv german "INF"
+abbrv spanish "INF"
+abbrv spanishna "INF"
+abbrv portuguese "INF"
+abbrv japanese "INF"
+abbrv arabic "INF"
+abbrv polish "ZAR"
+abbrv russian "Зар."
+abbrv british "INF"
+script infect
+gametype oneshot
+name english  "One Shot Team Deathmatch"
+name french "Match à mort par équipe en un coup"
+name italian "Deathmatch a squadre Un colpo"
+name german "Ein Schuss - Team-Deathmatch"
+name spanish "Duelo por equipos Un tiro"
+name spanishna "Duelo por equipos Un tiro"
+name portuguese "Mata-Mata em Equipe de Tiro Único"
+name japanese  "OS TEAM DEATHMATCH"
+name arabic "One Shot Team Deathmatch"
+name polish "Jeden strzał DM Drużynowy"
+name russian "Командный бой. ОВ"
+name british "OS TEAM DEATHMATCH"
+abbrv english  "ONE TDM"
+abbrv french "MME UN"
+abbrv italian "DMS UNO"
+abbrv german "EIN - TDM"
+abbrv spanish "DPE Un"
+abbrv spanishna "DPE Un"
+abbrv portuguese "MME TU"
+abbrv japanese  "ONE TDM"
+abbrv arabic "ONE TDM"
+abbrv polish "JS DMD"
+abbrv russian "КБ ОВ"
+abbrv british "ONE TDM"
+script war
+teambased
+recipe 4
+gametype oneshot_dom
+name english  "One Shot Domination"
+name french "Domination en un coup"
+name italian "Dominio Un colpo"
+name german "Ein Schuss - Herrschaft"
+name spanish "Dominio Un tiro"
+name spanishna "Dominio Un tiro"
+name portuguese "Dominação de Tiro Único"
+name japanese  "OS DOMINATION"
+name arabic "One Shot Domination"
+name polish "Jeden strzał Dominacja"
+name russian "Подавление. ОВ"
+name british "OS DOMINATION"
+abbrv english "ONE DOM"
+abbrv french "DOM UN"
+abbrv italian "DOM UNO"
+abbrv german "EIN - HER"
+abbrv spanish "DOM Un"
+abbrv spanishna "DOM Un"
+abbrv portuguese "DOM TU"
+abbrv japanese  "ONE DOM"
+abbrv arabic "ONE DOM"
+abbrv polish "JS DOM"
+abbrv russian "ПОД. ОВ"
+abbrv british "ONE DOM"
+script dom
+teambased
+recipe 5
+gametype oneshot_conf
+name english  "One Shot Kill Confirmed"
+name french "Élimination confirmée en un coup"
+name italian "Uccisione confermata Un colpo"
+name german "Ein Schuss - Abschuss bestätigt"
+name spanish "Baja confirmada Un tiro"
+name spanishna "Baja confirmada Un tiro"
+name portuguese "Baixa Confirmada de Tiro Único"
+name japanese  "OS KILL CONFIRMED"
+name arabic "One Shot Kill Confirmed"
+name polish "Jeden strzał Likwidacja potw."
+name russian "Убийство подтв. ОВ"
+name british "OS KILL CONFIRMED"
+abbrv english "ONE KC"
+abbrv french "ÉC UN"
+abbrv italian "UC UNO"
+abbrv german "EIN - AB"
+abbrv spanish "BC Un"
+abbrv spanishna "BC Un"
+abbrv portuguese "BC TU"
+abbrv japanese  "ONE KC"
+abbrv arabic "ONE KC"
+abbrv polish "JS LP"
+abbrv russian "УП ОВ"
+abbrv british "ONE KC"
+script conf
+teambased
+recipe 6
+gametype oneshot_dm
+name english  "One Shot Free-for-all"
+name french "Mêlée générale en un coup"
+name italian "Tutti contro tutti Un colpo"
+name german "Ein Schuss - Frei für alle"
+name spanish "Contra todos Un tiro"
+name spanishna "Contra todos Un tiro"
+name portuguese "Contra Todos de Tiro Único"
+name japanese  "OS FREE-FOR-ALL"
+name arabic "One Shot Free-for-all"
+name polish "Jeden strzał Deathmatch"
+name russian "Свободная игра. ОВ"
+name british "OS FREE-FOR-ALL"
+abbrv english "ONE FFA"
+abbrv french "MG UN"
+abbrv italian "TCT UNO"
+abbrv german "EIN - FFA"
+abbrv spanish "CT Un"
+abbrv spanishna "CT Un"
+abbrv portuguese "CT TU"
+abbrv japanese  "ONE FFA"
+abbrv arabic "ONE FFA"
+abbrv polish "JS DM"
+abbrv russian "СИ ОВ"
+abbrv british "ONE FFA"
+script dm
+recipe 7
+gametype oneshot_hp
+name english  "One Shot Hardpoint"
+name french "Point stratégique en un coup"
+name italian "Postazione Un colpo"
+name german "Ein Schuss - Stellung"
+name spanish "Punto caliente Un tiro"
+name spanishna "Punto caliente Un tiro"
+name portuguese "Zona de Conflito de Tiro Único"
+name japanese  "OS HARDPOINT"
+name arabic "One Shot Hardpoint"
+name polish "Jeden strzał Umocniony punkt"
+name russian "Опорный пункт. ОВ"
+name british "OS HARDPOINT"
+abbrv english "ONE HP"
+abbrv french "PS UN"
+abbrv italian "POS UNO"
+abbrv german "EIN - STE"
+abbrv spanish "PC Un"
+abbrv spanishna "PC Un"
+abbrv portuguese "ZC TU"
+abbrv japanese "ONE HP"
+abbrv arabic "ONE HP"
+abbrv polish "JS UP"
+abbrv russian "ОП ОВ"
+abbrv british "ONE HP"
+script hp
+teambased
+recipe 8
+gametype hp
+name english  "Hardpoint"
+name french "Point stratégique"
+name italian "Postazione"
+name german "Stellung"
+name spanish "Punto caliente"
+name spanishna "Punto caliente"
+name portuguese "Zona de Conflito"
+name japanese "HARDPOINT"
+name arabic "Hardpoint"
+name polish "Umocniony punkt"
+name russian "Опорный пункт"
+name british "HARDPOINT"
+abbrv english  "HP"
+abbrv french "PS"
+abbrv italian "POS"
+abbrv german "STE"
+abbrv spanish "PC"
+abbrv spanishna "PC"
+abbrv portuguese "ZC"
+abbrv japanese "HP"
+abbrv arabic "HP"
+abbrv polish "UP"
+abbrv russian "ОП"
+abbrv british "HP"
+script hp
+teambased
+gametype uplink
+name english  "Uplink"
+name french "Liaison satellite"
+name italian "Uplink"
+name german "Uplink"
+name spanish "Enlace"
+name spanishna "Enlace"
+name portuguese "Link"
+name japanese "UPLINK"
+name arabic "Uplink"
+name polish "Uplink"
+name russian "Станция связи"
+name british "UPLINK"
+abbrv english  "LINK"
+abbrv french "LIAISON"
+abbrv italian "LINK"
+abbrv german "LINK"
+abbrv spanish "ENL"
+abbrv spanishna "ENL"
+abbrv portuguese "LINK"
+abbrv japanese "LINK"
+abbrv arabic "LINK"
+abbrv polish "LINK"
+abbrv russian "СВЯЗЬ"
+abbrv british "LINK"
+script ball
+teambased
+gametype horde
+name english  "Exo Survival"
+name french "Exo-survie"
+name italian "Sopravvivenza Exo"
+name german "Exo-Überlebenskampf"
+name spanish "Supervivencia exo"
+name spanishna "Sobrevivencia exo"
+name portuguese "Sobrevivência Exo"
+name japanese "EXO SURVIVAL"
+name arabic "Exo Survival"
+name polish "Egzo przetrwanie"
+name russian "Экзо-выживание"
+name british "EXO SURVIVAL"
+abbrv english  "Exo Survival"
+abbrv french "Exo-survie"
+abbrv italian "Sopravv. Exo"
+abbrv german "Exo-Überleben"
+abbrv spanish "Superv. exo"
+abbrv spanishna "Sobrev. exo"
+abbrv portuguese "Sobrev. Exo"
+abbrv japanese "EXO SURVIVAL"
+abbrv arabic "Exo Survival"
+abbrv polish "Egzo przetr."
+abbrv russian "Экзо-выживание"
+abbrv british "EXO SURVIVAL"
+script horde
+teambased
+rule scr_game_high_jump 1
+rule party_playersCoop 1
+gametype zombies
+name english  "Exo Zombies"
+name french "Zombies"
+name italian "Zombi"
+name german "Zombies"
+name spanish "Zombis"
+name spanishna "Zombis"
+name portuguese "Zumbis"
+name japanese  "Exo Zombies"
+name arabic "Zombies"
+name polish "Zombie"
+name russian "Зомби"
+name british "ZOMBIES"
+abbrv english  "Exo Zombies"
+abbrv french "Exo-Zombies"
+abbrv italian "Exo zombi"
+abbrv german "Exo-Zombies"
+abbrv spanish "Exo zombis"
+abbrv spanishna "Exo zombis"
+abbrv portuguese "Exo Zumbis"
+abbrv japanese  "Exo Zombies"
+abbrv arabic "Exo Zombies"
+abbrv polish "Egzo Zombie"
+abbrv russian "Экзо-зомби"
+abbrv british "EXO ZOMBIES"
+script zombies
+rule scr_game_high_jump 1
+rule party_playersCoop 1
+
+
+
+
+//################################################################################################
+playlist 1 // tdm gametype
+name english  "Team Deathmatch"
+name french "Match à mort par équipe"
+name italian "Deathmatch a squadre"
+name german "Team-Deathmatch"
+name spanish "Duelo por equipos"
+name spanishna "Duelo por equipos"
+name portuguese "Mata-Mata em Equipe"
+name japanese "TEAM DEATHMATCH"
+name arabic "Team Deathmatch"
+name polish "DM drużynowy"
+name russian "Командный бой"
+name british "TEAM DEATHMATCH"
+description english  "Eliminate the enemy team to score.  First team to reach the score limit wins."
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule party_minplayers 2
+rule party_maxplayers 12
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+image "icon_pl_exo_team_deathmatch"
+mp_refraction,tdm,1
+mp_greenband,tdm,1
+mp_solar,tdm,1
+mp_levity,tdm,1
+mp_prison,tdm,1
+mp_laser2,tdm,1
+mp_lab2,tdm,1
+mp_instinct,tdm,1
+mp_detroit,tdm,1
+mp_terrace,tdm,1
+mp_comeback,tdm,1
+mp_recovery,tdm,1
+mp_venus,tdm,1
+mp_dam,tdm,1
+mp_clowntown3,tdm,1
+mp_torqued,tdm,1
+mp_lost,tdm,1
+mp_urban,tdm,1
+mp_blackbox,tdm,1
+mp_climate_3,tdm,1
+mp_perplex_1,tdm,1
+mp_spark,tdm,1
+
+//################################################################################################
+playlist 2 // dom gametype
+name english  "Domination"
+name french "Domination"
+name italian "Dominio"
+name german "Herrschaft"
+name spanish "Dominio"
+name spanishna "Dominio"
+name portuguese "Dominação"
+name japanese "DOMINATION"
+name arabic "Domination"
+name polish "Dominacja"
+name russian "Подавление"
+name british "DOMINATION"
+description english  "Capture and hold the designated positions to score.  The first team to reach the score limit wins."
+DESCRIPTION french "Capturez et tenez les positions désignées pour marquer. La première équipe à atteindre la limite de score gagne."
+DESCRIPTION italian "Cattura e difendi le posizioni designate per segnare punti. Vince la prima squadra che raggiunge il punteggio stabilito."
+DESCRIPTION german "Nehmen Sie die angegebenen Positionen ein und halten Sie sie, um zu punkten. Das Team, das zuerst das Punktelimit erreicht, gewinnt."
+DESCRIPTION spanish "Toma y mantén las posiciones marcadas para puntuar. El primer equipo en alcanzar la puntuación gana."
+DESCRIPTION spanishna "Toma y mantén las posiciones marcadas para puntuar. El primer equipo en alcanzar la puntuación gana."
+DESCRIPTION portuguese "Capture e mantenha as posições designadas para pontuar. A primeira equipe a alcançar o limite de pontos vence."
+DESCRIPTION japanese "指定された地点を確保し 奪われないように防衛 先にポイント制限に到達 / 時間制限に到達した 時点で ポイントの高い チームが勝利"
+DESCRIPTION arabic "Capture and hold the designated positions to score.  The first team to reach the score limit wins."
+DESCRIPTION polish "Zdobądź i utrzymaj określone miejsca na mapie. Pierwsza drużyna, która osiągnie limit punktów, wygrywa."
+DESCRIPTION russian "Захватывайте и удерживайте указанные позиции, чтобы получать очки. Побеждает команда, первой набравшая нужное количество очков."
+DESCRIPTION british "指定された地点を確保し 奪われないように防衛 先にポイント制限に到達 / 時間制限に到達した 時点で ポイントの高い チームが勝利"
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+image "icon_pl_exo_domination"
+mp_refraction,dom,1
+mp_greenband,dom,1
+mp_solar,dom,1
+mp_levity,dom,1
+mp_prison,dom,1
+mp_laser2,dom,1
+mp_lab2,dom,1
+mp_instinct,dom,1
+mp_detroit,dom,1
+mp_terrace,dom,1
+mp_comeback,dom,1
+mp_recovery,dom,1
+mp_venus,dom,1
+mp_dam,dom,1
+mp_clowntown3,dom,1
+mp_torqued,dom,1
+mp_lost,dom,1
+mp_urban,dom,1
+mp_blackbox,dom,1
+mp_climate_3,dom,1
+mp_perplex_1,dom,1
+mp_spark,dom,1
+
+//################################################################################################
+playlist 3 // conf_tdm gametype
+name english "Kill Confirmed"
+name french "Élimination confirmée"
+name italian "Uccisione confermata"
+name german "Abschuss bestätigt"
+name spanish "Baja confirmada"
+name spanishna "Baja confirmada"
+name portuguese "Baixa Confirmada"
+name japanese "KILL CONFIRMED"
+name arabic "Kill Confirmed"
+name polish "Likwidacja potw."
+name russian "Убийство подтв."
+name british "KILL CONFIRMED"
+description english  "Eliminate enemies and pick up their dog tags to score. First team to reach the score limit wins."
+DESCRIPTION french "Éliminez les ennemis et récupérez leurs plaques pour marquer. La première équipe à atteindre la limite de score gagne."
+DESCRIPTION italian "Elimina i nemici e raccogli le loro piastrine per segnare punti. Vince la prima squadra che raggiunge il punteggio stabilito."
+DESCRIPTION german "Schalten Sie Gegner aus und nehmen Sie ihre Marken auf, um zu punkten. Das Team, das zuerst das Punktelimit erreicht, gewinnt."
+DESCRIPTION spanish "Elimina a enemigos y coge sus chapas de identificación para puntuar. El primer equipo en alcanzar la puntuación gana."
+DESCRIPTION spanishna "Elimina a enemigos y recoge sus placas de identificación para puntuar. El primer equipo en alcanzar la puntuación gana."
+DESCRIPTION portuguese "Elimine inimigos e recolha suas plaquetas para pontuar. A primeira equipe a alcançar o limite de pontos vence."
+DESCRIPTION japanese "敵を排除し ドッグタグを回収 先にポイント制限に到達 / 時間制限に到達した 時点で ポイントの高い チームが勝利"
+DESCRIPTION arabic "Eliminate enemies and pick up their dog tags to score. First team to reach the score limit wins."
+DESCRIPTION polish "Eliminuj przeciwników, punkty otrzymujesz za zbieranie ich nieśmiertelników. Pierwsza drużyna, która osiągnie limit punktów, wygrywa."
+DESCRIPTION russian "Уничтожайте врагов и подбирайте их жетоны, чтобы получать очки. Побеждает команда, первой набравшая нужное количество очков."
+DESCRIPTION british "敵を排除し ドッグタグを回収 先にポイント制限に到達 / 時間制限に到達した 時点で ポイントの高い チームが勝利"
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule s_max_search_dcids 10
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+rule scr_conf_scorelimit 85
+image "icon_pl_exo_kill_confirmed"
+mp_refraction,conf_tdm,1
+mp_greenband,conf_tdm,1
+mp_solar,conf_tdm,1
+mp_levity,conf_tdm,1
+mp_prison,conf_tdm,1
+mp_laser2,conf_tdm,1
+mp_lab2,conf_tdm,1
+mp_instinct,conf_tdm,1
+mp_detroit,conf_tdm,1
+mp_terrace,conf_tdm,1
+mp_comeback,conf_tdm,1
+mp_recovery,conf_tdm,1
+mp_venus,conf_tdm,1
+mp_dam,conf_tdm,1
+mp_clowntown3,conf_tdm,1
+mp_torqued,conf_tdm,1
+mp_lost,conf_tdm,1
+mp_urban,conf_tdm,1
+mp_blackbox,conf_tdm,1
+mp_climate_3,conf_tdm,1
+mp_perplex_1,conf_tdm,1
+mp_spark,conf_tdm,1
+
+
+//################################################################################################
+playlist 4 // Ground War
+name english  "Ground War"
+name french "Guerre terrestre"
+name italian "Guerra terrestre"
+name german "Bodenangriff"
+name spanish "Guerra terrestre"
+name spanishna "Guerra terrestre"
+name portuguese "Guerra Terrestre"
+name japanese "GROUND WAR"
+name arabic "Ground War"
+name polish "Wojna naziemna"
+name russian "Наземная война"
+name british "GROUND WAR"
+description english  "Big team games of Team Deathmatch, Domination, and Kill Confirmed."
+DESCRIPTION french "Match à mort par équipe, Domination et Élimination confirmée avec des équipes plus grandes."
+DESCRIPTION italian "Grandi partite di Deathmatch a squadre, Dominio e Uccisione confermata."
+DESCRIPTION german "Große Teamspiele mit Team-Deathmatch, Herrschaft und Abschuss bestätigt."
+DESCRIPTION spanish "Partidas de Duelo por equipos, Dominio y Baja confirmada con equipos grandes."
+DESCRIPTION spanishna "Partidas de Duelo por equipos, Dominio y Baja confirmada con equipos grandes."
+DESCRIPTION portuguese "Grandes jogos em equipe de Mata-Mata em Equipe, Dominação e Baixa Confirmada."
+DESCRIPTION japanese "大規模チームによる Team Deathmatch / Domination / Kill Confirmed"
+DESCRIPTION arabic "Big team games of Team Deathmatch, Domination, and Kill Confirmed."
+DESCRIPTION polish "Gry dla większych drużyn w DM Drużynowy, Dominacja i Likwidacja potwierdzona."
+DESCRIPTION russian "Большие командные игры: Командный бой,  Подавление, Убийство подтверждаю."
+DESCRIPTION british "大規模チームによる Team Deathmatch / Domination / Kill Confirmed"
+unlockxp 0
+maxparty 9
+rule ds_dcid 0
+rule s_max_search_dcids 10
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+rule scr_war_scorelimit 100
+rule scr_conf_scorelimit 120
+image "icon_pl_exo_ground_war"
+mp_refraction,tdm,1
+mp_greenband,tdm,1
+mp_solar,tdm,1
+mp_levity,tdm,1
+mp_prison,tdm,1
+mp_laser2,tdm,1
+mp_lab2,tdm,1
+mp_instinct,tdm,1
+mp_detroit,tdm,1
+mp_terrace,tdm,1
+mp_comeback,tdm,1
+mp_recovery,tdm,1
+mp_venus,tdm,1
+mp_dam,tdm,1
+mp_clowntown3,tdm,1
+mp_torqued,tdm,1
+mp_lost,tdm,1
+mp_urban,tdm,1
+mp_blackbox,tdm,1
+mp_climate_3,tdm,1
+mp_perplex_1,tdm,1
+mp_spark,tdm,1
+mp_refraction,conf_tdm,1
+mp_greenband,conf_tdm,1
+mp_solar,conf_tdm,1
+mp_levity,conf_tdm,1
+mp_prison,conf_tdm,1
+mp_laser2,conf_tdm,1
+mp_lab2,conf_tdm,1
+mp_instinct,conf_tdm,1
+mp_detroit,conf_tdm,1
+mp_terrace,conf_tdm,1
+mp_comeback,conf_tdm,1
+mp_recovery,conf_tdm,1
+mp_venus,conf_tdm,1
+mp_dam,conf_tdm,1
+mp_clowntown3,conf_tdm,1
+mp_torqued,conf_tdm,1
+mp_lost,conf_tdm,1
+mp_urban,conf_tdm,1
+mp_blackbox,conf_tdm,1
+mp_climate_3,conf_tdm,1
+mp_perplex_1,conf_tdm,1
+mp_spark,conf_tdm,1
+mp_refraction,dom,1
+mp_greenband,dom,1
+mp_solar,dom,1
+mp_levity,dom,1
+mp_prison,dom,1
+mp_laser2,dom,1
+mp_lab2,dom,1
+mp_instinct,dom,1
+mp_detroit,dom,1
+mp_terrace,dom,1
+mp_comeback,dom,1
+mp_recovery,dom,1
+mp_venus,dom,1
+mp_dam,dom,1
+mp_clowntown3,dom,1
+mp_torqued,dom,1
+mp_lost,dom,1
+mp_urban,dom,1
+mp_blackbox,dom,1
+mp_climate_3,dom,1
+mp_perplex_1,dom,1
+mp_spark,dom,1
+
+//################################################################################################
+playlist 5 // uplink gametype
+name english  "Uplink"
+name french "Liaison satellite"
+name italian "Uplink"
+name german "Uplink"
+name spanish "Enlace"
+name spanishna "Enlace"
+name portuguese "Link"
+name japanese "UPLINK"
+name arabic "Uplink"
+name polish "Uplink"
+name russian "Станция связи"
+name british "UPLINK"
+description english  "Throw or carry the Satellite Drone to the Uplink Station to score."
+DESCRIPTION french "Portez ou lancez le drone satellite au poste de liaison pour marquer."
+DESCRIPTION italian "Trasporta o lancia il drone satellite nella stazione uplink per segnare punti."
+DESCRIPTION german "Werfen oder tragen Sie die Satellitendrohne zur Uplink-Station, um zu punkten."
+DESCRIPTION spanish "Lanza o lleva el dron satélite hasta el puesto de enlace para puntuar."
+DESCRIPTION spanishna "Lanza o lleva el dron satélite hasta el puesto de enlace para puntuar."
+DESCRIPTION portuguese "Arremesse ou carregue o VANT satélite até a estação de link para pontuar."
+DESCRIPTION japanese "サテライトをアップリンクへ 持ったまま入るか 投げ入れてポイント獲得"
+DESCRIPTION arabic "Throw or carry the Satellite Drone to the Uplink Station to score."
+DESCRIPTION polish "Wrzuć lub donieś drona satelitarnego do stacji łączności, by zdobywać punkty."
+DESCRIPTION russian "Добросьте или донесите спутниковый дрон до станции связи, чтобы получить очки."
+DESCRIPTION british "サテライトをアップリンクへ 持ったまま入るか 投げ入れてポイント獲得"
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule s_max_search_dcids 10
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+image "icon_pl_exo_uplink"
+mp_refraction,uplink,1
+mp_greenband,uplink,1
+mp_solar,uplink,1
+mp_levity,uplink,1
+mp_prison,uplink,1
+mp_laser2,uplink,1
+mp_lab2,uplink,1
+mp_instinct,uplink,1
+mp_detroit,uplink,1
+mp_terrace,uplink,1
+mp_comeback,uplink,1
+mp_recovery,uplink,1
+mp_venus,uplink,1
+mp_dam,uplink,1
+mp_clowntown3,uplink,1
+mp_torqued,uplink,1
+mp_lost,uplink,1
+mp_urban,uplink,1
+mp_blackbox,uplink,1
+mp_climate_3,uplink,1
+mp_perplex_1,uplink,1
+mp_spark,uplink,1
+
+//################################################################################################
+playlist 6 // momentum gametype
+name english  "Momentum"
+name french "Avantage"
+name italian "Momentum"
+name german "Momentum"
+name spanish "Iniciativa"
+name spanishna "Iniciativa"
+name portuguese "Momento"
+name japanese "MOMENTUM"
+name arabic "Momentum"
+name polish "Impet"
+name russian "Импульс"
+name british "MOMENTUM"
+description english  "Capture all the flags to win. Kill enemies to increase momentum and capture flags faster."
+DESCRIPTION french "Capturez tous les drapeaux pour gagner. Tuez les ennemis pour améliorer votre avantage et capturer les drapeaux plus vite."
+DESCRIPTION italian "Cattura tutte le bandiere per vincere. Uccidi i nemici per aumentare il momentum e catturare le bandiere più in fretta."
+DESCRIPTION german "Nehmen Sie alle Flaggen ein, um zu gewinnen. Töten Sie Feinde, um Ihr Momentum zu steigern und schneller Flaggen einzunehmen."
+DESCRIPTION spanish "Toma todas las banderas para ganar. Mata a enemigos para aumentar la iniciativa y tomar banderas más rápido."
+DESCRIPTION spanishna "Toma todas las banderas para ganar. Mata a enemigos para aumentar la iniciativa y tomar banderas más rápido."
+DESCRIPTION portuguese "Capture todas as bandeiras para vencer. Mate inimigos para aumentar o momento e capturar bandeiras mais rápido."
+DESCRIPTION japanese "全フラッグを先取することでポイントを獲得 敵プレイヤーをキル / フラッグを確保 すると モーメンタム増加 (フラッグ確保時間短縮)"
+DESCRIPTION arabic "Capture all the flags to win. Kill enemies to increase momentum and capture flags faster."
+DESCRIPTION polish "Zdobądź wszystkie flagi. Eliminuj przeciwników, aby osiągnąć przewagę i łatwiej zdobywać flagi."
+DESCRIPTION russian "Для победы необходимо захватить все флаги. Убивайте врагов, чтобы увеличить импульс и быстрее захватывать флаги."
+DESCRIPTION british "全フラッグを先取することでポイントを獲得 敵プレイヤーをキル / フラッグを確保 すると モーメンタム増加 (フラッグ確保時間短縮)"
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule s_max_search_dcids 10
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+image "icon_pl_exo_momentum"
+mp_refraction,momentum,1
+mp_greenband,momentum,1
+mp_solar,momentum,1
+mp_levity,momentum,1
+mp_prison,momentum,1
+mp_laser2,momentum,1
+mp_lab2,momentum,1
+mp_instinct,momentum,1
+mp_detroit,momentum,1
+mp_terrace,momentum,1
+mp_comeback,momentum,1
+mp_recovery,momentum,1
+mp_venus,momentum,1
+mp_dam,momentum,1
+mp_clowntown3,momentum,1
+mp_torqued,momentum,1
+mp_lost,momentum,1
+mp_urban,momentum,1
+mp_blackbox,momentum,1
+mp_climate_3,momentum,1
+mp_perplex_1,momentum,1
+mp_spark,momentum,1
+
+//################################################################################################
+playlist 7 // hp gametype
+name english  "Hardpoint"
+name french "Point stratégique"
+name italian "Postazione"
+name german "Stellung"
+name spanish "Punto caliente"
+name spanishna "Punto caliente"
+name portuguese "Zona de Conflito"
+name japanese "HARDPOINT"
+name arabic "Hardpoint"
+name polish "Umocniony punkt"
+name russian "Опорный пункт"
+name british "HARDPOINT"
+description english  "Capture and hold the hardpoints to score.  First team to reach the score limit wins."
+DESCRIPTION french "Capturez et tenez les points stratégiques pour marquer. La première équipe à atteindre la limite de score gagne."
+DESCRIPTION italian "Cattura e difendi le postazioni per segnare punti. Vince la prima squadra che raggiunge il punteggio stabilito."
+DESCRIPTION german "Nehmen Sie die Stellungen ein und halten Sie sie, um zu punkten. Das Team, das zuerst das Punktelimit erreicht, gewinnt."
+DESCRIPTION spanish "Toma y mantén los puntos calientes para puntuar. El primer equipo en alcanzar la puntuación gana."
+DESCRIPTION spanishna "Toma y mantén los puntos calientes para puntuar. El primer equipo en alcanzar la puntuación gana."
+DESCRIPTION portuguese "Capture e mantenha as zonas de conflito para pontuar. A primeira equipe a alcançar o limite de pontos vence."
+DESCRIPTION japanese "ハードポイントを奪取して防衛 先にポイント制限に到達 / 時間制限に到達した 時点で ポイントの高い チームが勝利"
+DESCRIPTION arabic "Capture and hold the hardpoints to score.  First team to reach the score limit wins."
+DESCRIPTION polish "Zdobądź i utrzymaj umocniony punkt. Pierwsza drużyna, która osiągnie limit punktów, wygrywa."
+DESCRIPTION russian "Захватывайте и удерживайте опорные точки, чтобы получать очки. Побеждает команда, первой набравшая нужное количество очков."
+DESCRIPTION british "ハードポイントを奪取して防衛 先にポイント制限に到達 / 時間制限に到達した 時点で ポイントの高い チームが勝利"
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule s_max_search_dcids 10
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+image "icon_pl_exo_hardpoint"
+mp_refraction,hp,1
+mp_greenband,hp,1
+mp_solar,hp,1
+mp_levity,hp,1
+mp_prison,hp,1
+mp_laser2,hp,1
+mp_lab2,hp,1
+mp_instinct,hp,1
+mp_detroit,hp,1
+mp_terrace,hp,1
+mp_comeback,hp,1
+mp_recovery,hp,1
+mp_venus,hp,1
+mp_dam,hp,1
+mp_clowntown3,hp,1
+mp_torqued,hp,1
+mp_lost,hp,1
+mp_urban,hp,1
+mp_blackbox,hp,1
+mp_climate_3,hp,1
+mp_perplex_1,hp,1
+mp_spark,hp,1
+
+//################################################################################################
+playlist 8 // sd gametype
+name english  "Search and Destroy"
+name french "Recherche et destruction"
+name italian "Cerca e distruggi"
+name german "Suchen & Zerstören"
+name spanish "Buscar y destruir"
+name spanishna "Buscar y destruir"
+name portuguese "Localizar e Destruir"
+name japanese "SEARCH & DESTROY"
+name arabic "Search and Destroy"
+name polish "Znajdź i zniszcz"
+name russian "Найти и уничт."
+name british "SEARCH & DESTROY"
+description english  "Teams take turns defending and destroying an objective."
+DESCRIPTION french "En alternance, chaque équipe doit défendre un objectif tandis que l'autre doit le détruire."
+DESCRIPTION italian "A turni, le squadre difendono il proprio obiettivo o distruggono quello avversario."
+DESCRIPTION german "Die Teams versuchen abwechselnd, ein Ziel zu verteidigen bzw. zu zerstören."
+DESCRIPTION spanish "Los equipos se turnan para defender y destruir un objetivo."
+DESCRIPTION spanishna "Los equipos se turnan para defender y destruir un objetivo."
+DESCRIPTION portuguese "Equipes se revezam defendendo e destruindo um objetivo."
+DESCRIPTION japanese "敵チームと交互に目標を 破壊 / 防衛"
+DESCRIPTION arabic "Teams take turns defending and destroying an objective."
+DESCRIPTION polish "Drużyny na zmianę bronią lub niszczą zadany cel."
+DESCRIPTION russian "Команды по очереди защищают и уничтожают цель."
+DESCRIPTION british "敵チームと交互に目標を 破壊 / 防衛"
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule s_max_search_dcids 10
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+image "icon_pl_exo_search_and_destroy"
+mp_refraction,sd,1
+mp_greenband,sd,1
+mp_solar,sd,1
+mp_levity,sd,1
+mp_prison,sd,1
+mp_laser2,sd,1
+mp_lab2,sd,1
+mp_instinct,sd,1
+mp_detroit,sd,1
+mp_terrace,sd,1
+mp_comeback,sd,1
+mp_recovery,sd,1
+mp_venus,sd,1
+mp_dam,sd,1
+mp_clowntown3,sd,1
+mp_torqued,sd,1
+mp_lost,sd,1
+mp_urban,sd,1
+mp_blackbox,sd,1
+mp_climate_3,sd,1
+mp_perplex_1,sd,1
+mp_spark,sd,1
+
+//################################################################################################
+playlist 9 // sr gametype
+name english  "Search and Rescue"
+name french "Recherche et sauvetage"
+name italian "Salvataggio"
+name german "Suchen & Retten"
+name spanish "Buscar y rescatar"
+name spanishna "Buscar y rescatar"
+name portuguese "Buscar e Resgatar"
+name japanese "SEARCH & RESCUE"
+name arabic "Search and Rescue"
+name polish "Znajdź i uratuj"
+name russian "Найти и спасти"
+name british "SEARCH & RESCUE"
+description english  "Teams take turns defending and destroying an objective. Recover dog tags to allow or deny respawns."
+DESCRIPTION french "Les équipes devront tour à tour défendre et détruire un objectif. Récupérez les plaques pour permettre ou empêcher des réapparitions."
+DESCRIPTION italian "A turni, le squadre difendono o distruggono un obiettivo. Recupera le piastrine per consentire o impedire i rientri."
+DESCRIPTION german "Die Teams wechseln sich im Verteidigen und Zerstören von Zielen ab. Bergen Sie Marken, um anderen den Wiedereinstieg zu ermöglichen oder zu verwehren."
+DESCRIPTION spanish "Los equipos se turnan para defender y destruir un objetivo. Recupera chapas para permitir o negar reapariciones."
+DESCRIPTION spanishna "Los equipos se turnan para defender y destruir un objetivo. Recupera placas para permitir o negar reapariciones."
+DESCRIPTION portuguese "As equipes se revezam defendendo e destruindo um objetivo. Recupere plaquetas para permitir ou impedir reaparições."
+DESCRIPTION japanese "敵チームと交互に目標を 破壊 / 防衛 味方のドッグタグを回収してリスポーン支援 敵のドッグタグを回収してリスポーン阻止"
+DESCRIPTION arabic "Teams take turns defending and destroying an objective. Recover dog tags to allow or deny respawns."
+DESCRIPTION polish "Drużyny na zmianę bronią lub niszczą zadany cel. Zdobywaj nieśmiertelniki, aby umożliwić lub zablokować odradzanie."
+DESCRIPTION russian "Команды по очереди защищают и уничтожают цель. Собирайте жетоны, чтобы разрешать или запрещать возрождения."
+DESCRIPTION british "敵チームと交互に目標を 破壊 / 防衛 味方のドッグタグを回収してリスポーン支援 敵のドッグタグを回収してリスポーン阻止"
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule s_max_search_dcids 10
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+image "icon_pl_exo_search_and_rescue"
+mp_refraction,sr,1
+mp_greenband,sr,1
+mp_solar,sr,1
+mp_levity,sr,1
+mp_prison,sr,1
+mp_laser2,sr,1
+mp_lab2,sr,1
+mp_instinct,sr,1
+mp_detroit,sr,1
+mp_terrace,sr,1
+mp_comeback,sr,1
+mp_recovery,sr,1
+mp_venus,sr,1
+mp_dam,sr,1
+mp_clowntown3,sr,1
+mp_torqued,sr,1
+mp_lost,sr,1
+mp_urban,sr,1
+mp_blackbox,sr,1
+mp_climate_3,sr,1
+mp_perplex_1,sr,1
+mp_spark,sr,1
+
+//################################################################################################
+playlist 10 // ctf gametype
+name english  "Capture the Flag"
+name french "Capture du drapeau"
+name italian "Cattura la bandiera"
+name german "Capture the Flag"
+name spanish "Tomar la bandera"
+name spanishna "Tomar la bandera"
+name portuguese "Capture a Bandeira"
+name japanese "CAPTURE THE FLAG"
+name arabic "Capture the Flag"
+name polish "Zdobądź flagę"
+name russian "Захват флага"
+name british "CAPTURE THE FLAG"
+description english  "Capture the enemy flag to score."
+DESCRIPTION french "Capturez le drapeau ennemi pour marquer."
+DESCRIPTION italian "Cattura la bandiera nemica per segnare punti."
+DESCRIPTION german "Nehmen Sie die feindliche Flagge ein, um zu punkten."
+DESCRIPTION spanish "Toma la bandera enemiga para puntuar."
+DESCRIPTION spanishna "Toma la bandera enemiga para puntuar."
+DESCRIPTION portuguese "Capture a bandeira inimiga para pontuar."
+DESCRIPTION japanese "敵のフラッグを奪取して ポイント獲得"
+DESCRIPTION arabic "Capture the enemy flag to score."
+DESCRIPTION polish "Przejmij flagę przeciwników by zdobyć punkty."
+DESCRIPTION russian "Захватите вражеский флаг, чтобы получить очки."
+DESCRIPTION british "敵のフラッグを奪取して ポイント獲得"
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule s_max_search_dcids 10
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+image "icon_pl_exo_capture_the_flag"
+mp_refraction,ctf,1
+mp_greenband,ctf,1
+mp_solar,ctf,1
+mp_levity,ctf,1
+mp_prison,ctf,1
+mp_laser2,ctf,1
+mp_lab2,ctf,1
+mp_instinct,ctf,1
+mp_detroit,ctf,1
+mp_terrace,ctf,1
+mp_comeback,ctf,1
+mp_recovery,ctf,1
+mp_venus,ctf,1
+mp_dam,ctf,1
+mp_clowntown3,ctf,1
+mp_torqued,ctf,1
+mp_lost,ctf,1
+mp_urban,ctf,1
+mp_blackbox,ctf,1
+mp_climate_3,ctf,1
+mp_perplex_1,ctf,1
+mp_spark,ctf,1
+
+//################################################################################################
+playlist 11 // infect gametype
+name english  "Infected"
+name french "Infectés"
+name italian "Infetto"
+name german "Infiziert"
+name spanish "Infectado"
+name spanishna "Infectado"
+name portuguese "Infectado"
+name japanese  "Infected"
+name arabic "Infected"
+name polish "Zarażony"
+name russian "Заражение"
+name british "INFECTED"
+description english  "Eliminated Survivors become infected.  Infect everyone, or survive to win."
+DESCRIPTION french "Les survivants éliminés deviennent infectés. Infectez tout le monde ou survivez pour gagner."
+DESCRIPTION italian "I superstiti eliminati diventano infetti. Per vincere, infetta tutti o sopravvivi."
+DESCRIPTION german "Ausgeschaltete Überlebende werden zu Infizierten. Infizieren Sie alle oder überleben Sie, um zu gewinnen."
+DESCRIPTION spanish "Los eliminados quedarán infectados. Infecta a todos o sobrevive para ganar."
+DESCRIPTION spanishna "Los eliminados quedarán infectados. Infecta a todos o sobrevive para ganar."
+DESCRIPTION portuguese "Os sobreviventes eliminados ficam infectados. Infecte todos, ou sobreviva para vencer."
+DESCRIPTION japanese "インフェクテッドは全員を 「感染」 させると勝利 サバイバーは最後まで生き残ると勝利"
+DESCRIPTION arabic "Eliminated Survivors become infected.  Infect everyone, or survive to win."
+DESCRIPTION polish "Wyeliminowani stają się zarażonymi. Zaraź wszystkich lub przetrwaj, aby wygrać."
+DESCRIPTION russian "Убитые становятся зараженными. Чтобы победить, заразите всех или выживите."
+DESCRIPTION british "インフェクテッドは全員を 「感染」 させると勝利 サバイバーは最後まで生き残ると勝利"
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule s_max_search_dcids 10
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+image "icon_pl_exo_infected"
+mp_refraction,infect,1
+mp_greenband,infect,1
+mp_solar,infect,1
+mp_levity,infect,1
+mp_prison,infect,1
+mp_laser2,infect,1
+mp_lab2,infect,1
+mp_instinct,infect,1
+mp_detroit,infect,1
+mp_terrace,infect,1
+mp_comeback,infect,1
+mp_recovery,infect,1
+mp_venus,infect,1
+mp_dam,infect,1
+mp_clowntown3,infect,1
+mp_torqued,infect,1
+mp_lost,infect,1
+mp_urban,infect,1
+mp_blackbox,infect,1
+mp_climate_3,infect,1
+mp_perplex_1,infect,1
+mp_spark,infect,1
+
+//################################################################################################
+playlist 12 // ffa gametype
+name english  "Free-for-all"
+name french "Mêlée générale"
+name italian "Tutti contro tutti"
+name german "Frei für alle"
+name spanish "Contra todos"
+name spanishna "Contra todos"
+name portuguese "Contra Todos"
+name japanese "FREE-FOR-ALL"
+name arabic "Free-for-all"
+name polish "Deathmatch"
+name russian "Свободная игра"
+name british "FREE-FOR-ALL"
+description english  "Eliminate the enemies to score.  First player to reach the score limit wins."
+DESCRIPTION french "Éliminez les ennemis pour marquer des points. Le premier joueur à atteindre la limite de score gagne."
+DESCRIPTION italian "Elimina i nemici per segnare punti. Vince il primo giocatore che raggiunge il punteggio stabilito."
+DESCRIPTION german "Schalten Sie Gegner aus, um zu punkten. Der Spieler, der zuerst das Punktelimit erreicht, gewinnt."
+DESCRIPTION spanish "Elimina a los enemigos para puntuar. El primer jugador en alcanzar la puntuación gana."
+DESCRIPTION spanishna "Elimina a los enemigos para puntuar. El primer jugador en alcanzar la puntuación gana."
+DESCRIPTION portuguese "Elimine os inimigos para pontuar. O primeiro jogador a alcançar o limite de pontos vence."
+DESCRIPTION japanese "敵プレイヤーを排除 先にポイント制限に到達 / 時間制限に到達した時点で ポイントの高い プレイヤーが勝利"
+DESCRIPTION arabic "Eliminate the enemies to score.  First player to reach the score limit wins."
+DESCRIPTION polish "Eliminuj przeciwników. Pierwszy gracz, który osiągnie limit punktów, wygrywa."
+DESCRIPTION russian "Уничтожайте врагов, чтобы получать очки. Побеждает игрок, первым набравший нужное количество очков."
+DESCRIPTION british "敵プレイヤーを排除 先にポイント制限に到達 / 時間制限に到達した時点で ポイントの高い プレイヤーが勝利"
+unlockxp 0
+maxparty 1
+rule ds_dcid 0
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+rule mm_skill_enforcement 0
+image "icon_pl_exo_free_for_all"
+mp_refraction,ffa,1
+mp_greenband,ffa,1
+mp_solar,ffa,1
+mp_levity,ffa,1
+mp_prison,ffa,1
+mp_laser2,ffa,1
+mp_lab2,ffa,1
+mp_instinct,ffa,1
+mp_detroit,ffa,1
+mp_terrace,ffa,1
+mp_comeback,ffa,1
+mp_recovery,ffa,1
+mp_venus,ffa,1
+mp_dam,ffa,1
+mp_clowntown3,ffa,1
+mp_torqued,ffa,1
+mp_lost,ffa,1
+mp_urban,ffa,1
+mp_blackbox,ffa,1
+mp_climate_3,ffa,1
+mp_perplex_1,ffa,1
+mp_spark,ffa,1
+
+//################################################################################################
+playlist 24 // Competitive
+name english  "Ranked Play"
+name french "Partie avec classement"
+name italian "Partita classificata"
+name german "Ranglistenspiel"
+name spanish "Partidas de clasificación"
+name spanishna "Partidas de clasificación"
+name portuguese "Partidas por Ranking"
+name japanese "RANKED PLAY"
+name arabic "Ranked Play"
+name polish "Gra rankingowa"
+name russian "Соперничество"
+name british "RANKED PLAY"
+description english  "Season 7\nWin matches against players of your skill level to progress through the divisions and earn exclusive content playing in the eSport rule set and modes.\nNo guests allowed."
+unlockxp 0
+maxparty 4
+nojip
+rule noguests
+rule ds_dcid 0
+rule s_max_search_dcids 10
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule dw_matchmaking_enable_skill_based 1
+rule partyChatDisallowed 0
+set scr_game_division 1
+image "icon_pl_exo_competitive"
+mp_lab2,comp_uplink,1
+mp_comeback,comp_uplink,1
+mp_detroit,comp_uplink,1
+mp_lab2,comp_sd,1
+mp_detroit,comp_sd,1
+mp_recovery,comp_sd,1
+mp_prison,comp_sd,1
+mp_solar,comp_sd,1
+mp_lab2,comp_hp,1
+mp_detroit,comp_hp,1
+mp_venus,comp_hp,1
+mp_solar,comp_hp,1
+
+//################################################################################################
+playlist 13 // Hardcore Team Deathmatch
+name english "Hardcore Team Deathmatch"
+name french "MME Hardcore"
+name italian "DM a squadre Veterano"
+name german "Hardcore-Team-Deathmatch"
+name spanish "Duelo por equipos extremo"
+name spanishna "Duelo por equipos extremo"
+name portuguese "Mata-Mata em Equipe Extremo"
+name polish "DM drużynowy hardcore"
+name russian "Командный бой. Хардкор"
+name japanese "Hardcore Team Deathmatch"
+name arabic "Hardcore Team Deathmatch"
+name british "HC TEAM DEATHMATCH"
+description english  "Team Deathmatch with limited HUD, extra damage, and friendly fire enabled."
+DESCRIPTION french "Match à mort par équipe avec un ATH limité, des dégâts plus importants et le tir allié activé."
+DESCRIPTION italian "Deathmatch a squadre con interfaccia limitata, danni extra e fuoco amico abilitato."
+DESCRIPTION german "Team-Deathmatch mit eingeschränktem HUD, erhöhtem Schaden und aktiviertem Teambeschuss."
+DESCRIPTION spanish "Duelo por equipos con HUD limitado, daño adicional y fuego amigo activado."
+DESCRIPTION spanishna "Duelo por equipos con HUD limitado, daño adicional y fuego amigo activado."
+DESCRIPTION portuguese "Mata-Mata em Equipe com HUD limitado, dano extra e fogo amigo habilitado."
+DESCRIPTION japanese "Team Deathmatch (HUD 制限 / 追加ダメージ / 同士討ち有効)"
+DESCRIPTION arabic "Team Deathmatch with limited HUD, extra damage, and friendly fire enabled."
+DESCRIPTION polish "DM drużynowy z ograniczonym HUD, dodatkowymi obrażeniami i włączonym ostrzałem sojuszniczym."
+DESCRIPTION russian "Командный бой  с ограниченным интерфейсом , дополнительным уроном и возможностью огня по своим."
+DESCRIPTION british "Team Deathmatch (HUD 制限 / 追加ダメージ / 同士討ち有効)"
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule scr_team_teamkillkicklimit 0
+rule netconststrings_warnings 0
+image "icon_pl_hrd_team_deathmatch"
+mp_refraction,hc_tdm,1
+mp_greenband,hc_tdm,1
+mp_solar,hc_tdm,1
+mp_levity,hc_tdm,1
+mp_prison,hc_tdm,1
+mp_laser2,hc_tdm,1
+mp_lab2,hc_tdm,1
+mp_instinct,hc_tdm,1
+mp_detroit,hc_tdm,1
+mp_terrace,hc_tdm,1
+mp_comeback,hc_tdm,1
+mp_recovery,hc_tdm,1
+mp_venus,hc_tdm,1
+mp_dam,hc_tdm,1
+mp_clowntown3,hc_tdm,1
+mp_torqued,hc_tdm,1
+mp_lost,hc_tdm,1
+mp_urban,hc_tdm,1
+mp_blackbox,hc_tdm,1
+mp_climate_3,hc_tdm,1
+mp_perplex_1,hc_tdm,1
+mp_spark,hc_tdm,1
+
+//################################################################################################
+playlist 14 // Hardcore Kill Confirmed
+name english  "Hardcore Kill Confirmed"
+name french "Élim. conf. Hardcore"
+name italian "Uccisione confermata Veterano"
+name german "Hardcore-Abschuss bestätigt"
+name spanish "Baja confirmada extremo"
+name spanishna "Baja confirmada extremo"
+name portuguese "Baixa Confirmada Extrema"
+name japanese "HC KILL CONFIRMED"
+name arabic "Hardcore Kill Confirmed"
+name polish "Likwidacja potw. hardcore"
+name russian "Убийство подтверж. Хардкор"
+name british "HC KILL CONFIRMED"
+description english  "Kill Confirmed with limited HUD, extra damage, and friendly fire enabled."
+DESCRIPTION french "Élimination confirmée avec un ATH limité, des dégâts plus importants et le tir allié activé."
+DESCRIPTION italian "Uccisione confermata con interfaccia limitata, danni extra e fuoco amico abilitato."
+DESCRIPTION german "Abschuss bestätigt mit eingeschränktem HUD, erhöhtem Schaden und aktiviertem Teambeschuss."
+DESCRIPTION spanish "Baja confirmada con HUD limitado, daño adicional y fuego amigo activado."
+DESCRIPTION spanishna "Baja confirmada con HUD limitado, daño adicional y fuego amigo activado."
+DESCRIPTION portuguese "Baixa Confirmada com HUD limitado, dano extra e fogo amigo habilitado."
+DESCRIPTION japanese "Kill Confirmed (HUD 制限 / 追加ダメージ / 同士討ち有効)"
+DESCRIPTION arabic "Kill Confirmed with limited HUD, extra damage, and friendly fire enabled."
+DESCRIPTION polish "Likwidacja potwierdzona z ograniczonym HUD, dodatkowymi obrażeniami i włączonym ostrzałem sojuszniczym."
+DESCRIPTION russian "Убийство подтверждаю  с ограниченным интерфейсом , дополнительным уроном и возможностью огня по своим."
+DESCRIPTION british "Kill Confirmed (HUD 制限 / 追加ダメージ / 同士討ち有効)"
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule scr_team_teamkillkicklimit 3
+rule netconststrings_warnings 0
+image "icon_pl_hrd_kill_confirmed"
+mp_refraction,hc_conf_tdm,1
+mp_greenband,hc_conf_tdm,1
+mp_solar,hc_conf_tdm,1
+mp_levity,hc_conf_tdm,1
+mp_prison,hc_conf_tdm,1
+mp_laser2,hc_conf_tdm,1
+mp_lab2,hc_conf_tdm,1
+mp_instinct,hc_conf_tdm,1
+mp_detroit,hc_conf_tdm,1
+mp_terrace,hc_conf_tdm,1
+mp_comeback,hc_conf_tdm,1
+mp_recovery,hc_conf_tdm,1
+mp_venus,hc_conf_tdm,1
+mp_dam,hc_conf_tdm,1
+mp_clowntown3,hc_conf_tdm,1
+mp_torqued,hc_conf_tdm,1
+mp_lost,hc_conf_tdm,1
+mp_urban,hc_conf_tdm,1
+mp_blackbox,hc_conf_tdm,1
+mp_climate_3,hc_conf_tdm,1
+mp_perplex_1,hc_conf_tdm,1
+mp_spark,hc_conf_tdm,1
+
+//################################################################################################
+playlist 15 // Hardcore Domination
+name english  "Hardcore Domination"
+description english  "Domination with limited HUD, extra damage, and friendly fire enabled."
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule scr_team_teamkillkicklimit 3
+rule netconststrings_warnings 0
+image "icon_pl_hrd_domination"
+mp_refraction,hc_dom,1
+mp_greenband,hc_dom,1
+mp_solar,hc_dom,1
+mp_levity,hc_dom,1
+mp_prison,hc_dom,1
+mp_laser2,hc_dom,1
+mp_lab2,hc_dom,1
+mp_instinct,hc_dom,1
+mp_detroit,hc_dom,1
+mp_terrace,hc_dom,1
+mp_comeback,hc_dom,1
+mp_recovery,hc_dom,1
+mp_venus,hc_dom,1
+mp_dam,hc_dom,1
+mp_clowntown3,hc_dom,1
+mp_torqued,hc_dom,1
+mp_lost,hc_dom,1
+mp_urban,hc_dom,1
+mp_blackbox,hc_dom,1
+mp_climate_3,hc_dom,1
+mp_perplex_1,hc_dom,1
+mp_spark,hc_dom,1
+
+//################################################################################################
+playlist 16 // Hardcore Search and Destroy
+name english  "Hardcore Search and Destroy"
+description english  "Search and Destroy with limited HUD, extra damage, and friendly fire enabled."
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule scr_team_teamkillkicklimit 3
+rule netconststrings_warnings 0
+image "icon_pl_hrd_search_and_destroy"
+mp_refraction,hc_sd,1
+mp_greenband,hc_sd,1
+mp_solar,hc_sd,1
+mp_levity,hc_sd,1
+mp_prison,hc_sd,1
+mp_laser2,hc_sd,1
+mp_lab2,hc_sd,1
+mp_instinct,hc_sd,1
+mp_detroit,hc_sd,1
+mp_terrace,hc_sd,1
+mp_comeback,hc_sd,1
+mp_recovery,hc_sd,1
+mp_venus,hc_sd,1
+mp_dam,hc_sd,1
+mp_clowntown3,hc_sd,1
+mp_torqued,hc_sd,1
+mp_lost,hc_sd,1
+mp_urban,hc_sd,1
+mp_blackbox,hc_sd,1
+mp_climate_3,hc_sd,1
+mp_perplex_1,hc_sd,1
+mp_spark,hc_sd,1
+
+//################################################################################################
+playlist 34 // c_tdm gametype
+name english "Classic Team Deathmatch"
+description english  "Team Deathmatch without exo movement."
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule s_max_search_dcids 10
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+image "icon_pl_cls_team_deathmatch"
+mp_refraction,c_tdm,1
+mp_greenband,c_tdm,1
+mp_solar,c_tdm,1
+mp_levity,c_tdm,1
+mp_prison,c_tdm,1
+mp_laser2,c_tdm,1
+mp_lab2,c_tdm,1
+mp_instinct,c_tdm,1
+mp_detroit,c_tdm,1
+mp_terrace,c_tdm,1
+mp_comeback,c_tdm,1
+mp_recovery,c_tdm,1
+mp_venus,c_tdm,1
+mp_dam,c_tdm,1
+mp_clowntown3,c_tdm,1
+mp_torqued,c_tdm,1
+mp_lost,c_tdm,1
+mp_urban,c_tdm,1
+mp_blackbox,c_tdm,1
+mp_climate_3,c_tdm,1
+mp_perplex_1,c_tdm,1
+mp_spark,c_tdm,1
+
+//################################################################################################
+playlist 17 // classic mosh pit
+name english "Classic Mosh Pit"
+name french "Moshpit Classique"
+name italian "Moshpit Classico"
+name german "Klassische Mosh-Pit"
+name spanish "Foso clásico"
+name spanishna "Foso clásico"
+name portuguese "Moshpit Clássico"
+name polish "Klasyczy Kocioł"
+name russian "Мясорубка. Классика"
+name japanese "CL MOSH PIT"
+name arabic "Classic Mosh Pit"
+name british "CL MOSH PIT"
+description english  "Variety of maps and modes without exo movement."
+DESCRIPTION french "Diverses cartes et modes de jeu sans mouvements d'Exo."
+DESCRIPTION italian "Diverse mappe e modalità di gioco senza movimenti Exo."
+DESCRIPTION german "Verschiedene Karten und Spielmodi ohne Exo-Aktionen."
+DESCRIPTION spanish "Varios modos de juego y mapas sin movimiento de exos."
+DESCRIPTION spanishna "Una variedad de modos de juego y mapas sin movimiento de exos."
+DESCRIPTION portuguese "Variedade de mapas e modos sem movimentação de Exo."
+DESCRIPTION japanese "様々なマップと ゲームモードを プレイ (Exo 無効)"
+DESCRIPTION arabic "Variety of maps and modes without exo movement."
+DESCRIPTION polish "Różne mapy i tryby bez egzo ruchów."
+DESCRIPTION russian "Разные игровые режимы без экзо-маневров на разных картах."
+DESCRIPTION british "様々なマップと ゲームモードを プレイ (Exo 無効)"
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule s_max_search_dcids 10
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+rule scr_current_playlist 1
+rule scr_conf_scorelimit 80
+image "icon_pl_cls_team_deathmatch"
+mp_refraction,c_tdm,1
+mp_greenband,c_tdm,1
+mp_solar,c_tdm,1
+mp_levity,c_tdm,1
+mp_prison,c_tdm,1
+mp_laser2,c_tdm,1
+mp_lab2,c_tdm,1
+mp_instinct,c_tdm,1
+mp_detroit,c_tdm,1
+mp_terrace,c_tdm,1
+mp_comeback,c_tdm,1
+mp_recovery,c_tdm,1
+mp_venus,c_tdm,1
+mp_dam,c_tdm,1
+mp_clowntown3,c_tdm,1
+mp_torqued,c_tdm,1
+mp_lost,c_tdm,1
+mp_urban,c_tdm,1
+mp_blackbox,c_tdm,1
+mp_climate_3,c_tdm,1
+mp_perplex_1,c_tdm,1
+mp_spark,c_tdm,1
+mp_refraction,c_dom,1
+mp_greenband,c_dom,1
+mp_solar,c_dom,1
+mp_levity,c_dom,1
+mp_prison,c_dom,1
+mp_laser2,c_dom,1
+mp_lab2,c_dom,1
+mp_instinct,c_dom,1
+mp_detroit,c_dom,1
+mp_terrace,c_dom,1
+mp_comeback,c_dom,1
+mp_recovery,c_dom,1
+mp_venus,c_dom,1
+mp_dam,c_dom,1
+mp_clowntown3,c_dom,1
+mp_torqued,c_dom,1
+mp_lost,c_dom,1
+mp_urban,c_dom,1
+mp_blackbox,c_dom,1
+mp_climate_3,c_dom,1
+mp_perplex_1,c_dom,1
+mp_spark,c_dom,1
+mp_refraction,c_conf_tdm,1
+mp_greenband,c_conf_tdm,1
+mp_solar,c_conf_tdm,1
+mp_levity,c_conf_tdm,1
+mp_prison,c_conf_tdm,1
+mp_laser2,c_conf_tdm,1
+mp_lab2,c_conf_tdm,1
+mp_instinct,c_conf_tdm,1
+mp_detroit,c_conf_tdm,1
+mp_terrace,c_conf_tdm,1
+mp_comeback,c_conf_tdm,1
+mp_recovery,c_conf_tdm,1
+mp_venus,c_conf_tdm,1
+mp_dam,c_conf_tdm,1
+mp_clowntown3,c_conf_tdm,1
+mp_torqued,c_conf_tdm,1
+mp_lost,c_conf_tdm,1
+mp_urban,c_conf_tdm,1
+mp_blackbox,c_conf_tdm,1
+mp_climate_3,c_conf_tdm,1
+mp_perplex_1,c_conf_tdm,1
+mp_spark,c_conf_tdm,1
+mp_refraction,c_sd,1
+mp_greenband,c_sd,1
+mp_solar,c_sd,1
+mp_levity,c_sd,1
+mp_prison,c_sd,1
+mp_laser2,c_sd,1
+mp_lab2,c_sd,1
+mp_instinct,c_sd,1
+mp_detroit,c_sd,1
+mp_terrace,c_sd,1
+mp_comeback,c_sd,1
+mp_recovery,c_sd,1
+mp_venus,c_sd,1
+mp_dam,c_sd,1
+mp_clowntown3,c_sd,1
+mp_torqued,c_sd,1
+mp_lost,c_sd,1
+mp_urban,c_sd,1
+mp_blackbox,c_sd,1
+mp_climate_3,c_sd,1
+mp_perplex_1,c_sd,1
+mp_spark,c_sd,1
+
+
+//################################################################################################
+playlist 21 // practice round
+name english  "Combat Readiness Program"
+name french "Préparation au combat"
+name italian "Programma di addestramento"
+name german "Kampfvorbereitungsprogramm"
+name spanish "Preparación de combate"
+name spanishna "Entrenamiento de combate"
+name portuguese "Programa de Prontidão de Combate"
+name japanese "戦闘訓練プログラム"
+name arabic "Combat Readiness Program"
+name polish "Przygotowanie do walki"
+name russian "Программа подготовки к бою."
+name british "戦闘訓練プログラム"
+description english  "Combat Readiness Program"
+DESCRIPTION french "Préparation au combat"
+DESCRIPTION italian "Programma di addestramento"
+DESCRIPTION german "Kampfvorbereitungsprogramm"
+DESCRIPTION spanish "Preparación de combate"
+DESCRIPTION spanishna "Entrenamiento de combate"
+DESCRIPTION portuguese "Programa de Prontidão de Combate"
+DESCRIPTION japanese "戦闘訓練プログラム"
+DESCRIPTION arabic "Combat Readiness Program"
+DESCRIPTION polish "Przygotowanie do walki"
+DESCRIPTION russian "Программа подготовки к бою."
+DESCRIPTION british "戦闘訓練プログラム"
+unlockxp 0
+maxparty 1
+maxhumanplayers 6
+alwayssearch
+nojip
+rule practiceroundgame 1
+rule bot_autoconnectdefault 0
+rule bot_difficultydefault 0
+rule scr_war_scorelimit 0
+rule scr_war_timelimit 7
+rule scr_dom_scorelimit 0
+rule scr_dom_timelimit 10
+rule scr_conf_scorelimit 0
+rule scr_conf_timelimit 10
+rule scr_game_allowkillcam 0
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule party_minlobbytime 15
+rule partyChatDisallowed 0
+rule practiceroundBotTeamLimit 6
+image "icon_pl_exo_team_deathmatch"
+mp_refraction,tdm,1
+mp_greenband,tdm,1
+mp_solar,tdm,1
+mp_levity,tdm,1
+mp_prison,tdm,1
+mp_laser2,tdm,1
+mp_lab2,tdm,1
+mp_instinct,tdm,1
+mp_detroit,tdm,1
+mp_terrace,tdm,1
+mp_comeback,tdm,1
+mp_recovery,tdm,1
+mp_venus,tdm,1
+
+
+//################################################################################################
+playlist 22 // Exo Survival
+name english  "Exo Survival"
+name french "Exo-survie"
+name italian "Sopravvivenza Exo"
+name german "Exo-Überlebenskampf"
+name spanish "Supervivencia exo"
+name spanishna "Sobrevivencia exo"
+name portuguese "Sobrevivência Exo"
+name japanese "EXO SURVIVAL"
+name arabic "Exo Survival"
+name polish "Egzo przetrwanie"
+name russian "Экзо-выживание"
+name british "EXO SURVIVAL"
+description english  "Fight cooperatively with up to 4 allied players against waves of enemies.  Survive as long as you can!"
+DESCRIPTION french "Battez-vous en coop avec jusqu'à 4 joueurs alliés contre des vagues de zombies. Survivez le plus longtemps possible !"
+DESCRIPTION italian "Battaglie in cooperativa per un massimo di 4 giocatori contro ondate di nemici. Sopravvivi più che puoi!"
+DESCRIPTION german "Kämpfen Sie mit bis zu vier verbündeten Spielern gemeinsam gegen Wellen von Feinden und überleben Sie möglichst lange!"
+DESCRIPTION spanish "Coopera con hasta 4 jugadores aliados para combatir oleadas de enemigos. ¡Sobrevive todo lo que puedas!"
+DESCRIPTION spanishna "Coopera con hasta 4 jugadores aliados para combatir oleadas de enemigos. ¡Sobrevive todo lo que puedas!"
+DESCRIPTION portuguese "Lute em cooperação com mais 4 jogadores aliados contra ondas de inimigos. Sobreviva o máximo que puder!"
+DESCRIPTION japanese "最大 4 人のプレイヤーで 敵の大群に挑戦 可能な限り長く生き残れ!"
+DESCRIPTION arabic "Fight cooperatively with up to 4 allied players against waves of enemies. Survive as long as you can!"
+DESCRIPTION polish "Walcz w trybie kooperacji z nadciągającymi falami wrogów. Przetrwaj jak najdłużej!"
+DESCRIPTION russian "Сражайтесь плечом к плечу с другими игроками (до 4 игроков) против волн врагов. Выживайте как можно дольше!"
+DESCRIPTION british "最大 4 人のプレイヤーで 敵の大群に挑戦 可能な限り長く生き残れ!"
+unlockxp 0
+maxparty 4
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+rule logfile 1
+set enable_random_ip_testing 1
+image "icon_pl_cat_survival"
+mp_lab2,horde,1
+mp_laser2,horde,1
+mp_instinct,horde,1
+mp_detroit,horde,1
+mp_comeback,horde,1
+mp_greenband,horde,1
+mp_recovery,horde,1
+mp_levity,horde,1
+mp_refraction,horde,1
+mp_terrace,horde,1
+mp_solar,horde,1
+mp_venus,horde,1
+
+
+//################################################################################################
+playlist 29 // Exo Survival Havoc
+name english "Havoc Exo Survival"
+name french "Exo-Survie Havoc"
+name italian "Sopravvivenza Exo Havoc"
+name german "Havoc - Exo-Überlebenskampf"
+name spanish "Supervivencia exo de Havoc"
+name spanishna "Sobrevivencia exo de Havoc"
+name portuguese "Sobrevivência Exo Havoc"
+name japanese "HAVOC EXO SURVIVAL"
+name arabic "Havoc Exo Survival"
+name polish "Egzo przetrwanie Havoc"
+name russian "Экзо-выживание Havoc"
+name british "HAVOC EXO SURVIVAL"
+description english  "Exo Survival played on Havoc Map Pack maps"
+DESCRIPTION french "Exo-Survie sur les cartes du pack Havoc"
+DESCRIPTION italian "Sopravvivenza Exo su mappe del pacchetto Havoc"
+DESCRIPTION german "Exo-Überlebenskampf auf den Karten des Havoc-Kartenpakets."
+DESCRIPTION spanish "Supervivencia exo en los mapas del paquete Havoc."
+DESCRIPTION spanishna "Supervivencia exo en los mapas del paquete de mapas Havoc."
+DESCRIPTION portuguese "Sobrevivência Exo em mapas do pacote Havoc."
+DESCRIPTION japanese "Havoc マップを 舞台にした Exo Survival"
+DESCRIPTION arabic "Exo Survival played on Havoc Map Pack maps"
+DESCRIPTION polish "Egzo przetrwanie na mapach pakietu Havoc."
+DESCRIPTION russian "Игра в режиме Экзо-выживание на картах набора Havoc."
+DESCRIPTION british "Havoc マップを 舞台にした Exo Survival"
+dlc 11
+unlockxp 0
+maxparty 4
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+image "icon_pl_cat_survival"
+mp_torqued,horde,1
+mp_lost,horde,1
+mp_urban,horde,1
+mp_clowntown3,horde,1
+
+
+//################################################################################################
+playlist 32 // Zombies
+name english  "Outbreak"
+name french "Outbreak"
+name italian "Outbreak"
+name german "Outbreak"
+name spanish "Outbreak"
+name spanishna "Outbreak"
+name portuguese "Outbreak"
+name japanese  "Outbreak"
+name arabic "Outbreak"
+name polish "Outbreak"
+name russian "Outbreak"
+name british "Outbreak"
+description english  "Atlas's new pet broke out of the lab and infested an entire compound.  Fight with up to 4 players to survive against endless waves of mutant zombies!"
+DESCRIPTION french "La nouvelle créature d'Atlas s'est échappée du labo et a infecté tout le complexe. Battez-vous avec jusqu'à 4 joueurs pour survire à des vagues infinies de zombies mutants !"
+DESCRIPTION italian "Il nuovo cucciolo di Atlas è scappato dal laboratorio e ha infestato un intero complesso. Combatti assieme a un massimo di 4 giocatori e sopravvivi a ondate infinite di zombi mutanti!"
+DESCRIPTION german "Atlas' neues Haustier ist aus dem Labor ausgebrochen und hat eine ganze Anlage überrannt. Kämpfen Sie mit bis zu 4 Spielern, um möglichst lange gegen endlose Wellen mutierter Zombies zu überleben!"
+DESCRIPTION spanish "La nueva mascota de Atlas ha escapado del laboratorio y ha infestado un complejo entero. ¡Lucha con hasta 4 jugadores para sobrevivir a incesantes oleadas de zombis mutantes!"
+DESCRIPTION spanishna "La nueva mascota de Atlas escapó del laboratorio e infestó un complejo entero. ¡Lucha con hasta 4 jugadores para sobrevivir a incesantes oleadas de zombis mutantes!"
+DESCRIPTION portuguese "O novo mascote da Atlas escapou do laboratório e infestou um complexo inteiro. Lute em até 4 jogadores para sobreviver contra ondas intermináveis de zumbis mutantes!"
+DESCRIPTION japanese "最大 4 人のプレイヤーで Atlas ゾンビの 大群に立ち向かえ!"
+DESCRIPTION arabic "Atlas's new pet broke out of the lab and infested an entire compound.  Fight with up to 4 players to survive against endless waves of mutant zombies!"
+DESCRIPTION polish "Nowy pupilek Atlasu uwolnił się z laboratorium i zaraził całe stado. Walcz (do 4 graczy) o przetrwanie z niekończącymi się falami zmutowanych zombie!"
+DESCRIPTION russian "Новая зверушка Atlas сбежала из лаборатории и заразила весь комплекс. Выживайте вместе с друзьями против бесконечных волн зомби-мутантов."
+DESCRIPTION british "最大 4 人のプレイヤーで Atlas ゾンビの 大群に立ち向かえ!"
+unlockxp 0
+maxparty 4
+dlc 11
+rule party_minlobbytime 10
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+image "icon_pl_cat_zombies"
+mp_zombie_lab,zombies,1
+
+
+//################################################################################################
+playlist 28 // Exo Zombies DLC2
+name english  "Infection"
+name french "Infection"
+name italian "Infection"
+name german "Infection"
+name spanish "Infection"
+name spanishna "Infection"
+name portuguese "Infection"
+name japanese  "Infection"
+name arabic "Infection"
+name polish "Infection"
+name russian "Infection"
+name british "Infection"
+description english  "The infection has spread to rural America and everyone's favorite burger joint!  Fight with up to 4 players to survive against endless waves of mutant zombies!"
+DESCRIPTION french "L'épidémie s'est répandue dans la campagne américaine et dans votre fast-food favori ! Affrontez les vagues de zombies mutants pour survivre, avec jusqu'à 4 joueurs!"
+DESCRIPTION italian "L'infezione è arrivata nell'America rurale e nel fast food preferito da tutti! Fino a 4 giocatori possono collaborare per sopravvivere a ondate infinite di zombi mutanti!"
+DESCRIPTION german "Die Infektion hat sich in Amerika ausgebreitet - und in jedermanns Lieblings-Burgerbude! Kämpfen Sie mit bis zu 4 Spielern gegen Wellen mutierter Zombies!"
+DESCRIPTION spanish "¡La infección se ha propagado a la América rural y a su hamburguesería preferida! ¡Lucha con hasta 4 jugadores para sobrevivir a incesantes oleadas de zombis mutantes!"
+DESCRIPTION spanishna "¡La infección se ha propagado a la América rural y a su hamburguesería preferida! ¡Lucha con hasta 4 jugadores para sobrevivir a incesantes oleadas de zombis mutantes!"
+DESCRIPTION portuguese "A infecção se espalhou pela área rural dos Estados Unidos e pelo fast-food preferido! Lute em até 4 jogadores para sobreviver contra hordas intermináveis de zumbis mutantes!"
+DESCRIPTION japanese "感染はついに 米国の 地方にまで 拡大し あの国民的な ハンバーガー店が 危機に! 最大 4 人のプレイヤーで ゾンビの 大群に立ち向かえ!"
+DESCRIPTION arabic "The infection has spread to rural America and everyone's favorite burger joint!  Fight with up to 4 players to survive against endless waves of mutant zombies!"
+DESCRIPTION polish "Infekcja opanowuje Amerykę i jej ulubioną sieć burgerów! W maksymalnie 4 graczy walcz przeciw nadciągającym falom zmutowanych zombie!"
+DESCRIPTION russian "Заражение распростр. на глубинку, затронув всеми любимое кафе! Сражайтесь в группе до 4, выживая против бесчисленных зомби-мутантов!"
+DESCRIPTION british "感染はついに 米国の 地方にまで 拡大し あの国民的な ハンバーガー店が 危機に! 最大 4 人のプレイヤーで ゾンビの 大群に立ち向かえ!"
+unlockxp 0
+maxparty 4
+dlc 12
+rule party_minlobbytime 10
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+image "icon_pl_cat_zombies_brg"
+mp_zombie_brg,zombies,1
+
+//################################################################################################
+playlist 40 // Exo Zombies DLC3
+name english  "Carrier"
+name french "Carrier"
+name italian "Carrier"
+name german "Carrier"
+name spanish "Carrier"
+name spanishna "Carrier"
+name portuguese "Carrier"
+name japanese  "Carrier"
+name arabic "Carrier"
+name polish "Carrier"
+name russian "Carrier"
+name british "Carrier"
+description english  "The source of the contagion has infected Atlas’s prized super-carrier! Fight with up to 4 players to survive against endless waves of mutant zombies!"
+DESCRIPTION french "La source de la contagion a infecté le précieux porte-avions d'Atlas ! Combattez avec jusqu'à 3 autres joueurs pour survivre à des vagues incessantes de zombies mutants !"
+DESCRIPTION italian "La fonte del contagio ha infettato la preziosa super-nave di Atlas! Fino a 4 giocatori possono collaborare per sopravvivere a ondate infinite di zombi mutanti!"
+DESCRIPTION german "Die Quelle der Seuche hat Atlas' Superträger infiziert. Kämpfen Sie mit bis zu 4 Spielern ums Überleben gegen endlose Wellen mutierter Zombies!"
+DESCRIPTION spanish "¡La fuente del contagio ha infectado al valioso superportaaviones de Atlas! Lucha con hasta 4 jugadores para sobrevivir a interminables hordas zombis."
+DESCRIPTION spanishna "¡La fuente del contagio infectó al valioso superportaaviones de Atlas! Lucha con hasta 4 jugadores para sobrevivir a interminables oleadas de zombis."
+DESCRIPTION portuguese "A fonte do contágio infectou o estimado supernavio da Atlas! Lute em até 4 jogadores para sobreviver contra hordas intermináveis de zumbis mutantes!"
+DESCRIPTION arabic "The source of the contagion has infected Atlas’s prized super-carrier! Fight with up to 4 players to survive against endless waves of mutant zombies!"
+DESCRIPTION polish "Lotniskowiec Atlasu skażony śmiercionośną infekcją. Walcz w maksymalnie 4 graczy z falami zmutowanych zombie!"
+DESCRIPTION russian "На тяжелом авианосце Атласа зафиксирован источник заражения! Сражайтесь в группе до 4, выживая против бесчисленных зомби-мутантов!"
+DESCRIPTION british "感染はついに Atlas の空母にまで拡大! 最大 4 人のプレイヤーで ゾンビの 大群に立ち向かえ!"
+DESCRIPTION japanese "感染はついに Atlas の空母にまで拡大! 最大 4 人のプレイヤーで ゾンビの 大群に立ち向かえ!"
+unlockxp 0
+maxparty 4
+dlc 13
+rule party_minlobbytime 10
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+rule logfile 1
+rule pt_allMembersDoQoS 0
+set enable_random_ip_testing 1
+image "icon_pl_cat_zombies_ark"
+mp_zombie_ark,zombies,1
+
+
+//################################################################################################
+playlist 23 // 24/7 skyrise
+name english  "SKYRISE 24/7 "
+name french "SKYRISE 24/24 "
+name italian "SKYRISE 24/7 "
+name german "SKYRISE 24/7 "
+name spanish "SKYRISE 24/7"
+name spanishna "SKYRISE 24/7"
+name portuguese "SKYRISE 24/7 "
+name japanese "SKYRISE 24/7"
+name arabic "SKYRISE 24/7 "
+name polish "SKYRISE 24/7"
+name russian "SKYRISE 24/7 "
+name british "SKYRISE 24/7"
+description english  "Mix of game modes played on Skyrise."
+DESCRIPTION french "Compilation de différents modes de jeu sur Skyrise"
+DESCRIPTION italian "Varie modalità di gioco nella mappa Skyrise."
+DESCRIPTION german "Verschiedene Spielmodi auf Skyrise."
+DESCRIPTION spanish "Mezcla de modos de juego en Skyrise."
+DESCRIPTION spanishna "Mezcla de modos de juego en Skyrise."
+DESCRIPTION portuguese "Mistura de modos de jogo disputados em Skyrise."
+DESCRIPTION japanese "Skyrise を舞台に ランダムのゲームモードでプレイ"
+DESCRIPTION arabic "Mix of game modes played on Skyrise."
+DESCRIPTION polish "Różne tryby gry, na mapie Skyrise."
+DESCRIPTION russian "Смешанный режим. Игра в Skyrise."
+DESCRIPTION british "Skyrise を舞台に ランダムのゲームモードでプレイ"
+dlc 13
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+rule scr_xpscale 2
+rule scr_conf_scorelimit 85
+image "icon_pl_exo_team_deathmatch"
+allowdupes
+mp_highrise2,tdm,1
+mp_highrise2,conf_tdm,1
+mp_highrise2,dom,1
+mp_highrise2,uplink,1
+mp_highrise2,momentum,1
+mp_highrise2,HP,1
+
+//################################################################################################
+playlist 33 // Gun Game
+name english  "Gun Game"
+name french "Jeu d'armes"
+name italian "Gioco delle armi"
+name german "Waffenspiel"
+name spanish "Juego de armas"
+name spanishna "Juego de armas"
+name portuguese "Jogo de Armas"
+name japanese "GUN GAME"
+name arabic "Gun Game"
+name polish "Zabawa z bronią"
+name russian "Оружие"
+name british "GUN GAME"
+description english "Kill players with your weapon to advance to the next weapon. First to get a kill with each weapon wins."
+DESCRIPTION french "Tuez des joueurs avec votre arme pour accéder à la prochaine arme. Le premier à effectuer une élimination avec chaque arme a gagné."
+DESCRIPTION italian "Uccidi i giocatori con un'arma per avanzare a quella successiva. Vince chi ottiene per primo un'uccisione con ogni arma."
+DESCRIPTION german "Schalten Sie Spieler mit Ihrer Waffe aus, um die nächste Stufe zu erreichen. Wer zuerst mit jeder Waffe Abschüsse schafft, gewinnt."
+DESCRIPTION spanish "Mata a jugadores con tu arma para avanzar a la siguiente arma. Gana el primero que consiga una baja con cada arma."
+DESCRIPTION spanishna "Mata a jugadores con tu arma para avanzar a la siguiente arma. Gana el primero que consiga una baja con cada arma."
+DESCRIPTION portuguese "Mate jogadores com a sua arma para avançar para a próxima arma. O primeiro a obter uma baixa com todas as armas vence."
+DESCRIPTION japanese "キルを達成するたびに 次の武器へ移行 最初に全武器で キルを達成した プレイヤーの勝利"
+DESCRIPTION arabic "Kill players with your weapon to advance to the next weapon. First to get a kill with each weapon wins."
+DESCRIPTION polish "Zabij, by otrzymać nową broń. Pierwszy gracz, który zabije z każdej broni – wygrywa!"
+DESCRIPTION russian "Убивайте противников чтобы получать новое оружие. Первый, кто совершит убийство из всех видов оружия побеждает."
+DESCRIPTION british "キルを達成するたびに 次の武器へ移行 最初に全武器で キルを達成した プレイヤーの勝利"
+unlockxp 0
+maxparty 8
+alwayssearch
+rule scr_gun_loot_variants 1
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+rule ds_dcid 0
+image "icon_pl_exo_team_deathmatch"
+mp_refraction,gun,1
+mp_greenband,gun,1
+mp_solar,gun,1
+mp_levity,gun,1
+mp_prison,gun,1
+mp_laser2,gun,1
+mp_lab2,gun,1
+mp_instinct,gun,1
+mp_detroit,gun,1
+mp_terrace,gun,1
+mp_comeback,gun,1
+mp_recovery,gun,1
+mp_venus,gun,1
+mp_dam,gun,1
+mp_clowntown3,gun,1
+mp_torqued,gun,1
+mp_lost,gun,1
+mp_urban,gun,1
+mp_blackbox,gun,1
+mp_climate_3,gun,1
+mp_perplex_1,gun,1
+mp_spark,gun,1
+
+
+//################################################################################################
+playlist 25 // Mosh Pit
+name english "Mosh Pit"
+name italian "Moshpit"
+name german "Mosh-Pit"
+name french "Moshpit"
+name spanish "Foso"
+name spanishna "Foso"
+name portuguese "Moshpit"
+name polish "Kocioł"
+name japanese "MOSH PIT"
+name british "MOSH PIT"
+name russian "Мясорубка"
+name arabic "Mosh Pit"
+description english "Popular maps with a variety of game modes."
+DESCRIPTION italian "Mappe popolari con diverse modalità di gioco."
+DESCRIPTION german "Beliebte Karten mit einer Vielzahl an Spielmodi."
+DESCRIPTION french "Cartes populaires avec plusieurs modes de jeu."
+DESCRIPTION spanish "Mapas populares con varios modos de juego."
+DESCRIPTION spanishna "Mapas populares con varios modos de juego."
+DESCRIPTION portuguese "Mapas populares com vários modos de jogo."
+DESCRIPTION polish "Popularne mapy i różne tryby gry."
+DESCRIPTION japanese "様々なモードで人気マップをプレイ "
+DESCRIPTION british "様々なモードで人気マップをプレイ "
+DESCRIPTION russian "Популярные карты с разнообразными режимами игры."
+DESCRIPTION arabic "Popular maps with a variety of game modes."
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+rule scr_current_playlist 1
+rule scr_conf_scorelimit 85
+image "icon_pl_exo_team_deathmatch"
+mp_solar,tdm,1
+mp_prison,tdm,1
+mp_lab2,tdm,1
+mp_detroit,tdm,1
+mp_terrace,tdm,1
+mp_comeback,tdm,1
+mp_venus,tdm,1
+mp_dam,tdm,1
+mp_clowntown3,tdm,1
+mp_torqued,tdm,1
+mp_lost,tdm,1
+mp_urban,tdm,1
+mp_blackbox,tdm,1
+mp_climate_3,tdm,1
+mp_perplex_1,tdm,1
+mp_spark,tdm,1
+mp_solar,conf_tdm,1
+mp_prison,conf_tdm,1
+mp_lab2,conf_tdm,1
+mp_detroit,conf_tdm,1
+mp_terrace,conf_tdm,1
+mp_comeback,conf_tdm,1
+mp_venus,conf_tdm,1
+mp_dam,conf_tdm,1
+mp_clowntown3,conf_tdm,1
+mp_torqued,conf_tdm,1
+mp_lost,conf_tdm,1
+mp_urban,conf_tdm,1
+mp_blackbox,conf_tdm,1
+mp_climate_3,conf_tdm,1
+mp_perplex_1,conf_tdm,1
+mp_spark,conf_tdm,1
+mp_solar,dom,1
+mp_prison,dom,1
+mp_lab2,dom,1
+mp_detroit,dom,1
+mp_terrace,dom,1
+mp_comeback,dom,1
+mp_venus,dom,1
+mp_dam,dom,1
+mp_clowntown3,dom,1
+mp_torqued,dom,1
+mp_lost,dom,1
+mp_urban,dom,1
+mp_blackbox,dom,1
+mp_climate_3,dom,1
+mp_perplex_1,dom,1
+mp_spark,dom,1
+mp_solar,hp,1
+mp_prison,hp,1
+mp_lab2,hp,1
+mp_detroit,hp,1
+mp_terrace,hp,1
+mp_comeback,hp,1
+mp_venus,hp,1
+mp_dam,hp,1
+mp_clowntown3,hp,1
+mp_torqued,hp,1
+mp_lost,hp,1
+mp_urban,hp,1
+mp_blackbox,hp,1
+mp_climate_3,hp,1
+mp_perplex_1,hp,1
+mp_spark,hp,1
+mp_solar,uplink,1
+mp_prison,uplink,1
+mp_lab2,uplink,1
+mp_detroit,uplink,1
+mp_terrace,uplink,1
+mp_comeback,uplink,1
+mp_venus,uplink,1
+mp_dam,uplink,1
+mp_clowntown3,uplink,1
+mp_torqued,uplink,1
+mp_lost,uplink,1
+mp_urban,uplink,1
+mp_blackbox,uplink,1
+mp_climate_3,uplink,1
+mp_perplex_1,uplink,1
+mp_spark,uplink,1
+
+
+//################################################################################################
+playlist 27 //Hardcore Mosh Pit
+name english "Hardcore Mosh Pit"
+name french "Moshpit Hardcore"
+name italian "Moshpit Veterano"
+name german "Hardcore-Mosh-Pit"
+name spanish "Foso extremo"
+name spanishna "Foso extremo"
+name portuguese "Moshpit Extremo"
+name polish "Kocioł HC"
+name russian "Хардкор мясорубка"
+name japanese "HC MOSH PIT"
+name arabic "Hardcore Most Pit"
+name british "HC MOSH PIT"
+description english  "A variety of Hardcore game modes. Includes DLC maps for DLC owners."
+DESCRIPTION french "Divers modes de jeu Hardcore. Inclut les cartes téléchargeables pour les détenteurs du DLC."
+DESCRIPTION italian "Diverse modalità di gioco Veterano. Include mappe contenuto scaricabile per chi le possiede."
+DESCRIPTION german "Verschiedene Hardcore-Spielmodi. Beinhaltet DLC-Maps für DLC-Besitzer."
+DESCRIPTION spanish "Varios modos de juego extremos. Incluye mapas descargables para los propietarios del contenido descargable."
+DESCRIPTION spanishna "Varios modos de juego extremos. Incluye mapas descargables para los propietarios del contenido descargable."
+DESCRIPTION portuguese "Uma variedade de modos de jogo Extremos. Inclui os mapas DLC para quem possuir os DLCs correspondentes."
+DESCRIPTION japanese "ハードコア ゲーム モードのミックス (DLC マップを含む)"
+DESCRIPTION arabic "A variety of Hardcore game modes. Includes DLC maps for DLC owners."
+DESCRIPTION polish "Różne tryby Hardcore. Z mapami DLC dla posiadaczy DLC."
+DESCRIPTION russian "Разные игровые режимы в Хардкоре. Для владельцев DLC включены DLC-карты."
+DESCRIPTION british "ハードコア ゲーム モードのミックス (DLC マップを含む)"
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule s_max_search_dcids 10
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule scr_team_teamkillkicklimit 3
+rule netconststrings_warnings 0
+rule scr_conf_scorelimit 85
+rule scr_current_playlist 2
+image "icon_pl_hrd_team_deathmatch"
+mp_refraction,hc_tdm,1
+mp_greenband,hc_tdm,1
+mp_solar,hc_tdm,1
+mp_levity,hc_tdm,1
+mp_prison,hc_tdm,1
+mp_laser2,hc_tdm,1
+mp_lab2,hc_tdm,1
+mp_instinct,hc_tdm,1
+mp_detroit,hc_tdm,1
+mp_terrace,hc_tdm,1
+mp_comeback,hc_tdm,1
+mp_recovery,hc_tdm,1
+mp_venus,hc_tdm,1
+mp_dam,hc_tdm,1
+mp_clowntown3,hc_tdm,1
+mp_torqued,hc_tdm,1
+mp_lost,hc_tdm,1
+mp_urban,hc_tdm,1
+mp_blackbox,hc_tdm,1
+mp_climate_3,hc_tdm,1
+mp_perplex_1,hc_tdm,1
+mp_spark,hc_tdm,1
+mp_highrise2,hc_tdm,1
+mp_kremlin,hc_tdm,1
+mp_bigben2,hc_tdm,1
+mp_sector17,hc_tdm,1
+mp_refraction,hc_conf_tdm,1
+mp_greenband,hc_conf_tdm,1
+mp_solar,hc_conf_tdm,1
+mp_levity,hc_conf_tdm,1
+mp_prison,hc_conf_tdm,1
+mp_laser2,hc_conf_tdm,1
+mp_lab2,hc_conf_tdm,1
+mp_instinct,hc_conf_tdm,1
+mp_detroit,hc_conf_tdm,1
+mp_terrace,hc_conf_tdm,1
+mp_comeback,hc_conf_tdm,1
+mp_recovery,hc_conf_tdm,1
+mp_venus,hc_conf_tdm,1
+mp_dam,hc_conf_tdm,1
+mp_clowntown3,hc_conf_tdm,1
+mp_torqued,hc_conf_tdm,1
+mp_lost,hc_conf_tdm,1
+mp_urban,hc_conf_tdm,1
+mp_blackbox,hc_conf_tdm,1
+mp_climate_3,hc_conf_tdm,1
+mp_perplex_1,hc_conf_tdm,1
+mp_spark,hc_conf_tdm,1
+mp_highrise2,hc_conf_tdm,1
+mp_kremlin,hc_conf_tdm,1
+mp_bigben2,hc_conf_tdm,1
+mp_sector17,hc_conf_tdm,1
+mp_refraction,hc_dom,1
+mp_greenband,hc_dom,1
+mp_solar,hc_dom,1
+mp_levity,hc_dom,1
+mp_prison,hc_dom,1
+mp_laser2,hc_dom,1
+mp_lab2,hc_dom,1
+mp_instinct,hc_dom,1
+mp_detroit,hc_dom,1
+mp_terrace,hc_dom,1
+mp_comeback,hc_dom,1
+mp_recovery,hc_dom,1
+mp_venus,hc_dom,1
+mp_dam,hc_dom,1
+mp_clowntown3,hc_dom,1
+mp_torqued,hc_dom,1
+mp_lost,hc_dom,1
+mp_urban,hc_dom,1
+mp_blackbox,hc_dom,1
+mp_climate_3,hc_dom,1
+mp_perplex_1,hc_dom,1
+mp_spark,hc_dom,1
+mp_highrise2,hc_dom,1
+mp_kremlin,hc_dom,1
+mp_bigben2,hc_dom,1
+mp_sector17,hc_dom,1
+mp_refraction,hc_sd,1
+mp_greenband,hc_sd,1
+mp_solar,hc_sd,1
+mp_levity,hc_sd,1
+mp_prison,hc_sd,1
+mp_laser2,hc_sd,1
+mp_lab2,hc_sd,1
+mp_instinct,hc_sd,1
+mp_detroit,hc_sd,1
+mp_terrace,hc_sd,1
+mp_comeback,hc_sd,1
+mp_recovery,hc_sd,1
+mp_venus,hc_sd,1
+mp_dam,hc_sd,1
+mp_clowntown3,hc_sd,1
+mp_torqued,hc_sd,1
+mp_lost,hc_sd,1
+mp_urban,hc_sd,1
+mp_blackbox,hc_sd,1
+mp_climate_3,hc_sd,1
+mp_perplex_1,hc_sd,1
+mp_spark,hc_sd,1
+mp_highrise2,hc_sd,1
+mp_kremlin,hc_sd,1
+mp_bigben2,hc_sd,1
+mp_sector17,hc_sd,1
+
+
+//################################################################################################
+playlist 26 // One Shot
+name english "One Shot"
+name french "UNE BALLE"
+name italian "Un colpo"
+name german "Ein Schuss"
+name spanish "Un tiro"
+name spanishna "Un tiro"
+name portuguese "Um tiro"
+name japanese "ONE SHOT"
+name arabic "One Shot"
+name polish "Jeden strzał"
+name russian "Одним выстрелом"
+name british "ONE SHOT"
+description english "Bolt-action snipers only. No create a class. One shot kills."
+DESCRIPTION french "Fusils de précision à verrou uniquement. Créer une classe non disponible. Éliminations en un coup."
+DESCRIPTION italian "Solo fucili di precisione a culatta mobile. Niente Crea una classe. Un colpo, un morto."
+DESCRIPTION german "Nur Geradezugverschluss-Gewehre. Kein Klasseneditor. Ein Schuss ist tödlich."
+DESCRIPTION spanish "Solo fusiles de precisión de cerrojo. Sin Crear una clase. Bajas de un tiro."
+DESCRIPTION spanishna "Solo fusiles de precisión de cerrojo. Sin Crear una clase. Bajas de un tiro."
+DESCRIPTION portuguese "Somente franco-atiradores com ferrolho. Sem classes personalizadas. Baixas de tiro único."
+DESCRIPTION japanese "ボルト アクション スナイパー限定 / ロードアウト なし / 1 発で死亡"
+DESCRIPTION arabic "Bolt-action snipers only. No create a class. One shot kills."
+DESCRIPTION polish "Tylko snajperzy z kuszami. Bez możliwości tworzenia klasy. Jeden strzał zabija."
+DESCRIPTION russian "Праздник для снайперов. Никаких классов. Каждое попадание убивает."
+DESCRIPTION british "ボルト アクション スナイパー限定 / ロードアウト なし / 1 発で死亡"
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule s_max_search_dcids 10
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+rule scr_conf_scorelimit 85
+rule scr_current_playlist 3
+image "icon_pl_exo_ground_war"
+mp_refraction,oneshot,1
+mp_greenband,oneshot,1
+mp_solar,oneshot,1
+mp_levity,oneshot,1
+mp_prison,oneshot,1
+mp_laser2,oneshot,1
+mp_lab2,oneshot,1
+mp_instinct,oneshot,1
+mp_detroit,oneshot,1
+mp_terrace,oneshot,1
+mp_comeback,oneshot,1
+mp_recovery,oneshot,1
+mp_venus,oneshot,1
+mp_dam,oneshot,1
+mp_clowntown3,oneshot,1
+mp_torqued,oneshot,1
+mp_lost,oneshot,1
+mp_urban,oneshot,1
+mp_blackbox,oneshot,1
+mp_climate_3,oneshot,1
+mp_perplex_1,oneshot,1
+mp_spark,oneshot,1
+mp_refraction,oneshot_conf,1
+mp_greenband,oneshot_conf,1
+mp_solar,oneshot_conf,1
+mp_levity,oneshot_conf,1
+mp_prison,oneshot_conf,1
+mp_laser2,oneshot_conf,1
+mp_lab2,oneshot_conf,1
+mp_instinct,oneshot_conf,1
+mp_detroit,oneshot_conf,1
+mp_terrace,oneshot_conf,1
+mp_comeback,oneshot_conf,1
+mp_recovery,oneshot_conf,1
+mp_venus,oneshot_conf,1
+mp_dam,oneshot_conf,1
+mp_clowntown3,oneshot_conf,1
+mp_torqued,oneshot_conf,1
+mp_lost,oneshot_conf,1
+mp_urban,oneshot_conf,1
+mp_blackbox,oneshot_conf,1
+mp_climate_3,oneshot_conf,1
+mp_perplex_1,oneshot_conf,1
+mp_spark,oneshot_conf,1
+mp_refraction,oneshot_dm,1
+mp_greenband,oneshot_dm,1
+mp_solar,oneshot_dm,1
+mp_levity,oneshot_dm,1
+mp_prison,oneshot_dm,1
+mp_laser2,oneshot_dm,1
+mp_lab2,oneshot_dm,1
+mp_instinct,oneshot_dm,1
+mp_detroit,oneshot_dm,1
+mp_terrace,oneshot_dm,1
+mp_comeback,oneshot_dm,1
+mp_recovery,oneshot_dm,1
+mp_venus,oneshot_dm,1
+mp_dam,oneshot_dm,1
+mp_clowntown3,oneshot_dm,1
+mp_torqued,oneshot_dm,1
+mp_lost,oneshot_dm,1
+mp_urban,oneshot_dm,1
+mp_blackbox,oneshot_dm,1
+mp_climate_3,oneshot_dm,1
+mp_perplex_1,oneshot_dm,1
+mp_spark,oneshot_dm,1
+mp_refraction,oneshot_hp,1
+mp_greenband,oneshot_hp,1
+mp_solar,oneshot_hp,1
+mp_levity,oneshot_hp,1
+mp_prison,oneshot_hp,1
+mp_laser2,oneshot_hp,1
+mp_lab2,oneshot_hp,1
+mp_instinct,oneshot_hp,1
+mp_detroit,oneshot_hp,1
+mp_terrace,oneshot_hp,1
+mp_comeback,oneshot_hp,1
+mp_recovery,oneshot_hp,1
+mp_venus,oneshot_hp,1
+mp_dam,oneshot_hp,1
+mp_clowntown3,oneshot_hp,1
+mp_torqued,oneshot_hp,1
+mp_lost,oneshot_hp,1
+mp_urban,oneshot_hp,1
+mp_blackbox,oneshot_hp,1
+mp_climate_3,oneshot_hp,1
+mp_perplex_1,oneshot_hp,1
+mp_spark,oneshot_hp,1
+mp_refraction,oneshot_dom,1
+mp_greenband,oneshot_dom,1
+mp_solar,oneshot_dom,1
+mp_levity,oneshot_dom,1
+mp_prison,oneshot_dom,1
+mp_laser2,oneshot_dom,1
+mp_lab2,oneshot_dom,1
+mp_instinct,oneshot_dom,1
+mp_detroit,oneshot_dom,1
+mp_terrace,oneshot_dom,1
+mp_comeback,oneshot_dom,1
+mp_recovery,oneshot_dom,1
+mp_venus,oneshot_dom,1
+mp_dam,oneshot_dom,1
+mp_clowntown3,oneshot_dom,1
+mp_torqued,oneshot_dom,1
+mp_lost,oneshot_dom,1
+mp_urban,oneshot_dom,1
+mp_blackbox,oneshot_dom,1
+mp_climate_3,oneshot_dom,1
+mp_perplex_1,oneshot_dom,1
+mp_spark,oneshot_dom,1
+
+
+//################################################################################################
+playlist 30 // Ascendance DLC Grapple Mosh Pit playlist
+name english  "Ascendance Grapple Mosh Pit"
+name french "Moshpit Grappin Ascendance"
+name italian "Moshpit Rampino Ascendance"
+name german "Ascendance-Kletterhaken-Moshpit"
+name spanish "Ascendance con gancho en Foso"
+name spanishna "Ascendance con gancho en Foso"
+name portuguese "Moshpit com Gancho Ascendance"
+name japanese "Ascendance Grapple Mosh Pit"
+name arabic "Ascendance Grapple Mosh Pit"
+name polish "Ascendance hak kocioł"
+name russian "Ascendance: Крюк-Мясорубка"
+name british "Ascendance Grapple Mosh Pit"
+description english  "Ascendance Map Pack maps with a variety of grapple-enabled game modes.\n\nYour Exo Ability slot, even if it's empty, will be replaced with Exo Grapple. Exo Grapple does not count towards Pick 13. Additional Exo Ability from Tactician Wildcard will remain."
+DESCRIPTION french "Les cartes du pack Ascendance avec divers modes de jeu incluant le grappin.\n\nL'empl. d'Exo-comp. sera remplacé par l'Exo-grappin. Ne compte pas dans la Créat. de classe en 13 choix. L'exo-comp. supp. du joker de Tacticien est conservée."
+DESCRIPTION italian "Mappe del pacchetto Ascendance con varie modalità di gioco con rampino.\n\nLo slot funzione Exo, anche se vuoto, è occupato dal Rampino Exo. Il Rampino Exo non conta per Scegline 13. La funzione Exo aggiuntiva della wildcard Tattico è mantenuta."
+DESCRIPTION german "Karten des Ascendance-DLC-Packs mit einer Vielzahl an Modi mit Kletterhaken. Ihr Exo-Slot wird, selbst wenn leer, durch einen Kletterhaken ersetzt. Er zählt nicht als Punkt für 'Nimm 13'. Die zusätzl. Exo-Fähigk. der Taktiker-Wildcard bleibt."
+DESCRIPTION spanish "Los paquetes de mapas de Ascendance con una variedad de modos de juego con gancho.\n\nTu espacio de aptitud exo será ocupado por un gancho exo y es independiente del sistema Elige 13. Se mantendrá la aptitud exo adicional del comodín Táctico."
+DESCRIPTION spanishna "Los paquetes de mapas de Ascendance con una variedad de modos de juego con gancho.\n\nTu espacio de aptitud exo será ocupado por un gancho exo y es independiente del sistema Elige 13. Se mantendrá la aptitud exo adicional del comodín Táctico."
+DESCRIPTION portuguese "Pacote de mapas Ascendance com vários modos de jogo com gancho.\n\nA Habilidade Exo, mesmo vazia, será substituída por Gancho Exo. O Gancho Exo não conta no sistema Escolha 13. A Habilidade Exo adicional de Curinga Tático permanecerá."
+DESCRIPTION japanese "Ascendance マップで 様々なゲーム モードを プレイ\n\nExo アビリティ が 空でも グラップルに 入れ替わる (ピック 13 対象外) タクティシャン分は 失われない"
+DESCRIPTION arabic "Ascendance Map Pack maps with a variety of grapple-enabled game modes.\n\nYour Exo Ability slot, even if it's empty, will be replaced with Exo Grapple. Exo Grapple does not count towards Pick 13. Additional Exo Ability from Tactician Wildcard will remain."
+DESCRIPTION polish "Mapy z Ascendance w różnych trybach gry z hakiem.\nTwój slot umiejętności egzo, nawet jeżeli jest pusty, zostanie zastąpiony Egzo Hakiem. Egzo Hak nie wlicza się do Wybierz 13. Aktywne pozostaną umiejętności Egzo z dzikiej karty."
+DESCRIPTION russian "Карты Ascendance. Игра с Крюком.\n\nСлот экзо-способ. заменится на Крюк. Это не увел. 'Выбери 13'. Доп. спос-ть за джокера 'Тактик' не теряется."
+DESCRIPTION british "Ascendance マップで 様々なゲーム モードを プレイ\n\nExo アビリティ が 空でも グラップルに 入れ替わる (ピック 13 対象外) タクティシャン分は 失われない"
+dlc 12
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule s_max_search_dcids 10
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+rule scr_conf_scorelimit 85
+rule scr_game_grappling_hook 1
+rule scr_current_playlist 1
+image "icon_pl_exo_team_deathmatch"
+showonlywhenhavemaps
+allowdupes
+mp_blackbox,dom,1
+mp_climate_3,dom,1
+mp_perplex_1,dom,1
+mp_spark,dom,1
+mp_blackbox,uplink,1
+mp_climate_3,uplink,1
+mp_perplex_1,uplink,1
+mp_spark,uplink,1
+mp_blackbox,HP,1
+mp_climate_3,HP,1
+mp_perplex_1,HP,1
+mp_spark,HP,1
+mp_blackbox,tdm,1
+mp_climate_3,tdm,1
+mp_perplex_1,tdm,1
+mp_spark,tdm,1
+mp_blackbox,conf_tdm,1
+mp_climate_3,conf_tdm,1
+mp_perplex_1,conf_tdm,1
+mp_spark,conf_tdm,1
+
+
+//################################################################################################
+playlist 18 // Supremacy DLC Grapple Mosh Pit playlist
+name english  "Supremacy Grapple Mosh Pit"
+name french "Moshpit Grappin Supremacy"
+name italian "Moshpit Rampino Supremacy"
+name german "Supremacy-Kletterhaken-Moshpit"
+name spanish "Supremacy con gancho en Foso"
+name spanishna "Supremacy con gancho en Foso"
+name portuguese "Moshpit com Gancho Supremacy"
+name japanese "Supremacy Grapple Mosh Pit"
+name arabic "Supremacy Grapple Mosh Pit"
+name polish "Supremacy hak kocioł"
+name russian "Supremacy: Крюк-Мясорубка"
+name british "Supremacy Grapple Mosh Pit"
+description english  "Supremacy Map Pack maps with a variety of grapple-enabled game modes.\n\nYour Exo Ability slot, even if it's empty, will be replaced with Exo Grapple. Exo Grapple does not count towards Pick 13. Additional Exo Ability from Tactician Wildcard will remain."
+DESCRIPTION french "Les cartes du pack Supremacy avec divers modes de jeu incluant le grappin.\n\nL'empl. d'Exo-comp. sera remplacé par l'Exo-grappin. Ne compte pas dans la Créat. de classe en 13 choix. L'exo-comp. supp. du joker de Tacticien est conservée."
+DESCRIPTION italian "Mappe del pacchetto Supremacy con varie modalità di gioco con rampino.\n\nLo slot funzione Exo, anche se vuoto, è occupato dal Rampino Exo. Il Rampino Exo non conta per Scegline 13. La funzione Exo aggiuntiva della wildcard Tattico è mantenuta."
+DESCRIPTION german "Karten des Supremacy-DLC-Packs mit einer Vielzahl an Modi mit Kletterhaken. Ihr Exo-Slot wird, selbst wenn leer, durch einen Kletterhaken ersetzt. Er zählt nicht als Punkt für 'Nimm 13'. Die zusätzl. Exo-Fähigk. der Taktiker-Wildcard bleibt."
+DESCRIPTION spanish "Los paquetes de mapas de Supremacy con una variedad de modos de juego con gancho.\n\nTu espacio de aptitud exo será ocupado por un gancho exo y es independiente del sistema Elige 13. Se mantendrá la aptitud exo adicional del comodín Táctico."
+DESCRIPTION spanishna "Los paquetes de mapas de Supremacy con una variedad de modos de juego con gancho.\n\nTu espacio de aptitud exo será ocupado por un gancho exo y es independiente del sistema Elige 13. Se mantendrá la aptitud exo adicional del comodín Táctico."
+DESCRIPTION portuguese "Pacote de mapas Supremacy com variedade de modos de jogo com gancho.\nEspaço Exo, mesmo vazio, será substituído pelo Gancho Exo. Gancho Exo não está no sistema Escolha 13. Habilidade de um coringa tático continuará."
+DESCRIPTION japanese "Supremacy マップで 様々なゲーム モードを プレイ\n\nExo アビリティ が 空でも グラップルに 入れ替わる (ピック 13 対象外) タクティシャン分は 失われない"
+DESCRIPTION arabic "Supremacy Map Pack maps with a variety of grapple-enabled game modes.\n\nYour Exo Ability slot, even if it's empty, will be replaced with Exo Grapple. Exo Grapple does not count towards Pick 13. Additional Exo Ability from Tactician Wildcard will remain."
+DESCRIPTION polish "Mapy z Supremacy w różnych trybach gry z hakiem.\nTwój slot umiejętności egzo, nawet jeżeli jest pusty, zostanie zastąpiony Egzo Hakiem. Egzo Hak nie wlicza się do Wybierz 13. Aktywne pozostaną umiejętności Egzo z dzikiej karty."
+DESCRIPTION russian "Микс игровых режимов с использованием Крюка на картах Supremacy.\nЭкзо-способность заменена на 'Экзо-крюк'."
+DESCRIPTION british "Supremacy マップで 様々なゲーム モードを プレイ\n\nExo アビリティ が 空でも グラップルに 入れ替わる (ピック 13 対象外) タクティシャン分は 失われない"
+dlc 13
+unlockxp 0
+maxparty 6
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+rule scr_conf_scorelimit 85
+rule scr_game_grappling_hook 1
+rule scr_current_playlist 1
+image "icon_pl_exo_team_deathmatch"
+showonlywhenhavemaps
+rule ds_dcid 0
+allowdupes
+mp_highrise2,dom,1
+mp_bigben2,dom,1
+mp_kremlin,dom,1
+mp_sector17,dom,1
+mp_highrise2,uplink,1
+mp_bigben2,uplink,1
+mp_kremlin,uplink,1
+mp_sector17,uplink,1
+mp_highrise2,hp,1
+mp_bigben2,hp,1
+mp_kremlin,hp,1
+mp_sector17,hp,1
+mp_highrise2,tdm,1
+mp_bigben2,tdm,1
+mp_kremlin,tdm,1
+mp_sector17,tdm,1
+mp_highrise2,conf_tdm,1
+mp_bigben2,conf_tdm,1
+mp_kremlin,conf_tdm,1
+mp_sector17,conf_tdm,1
+
+//################################################################################################
+playlist 19 // Supremacy DLC TDM playlist
+name english  "Supremacy Team Deathmatch"
+description english  "Team Deathmatch played on Supremacy Map Pack maps."
+dlc 13
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+image "icon_pl_exo_team_deathmatch"
+showonlywhenhavemaps
+allowdupes
+mp_highrise2,tdm,1
+mp_bigben2,tdm,1
+mp_kremlin,tdm,1
+mp_sector17,tdm,1
+
+//################################################################################################
+playlist 20 // Supremacy DLC Objective Mosh Pit playlist
+name english  "Supremacy Mosh Pit "
+description english  "Supremacy Map Pack maps with a variety of game modes."
+dlc 13
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+rule scr_conf_scorelimit 85
+rule scr_current_playlist 1
+image "icon_pl_exo_team_deathmatch"
+showonlywhenhavemaps
+allowdupes
+mp_highrise2,dom,1
+mp_bigben2,dom,1
+mp_kremlin,dom,1
+mp_sector17,dom,1
+mp_highrise2,uplink,1
+mp_bigben2,uplink,1
+mp_kremlin,uplink,1
+mp_sector17,uplink,1
+mp_highrise2,hp,1
+mp_bigben2,hp,1
+mp_kremlin,hp,1
+mp_sector17,hp,1
+mp_highrise2,tdm,1
+mp_bigben2,tdm,1
+mp_kremlin,tdm,1
+mp_sector17,tdm,1
+mp_highrise2,conf_tdm,1
+mp_bigben2,conf_tdm,1
+mp_kremlin,conf_tdm,1
+mp_sector17,conf_tdm,1
+
+//################################################################################################
+playlist 31 // DLC Grapple Mosh Pit playlist
+name english  "Grapple Mosh Pit"
+description english  "Grapple-enabled maps with a variety of grapple-enabled game modes.\n\nYour Exo Ability slot, even if it's empty, will be replaced with Exo Grapple. Exo Grapple does not count towards Pick 13. Additional Exo Ability from Tactician Wildcard will remain."
+dlc 12 
+dlc 13
+unlockxp 0
+maxparty 6
+rule ds_dcid 0
+rule party_minplayers 2
+rule party_maxplayers 18
+rule party_matchedplayercount 1
+rule partyChatDisallowed 0
+rule scr_conf_scorelimit 85
+rule scr_game_grappling_hook 1
+rule scr_current_playlist 1
+image "icon_pl_exo_team_deathmatch"
+showonlywhenhavemaps
+allowdupes
+mp_recovery,dom,1
+mp_blackbox,dom,1
+mp_climate_3,dom,1
+mp_perplex_1,dom,1
+mp_spark,dom,1
+mp_highrise2,dom,1
+mp_bigben2,dom,1
+mp_kremlin,dom,1
+mp_sector17,dom,1
+mp_blackbox,uplink,1
+mp_climate_3,uplink,1
+mp_perplex_1,uplink,1
+mp_spark,uplink,1
+mp_highrise2,uplink,1
+mp_bigben2,uplink,1
+mp_kremlin,uplink,1
+mp_sector17,uplink,1
+mp_blackbox,HP,1
+mp_climate_3,HP,1
+mp_perplex_1,HP,1
+mp_spark,HP,1
+mp_highrise2,hp,1
+mp_bigben2,hp,1
+mp_kremlin,hp,1
+mp_sector17,hp,1
+mp_blackbox,tdm,1
+mp_climate_3,tdm,1
+mp_perplex_1,tdm,1
+mp_spark,tdm,1
+mp_highrise2,tdm,1
+mp_bigben2,tdm,1
+mp_kremlin,tdm,1
+mp_sector17,tdm,1
+mp_blackbox,conf_tdm,1
+mp_climate_3,conf_tdm,1
+mp_perplex_1,conf_tdm,1
+mp_spark,conf_tdm,1
+mp_highrise2,conf_tdm,1
+mp_bigben2,conf_tdm,1
+mp_kremlin,conf_tdm,1
+mp_sector17,conf_tdm,1
+
+
+//################################################################################################
+//################################################################################################
+//################################################################################################
+category TOP
+include A, B, C, H, D, E, J, G, I 
+name english "Advanced Warfare MP"
+name french "Advanced Warfare Multijoueur"
+name italian "MG Advanced Warfare"
+name german "Advanced Warfare MS"
+name spanish "Advanced Warfare MJ"
+name spanishna "Advanced Warfare MJ"
+name portuguese "Advanced Warfare MJ"
+name japanese "ADVANCED WARFARE MP"
+name polish "Advanced Warfare MP"
+name russian "Advanced Warfare СИ"
+name british "ADVANCED WARFARE MP"
+
+//################################################################################################
+category A
+name english "Standard Playlists"
+name french "Sélections standard"
+name italian "Playlist standard"
+name german "Standard-Listen"
+name spanish "Listas de partidas estándar"
+name spanishna "Listas de partidas estándar"
+name portuguese "Listas de jogos padrões"
+name japanese "STANDARD"
+name arabic "Standard"
+name polish "Standardowe listy gier"
+name russian "Стандартные плейлисты"
+name british "STANDARD"
+description english "Standard Playlists featuring core game modes"
+DESCRIPTION french "Sélections standard incluant les modes de jeu de base"
+DESCRIPTION italian "Playlist standard con modalità di gioco principali"
+DESCRIPTION german "Standard-Listen mit den Standard-Spielmodi"
+DESCRIPTION spanish "Listas de partidas estándar con modos de juego básicos."
+DESCRIPTION spanishna "Listas de partidas estándar con modos de juego básicos."
+DESCRIPTION portuguese "Listas de jogos padrões apresentam modos de jogo principais."
+DESCRIPTION japanese "主流モードを収録した 標準的な プレイリスト"
+DESCRIPTION polish "Standardowe listy gier zawierające podstawowe tryby gry"
+DESCRIPTION russian "Стандартные плейлисты, включающие основные игровые режимы."
+DESCRIPTION british "主流モードを収録した 標準的な プレイリスト"
+include 25,1,2,3,4,5,6,7,8,9,10,12
+image "icon_pl_cat_exo"
+
+//################################################################################################
+category B
+name english  "Bonus Playlists"
+name french "Sélections bonus"
+name italian "Playlist bonus"
+name german "Bonus-Listen"
+name spanish "Listas de partidas de bonificación"
+name spanishna "Listas de partidas de bonificación"
+name portuguese "Lista de Jogos Bônus"
+name japanese "ボーナス"
+name arabic "Bonus Playlists"
+name polish "Premiowa lista gier"
+name russian "Бонусные плейлисты"
+name british "BONUS"
+description english  "Bonus Playlists featuring special game modes. "
+DESCRIPTION french "Sélections bonus incluant des modes de jeu spéciaux."
+DESCRIPTION italian "Playlist bonus con modalità di gioco speciali. "
+DESCRIPTION german "Bonus-Listen mit speziellen Spielmodi."
+DESCRIPTION spanish "Listas de partidas de bonificación con modos de juego especiales."
+DESCRIPTION spanishna "Listas de partidas de bonificación con modos de juego especiales."
+DESCRIPTION portuguese "Listas de jogos bônus apresentam modos de jogo especiais."
+DESCRIPTION japanese "特殊モードを収録した ボーナス プレイリスト"
+DESCRIPTION arabic "Bonus Playlists featuring special game modes. "
+DESCRIPTION polish "Dodatkowa lista gier ze specjalnymi trybami gry."
+DESCRIPTION russian "Бонусные плейлисты включают в себя специальные игровые режимы."
+DESCRIPTION british "特殊モードを収録した ボーナス プレイリスト"
+include  33,11,26,23
+image "icon_pl_cat_exo"
+
+//################################################################################################
+category C
+name english  "Hardcore Playlists"
+name french "Sélections Hardcore"
+name italian "Playlist Veterano"
+name german "Hardcore-Listen"
+name spanish "Listas de partidas extremas"
+name spanishna "Listas de partidas extremas"
+name portuguese "Lista de Jogos Extremos"
+name japanese "HARDCORE"
+name arabic "Hardcore Playlists"
+name polish "Lista gier: tryb hardcore"
+name russian "Плейлисты Хардкора"
+name british "HARDCORE"
+description english  "Hardcore Playlists featuring Hardcore game mode variants with LIMITED HUD, EXTRA DAMAGE and FRIENDLY FIRE enabled"
+DESCRIPTION french "Sélections Hardcore incluant des variantes de modes de jeu Hardcore avec un ATH LIMITÉ, des DÉGÂTS PLUS IMPORTANTS et le TIR ALLIÉ activé."
+DESCRIPTION italian "Playlist Veterano comprendenti modalità di gioco Veterano con INTERFACCIA LIMITATA, DANNI EXTRA e FUOCO AMICO abilitato"
+DESCRIPTION german "Hardcore-Listen mit Hardcore-Varianten von Spielmodi mit EINGESCHRÄNKTEM HUD, ERHÖHTEM SCHADEN und aktiviertem TEAMBESCHUSS"
+DESCRIPTION spanish "Listas de partidas extremas con modos de juego extremos con HUD LIMITADO, DAÑO ADICIONAL y FUEGO AMIGO activados."
+DESCRIPTION spanishna "Listas de partidas extremas con modos de juego extremos con HUD LIMITADO, DAÑO ADICIONAL y FUEGO AMIGO activados."
+DESCRIPTION portuguese "Listas de jogos extremos apresentam variantes de modos de jogo extremos com HUD LIMITADO, DANO EXTRA e FOGO AMIGO habilitados."
+DESCRIPTION japanese "ハードコア モードを 収録した プレイリスト: HUD 制限 / 追加ダメージ / 同士討ち有効"
+DESCRIPTION arabic "Hardcore Playlists featuring Hardcore game mode variants with LIMITED HUD, EXTRA DAMAGE and FRIENDLY FIRE enabled"
+DESCRIPTION polish "Lista gier hardcore z trybami gry hardcore z ograniczonym HUD, DODATKOWYMI OBRAŻENIAMI i OSTRZAŁEM SOJUSZNICZYM."
+DESCRIPTION russian "Плейлисты Хардкора включают в себя хардкорные игровые режимы С ОГРАНИЧЕННЫМ ИНТЕРФЕЙСОМ, ДОП. УРОНОМ и возможностью ОГНЯ ПО СВОИМ."
+DESCRIPTION british "ハードコア モードを 収録した プレイリスト: HUD 制限 / 追加ダメージ / 同士討ち有効"
+include 27, 13, 14, 15, 16
+image "icon_pl_cat_hardcore"
+
+//################################################################################################
+category D
+name english  "Classic Playlists"
+name french "Sélections Classiques"
+name italian "Playlist Classico"
+name german "Klassische Listen"
+name spanish "Listas de partidas clásicas"
+name spanishna "Listas de partidas clásicas"
+name portuguese "Lista de Jogos Clássicos"
+name japanese "CLASSIC"
+name arabic "Classic Playlists"
+name polish "Lista gier: tryb klasyczny"
+name russian "Плейлисты Классики"
+name british "CLASSIC"
+description english  "Classic Playlists featuring classic game modes without EXO MOVEMENT"
+DESCRIPTION french "Sélections classiques incluant les modes de jeu classiques sans MOUVEMENTS D'EXO."
+DESCRIPTION italian "Playlist classiche con modalità di gioco classiche senza MOVIMENTI EXO"
+DESCRIPTION german "Klassische Listen mit klassischen Spielmodi ohne EXO-AKTIONEN"
+DESCRIPTION spanish "Listas de partidas clásicas con modos de juego clásicos sin MOVIMIENTO DE EXOS."
+DESCRIPTION spanishna "Listas de partidas clásicas con modos de juego clásicos sin MOVIMIENTO DE EXOS."
+DESCRIPTION portuguese "Listas de jogos clássicos apresentam modos de jogo clássicos sem MOVIMENTAÇÃO DE EXO."
+DESCRIPTION japanese "伝統モードを収録した クラシック プレイリスト: EXO 使用不可"
+DESCRIPTION arabic "Classic Playlists featuring classic game modes without EXO MOVEMENT"
+DESCRIPTION polish "Klasyczne listy gier bez ruchów egzo"
+DESCRIPTION russian "Плейлисты Классики включают в себя классические игровые режимы без ЭКЗО-МАНЕВРОВ."
+DESCRIPTION british "伝統モードを収録した クラシック プレイリスト: EXO 使用不可"
+include 34, 17
+image "icon_pl_cat_classic"
+
+//################################################################################################
+category E
+categoryclass practice
+name english  "Combat Readiness Program Playlist"
+name french "Sélection Préparation au combat"
+name italian "Playlist Programma di addestramento"
+name german "Kampfvorbereitungsprogramm-Liste"
+name spanish "Lista de partidas Preparación de combate"
+name spanishna "Lista de partidas Entrenamiento de combate"
+name portuguese "Lista de jogos de Programa de Prontidão de Combate"
+name japanese "戦闘訓練プログラム"
+name arabic "Combat Readiness Program Playlist"
+name polish "Lista gier: tryb szkoleniowy"
+name russian "Плейлисты Программы подготовки к бою"
+name british "戦闘訓練プログラム"
+description english  "Combat Readiness Program Playlist."
+DESCRIPTION french "Sélection Préparation au combat"
+DESCRIPTION italian "Playlist Programma di addestramento."
+DESCRIPTION german "Kampfvorbereitungsprogramm-Liste."
+DESCRIPTION spanish "Lista de partidas Preparación de combate"
+DESCRIPTION spanishna "Lista de partidas Preparación de combate."
+DESCRIPTION portuguese "Lista de jogos de Programa de Prontidão de Combate."
+DESCRIPTION japanese "戦闘訓練プログラム"
+DESCRIPTION arabic "Combat Readiness Program Playlist."
+DESCRIPTION polish "Lista gier: tryb szkoleniowy."
+DESCRIPTION russian "Плейлисты программы подготовки к бою."
+DESCRIPTION british "戦闘訓練プログラム"
+include 21
+image "icon_pl_cat_exo"
+
+//################################################################################################
+category F
+name english  "Supremacy Playlists"
+name french "Sélections Supremacy"
+name italian "Playlist Supremacy"
+name german "Supremacy-Listen"
+name spanish "Listas de partidas de Supremacy"
+name spanishna "Listas de partidas de Supremacy"
+name portuguese "Listas de jogos Supremacy"
+name japanese "Supremacy Playlists"
+name arabic "Supremacy Playlists"
+name polish "Lista gier Supremacy"
+name russian "Плейлисты Supremacy"
+name british "Supremacy Playlists"
+description english  "Supremacy Map Pack maps with a variety of game modes."
+DESCRIPTION french "Les cartes du pack Supremacy avec divers modes de jeu."
+DESCRIPTION italian "Mappe del pacchetto Supremacy con diverse modalità di gioco."
+DESCRIPTION german "Karten des Supremacy-DLC-Packs mit einer Vielzahl an Spielmodi."
+DESCRIPTION spanish "Mapas del paquete de mapas Supremacy con varios modos de juego."
+DESCRIPTION spanishna "Mapas del paquete de mapas Supremacy con varios modos de juego."
+DESCRIPTION portuguese "Mapas do pacote de mapas Supremacy com uma variedade de modos de jogo."
+DESCRIPTION japanese "Supremacy マップで 様々なゲーム モードを プレイ"
+DESCRIPTION arabic "Supremacy Map Pack maps with a variety of game modes."
+DESCRIPTION polish "Mapy z pakietu Supremacy w różnych trybach gry."
+DESCRIPTION russian "Игра в различных игровых режимах на картах набора Supremacy."
+DESCRIPTION british "Supremacy マップで 様々なゲーム モードを プレイ"
+include 19, 20
+image "icon_pl_cat_exo"
+dlc 13
+
+//################################################################################################
+category G
+categoryclass survival
+name english "^1EXO Survival^7"
+name italian "^1Sopravvivenza EXO^7"
+name german "^1EXO-Überlebenskampf^7"
+name spanish "^1Supervivencia exo^7"
+name spanishna "^1Sobrevivencia EXO^7"
+name portuguese "^1Sobrevivência Exo^7"
+name japanese "^1EXO SURVIVAL^7"
+name polish "^1EGZO Przetrwanie^7"
+name russian "^1Экзо-выживание^7"
+name british "^1EXO SURVIVAL^7"
+description english "Exo Survival"
+DESCRIPTION french "Exo-Survie"
+DESCRIPTION italian "Sopravvivenza Exo"
+DESCRIPTION german "Exo-Überlebenskampf"
+DESCRIPTION spanish "Supervivencia Exo"
+DESCRIPTION spanishna "Sobrevivencia exo"
+DESCRIPTION portuguese "Sobrevivência Exo"
+DESCRIPTION japanese "EXO SURVIVAL"
+DESCRIPTION arabic "Exo Survival"
+DESCRIPTION polish "Egzo przetrwanie"
+DESCRIPTION russian "Экзо-выживание"
+DESCRIPTION british "EXO SURVIVAL"
+include 22,29
+image "icon_pl_cat_survival"
+
+//################################################################################################
+category H
+categoryclass directdisplay
+name english "Ranked Play"
+name french "Partie avec classement"
+name italian "Competitivo"
+name german "Ranglistenspiel "
+name spanish "Partidas de clasificación"
+name spanishna "Competitivo"
+name portuguese "Competitivo"
+name japanese "RANKED PLAY"
+name polish "Gra rankingowa"
+name russian "Соперничество"
+name british "RANKED PLAY"
+description english  "Season 1"
+DESCRIPTION french "Saison 1"
+DESCRIPTION italian "Stagione 1"
+DESCRIPTION german "Season 1"
+DESCRIPTION spanish "Temporada 1"
+DESCRIPTION spanishna "Temporada 1"
+DESCRIPTION arabic "Season 1"
+DESCRIPTION polish "Sezon 1"
+DESCRIPTION russian "Сезон 1"
+DESCRIPTION british "シーズン 1"
+include 24
+image "icon_pl_cat_survival"
+
+//################################################################################################
+category I
+categoryclass zombie
+name english "^1Exo Zombies^7"
+name french "^1Exo Zombies^7"
+name italian "^1Exo Zombies^7"
+name german "^1Exo Zombies^7"
+name spanish "^1Exo Zombies^7"
+name spanishna "^1Exo Zombies^7"
+name arabic "^1Exo Zombies^7"
+name polish "^1Exo Zombies^7"
+name russian "^1Exo Zombies^7"
+name british "^1EXO ZOMBIES^7"
+description english "Exo Zombies"
+DESCRIPTION french "Exo-Zombies."
+DESCRIPTION italian "Exo zombi."
+DESCRIPTION german "Exo-Zombies."
+DESCRIPTION spanish "Exo zombis."
+DESCRIPTION spanishna "Exo zombis."
+DESCRIPTION arabic "Exo Zombies"
+DESCRIPTION polish "Egzo Zombie."
+DESCRIPTION russian "Экзо-зомби."
+DESCRIPTION british "Exo Zombies"
+include 32, 28, 40
+image "icon_pl_cat_zombies"
+
+//################################################################################################
+category J
+name english  "Grapple Playlists"
+name french "Sélections Grappin"
+name italian "Playlist Rampino"
+name german "Kletterhaken-Listen"
+name spanish "Lista de partidas Gancho"
+name spanishna "Lista de partidas Gancho"
+name arabic "Grapple Playlists"
+name polish "Hak lista gier"
+name russian "Плейлисты Экзо-крюк"
+name british "GRAPPLE"
+description english  "Grapple Map Pack maps with a variety of game modes."
+DESCRIPTION french "Les cartes du pack Grappin avec divers modes de jeu."
+DESCRIPTION italian "Mappe del pacchetto Rampino con diverse modalità di gioco."
+DESCRIPTION german "Kletterhaken-Karten der DLC-Packs mit einer Vielzahl an Spielmodi."
+DESCRIPTION spanish "Mapas con disponibilidad de gancho con varios modos de juego."
+DESCRIPTION spanishna "Mapas con disponibilidad de gancho con varios modos de juego."
+DESCRIPTION portuguese "Mapas de diversos pacotes de mapas com uma variedade de modos de jogo com Gancho."
+DESCRIPTION japanese "Grapple マップで 様々なゲーム モードを プレイ"
+DESCRIPTION arabic "Grapple Map Pack maps with a variety of game modes."
+DESCRIPTION polish "Mapy z pakietu Hak w różnych trybach gry."
+DESCRIPTION russian "Игра с крюком в различных игровых режимах."
+DESCRIPTION british "Grapple マップで 様々なゲーム モードを プレイ"
+include 31, 30, 18 // For use when DLC3 goes live
+image "icon_pl_cat_exo"
+ÿ

@@ -1,0 +1,35 @@
+version 1
+
+// Number of keys to read from the key archive
+keys_to_read 4
+
+// unlocks in game - type, key index, bit, name, payload...
+consumable 0 xp 2
+title 1 0 cardtitle_elite_08
+title 1 1 cardtitle_elite_02
+title 1 2 cardtitle_elite_01
+title 1 3 cardtitle_elite_04
+title 1 4 cardtitle_elite_05
+title 1 5 cardtitle_elite_06
+title 1 6 cardtitle_elite_07
+icon 2 0 cardicon_elite02
+icon 2 1 cardicon_elite03
+icon 2 2 cardicon_elite04
+icon 2 3 cardicon_elite05
+icon 2 4 cardicon_elite06
+icon 2 5 cardicon_elite07
+icon 2 6 cardicon_elite08
+icon 2 7 cardicon_elite09
+icon 2 8 cardicon_elite10
+icon 2 9 cardicon_elite11
+icon 2 10 cardicon_elite12
+icon 2 11 cardicon_elite13
+icon 2 12 cardicon_elite14
+icon 2 13 cardicon_elite15
+icon 2 14 cardicon_elite16
+icon 2 15 cardicon_elite17
+icon 2 16 cardicon_elite18
+icon 2 17 cardicon_elite19
+icon 2 18 cardicon_elite20
+camo 3 0 marine
+camo 3 1 winter
